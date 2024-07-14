@@ -1,0 +1,169 @@
+.container {
+  justify-content: center;
+  /* Horizontally centers the container */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  border: 2px solid #444;
+  /* Darker border color */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Slightly larger shadow */
+  background-color: #333;
+  /* Darker background color */
+  width: 100%;
+  transition: ease-in-out, transform 0.3s ease-in-out;
+  transform-style: preserve-3d;
+  /* To preserve 3D perspective */
+  position: relative;
+  /* Relative positioning for the flip */
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.antiflipped {
+  transform: rotateY(180deg);
+  /* To Ensure that the inner content is not mirrored, we flip double (180 + 180 mod 360) = 0 -> no flip*/
+}
+
+
+
+.title-style {
+  border: 2px solid #666;
+  /* Darker border for title */
+  border-radius: 10px;
+  font-size: 1.2em;
+  /* Slightly larger font size */
+  font-weight: bold;
+  margin: 15px;
+  margin-left: 3%;
+  margin-right: 3%;
+  color: #eee;
+  /* Lighter text color */
+  text-align: center;
+  /* Center align text */
+  width: 90%;
+  /* Equal width to the container */
+}
+
+.with-padding {
+  padding: 10px
+}
+
+.content-style {
+  border: 2px dashed #666;
+  /* Darker border for content */
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 0.5em;
+  /* Larger font size */
+  line-height: 1.6;
+  color: #ddd;
+  /* Lighter text color */
+  text-align: justify;
+  /* Justify text */
+  width: 90%;
+  /* Equal width to the container */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  /* Distribute items evenly along the row */
+  align-items: center;
+  /* Center items vertically */
+  font-size: 0.5em;
+  margin-top: 10px;
+  /* Adjust margin as needed */
+  width: 100%;
+  /* Width of the container */
+}
+
+.button-container .right-button {
+  background-color: #333;
+  /* Button background color */
+  color: #ffffff;
+  /* Button text color */
+  margin: 5px;
+  width: 5%;
+  height: 5%;
+  border: none;
+  /* Remove border */
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  position: relative;
+  /* Position relative for pseudo-element */
+}
+
+.button-container .right-button::after {
+  content: '';
+  /* Empty content for pseudo-element */
+  position: absolute;
+  /* Position absolute for positioning */
+  top: 50%;
+  /* Center vertically */
+  right: 1%;
+  /* Adjust position */
+  transform: translateY(-50%);
+  /* Center vertically */
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  /* Triangle height */
+  border-bottom: 20px solid transparent;
+  /* Triangle height */
+  border-left: 30px solid #999999;
+  /* Triangle width and color */
+}
+
+.button-container .left-button {
+  background-color: #333;
+  /* Button background color */
+  color: #ffffff;
+  /* Button text color */
+  margin: 5px;
+  width: 5%;
+  height: 5%;
+  border: none;
+  /* Remove border */
+  padding: 20px 20px;
+  /* Padding inside the button */
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  position: relative;
+  /* Position relative for pseudo-element */
+}
+
+.button-container .left-button::after {
+  content: '';
+  /* Empty content for pseudo-element */
+  position: absolute;
+  /* Position absolute for positioning */
+  top: 50%;
+  /* Center vertically */
+  left: 1%;
+  /* Adjust position */
+  transform: translateY(-50%) rotate(0deg);
+  /* Center vertically and rotate for left direction */
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  /* Triangle height */
+  border-bottom: 20px solid transparent;
+  /* Triangle height */
+  border-right: 30px solid #999999;
+  /* Triangle width and color */
+}
+
+
+li {
+  margin: 2%;
+}

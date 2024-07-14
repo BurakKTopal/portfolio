@@ -1,0 +1,66 @@
+.course-details {
+    border: 1px solid var(--box-border-color);
+    padding: 16px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 0.6em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--course-details-background-color);
+    color: var(--course-details-text-color);
+    position: relative;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+}
+
+.course-table th,
+.course-table td {
+    border: 2px solid var(--course-table-border-color);
+    padding: 8px 12px;
+    text-align: left;
+    /* Left alignment for table cells */
+    font-size: 1em;
+}
+
+.course-table th {
+    background-color: var(--course-details-background-color);
+    color: var(--course-details-table-color);
+    font-weight: bold;
+}
+
+.course-table td {
+    background-color: var(--course-details-background-color);
+    color: var(--text-color);
+}
+
+.course-description {
+    margin-top: 16px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: var(--text-color);
+    text-align: left;
+    /* Ensure description text is left-aligned */
+}
+
+.close-button-container {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    color: var(--course-details-close-button-color);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: var(--text-color);
+    font-size: 1.8em;
+}

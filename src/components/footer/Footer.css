@@ -1,0 +1,73 @@
+/* Footer styles */
+.footer-style {
+  background-color: var(--footer-background-color);
+  /* Dark background color */
+  color: #fff;
+  /* Light text color */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 0 0 10px;
+  /* Remove default margin and add spacing below */
+}
+
+.footer-content nav {
+  margin-bottom: 10px;
+  /* Space between navigation and social icons */
+}
+
+.footer-content a {
+  color: #fff;
+  /* Link color */
+  text-decoration: none;
+  /* Remove underline */
+  margin: 0 15px;
+  /* Spacing between links */
+  font-size: 1.2em;
+  /* Font size of links */
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+  /* Underline links on hover */
+}
+
+.social-icons {
+  margin-top: 10px;
+  /* Spacing above social icons */
+}
+
+.social-icons a {
+  color: #fff;
+  /* Icon color */
+  font-size: 1.5em;
+  /* Icon size */
+  margin: 0 10px;
+  /* Spacing between icons */
+}
+
+.social-icons a:hover {
+  color: #f0f0f0;
+  /* Darken icon color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+  }
+
+  .footer-content a {
+    margin: 10px 0;
+    /* Adjust margin for links */
+  }
+}

@@ -1,0 +1,23 @@
+.theme-switcher {
+    position: fixed;
+    background-color: var(--button-arrow-color);
+    color: var(--text-color);
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-switcher:hover {
+    background-color: var(--button-arrow-color, darken(var(--button-arrow-color), 10%));
+}
+
+.theme-switcher i {
+    font-size: 20px;
+}

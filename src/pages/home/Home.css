@@ -1,0 +1,46 @@
+  .notepads-style {
+    color: #fff;
+    font-size: 2em;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .notepad-math-physics .container {
+    width: 80%;
+    background-color: var(--notepad-math-physics-background-color);
+
+  }
+
+  .notepad-math-physics .button-container button {
+    background-color: var(--notepad-math-physics-background-color)
+  }
+
+  .notepad-math-physics .button-container {
+    margin-left: auto;
+    /* Push this element to the right */
+  }
+
+  .fade-in {
+    opacity: 0;
+    /* Start with opacity 0 (fully transparent) */
+    transition: opacity 2s ease-in-out;
+    /* Transition opacity over 0.5 seconds */
+  }
+
+  .visible {
+    opacity: 1;
+    /* Change opacity to 1 (fully opaque) when .visible class is applied */
+  }
+
+  .fade-in-after-quote {
+    opacity: 0;
+    /* Start with opacity 0 (fully transparent) */
+    transition: opacity 3s ease-in-out;
+    /* Transition opacity over 0.5 seconds */
+  }
+
+  .after-quote-visible {
+    opacity: 1;
+    /* Change opacity to 1 (fully opaque) when .visible class is applied */
+  }

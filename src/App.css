@@ -1,0 +1,16 @@
+.app-body {
+  /* background-image: url('../src/assets/images/backgroundImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: var(--webpage-background-color);
+
+  background-attachment: fixed;
+  /* Keep background fixed */
+  color: #fff;
+  overflow-y: auto;
+  /* Enable vertical scrolling for content */
+  height: 100vh;
+  /* Full viewport height */
+  margin: 0;
+  padding: 0;
+}

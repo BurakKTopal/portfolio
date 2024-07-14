@@ -1,0 +1,59 @@
+/* Navbar.css */
+h1 {
+  font-size: 1.7em;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  background-color: var(--navbar-background-color);
+  color: var(--navbar-text-color);
+  position: fixed;
+  right: 5%;
+  top: 50%;
+  width: 13%;
+  transform: translateY(-50%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin-bottom: 10%;
+}
+
+.navbar ul li a {
+  color: var(--navbar-text-color);
+  text-decoration: none;
+  font-size: 1.4em;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.sub-section {
+  margin-left: 10%;
+
+  /* Left border for visual separation */
+  padding-left: 5px;
+  /* Padding for better readability */
+  font-size: 0.9em;
+}
+
+
+
+nav .navbar-fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+nav .navbar-visible {
+  opacity: 1;
+}

@@ -1,0 +1,51 @@
+.plot-grades-container {
+    width: 90%;
+    margin: auto;
+    border: 1px solid var(--plot-grades-box-color);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--notepad-background-color);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.plot-grades-title {
+    text-align: center;
+    color: var(--text-color);
+    padding: 10px;
+    background-color: var(--notepad-background-color);
+    border-radius: 10px 10px 0 0;
+}
+
+.plot-grades {
+    color: var(--text-color);
+    width: 100%;
+    height: 300px;
+}
+
+.semester-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.semester-button {
+    background-color: var(--semesters-button-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.semester-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.semester-button:active {
+    background-color: #666;
+}

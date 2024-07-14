@@ -1,0 +1,25 @@
+header {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    /* Choose a serif font for a classic look */
+    font-size: 2.5em;
+    color: var(--text-color);
+    /* Dark text color */
+    /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    box-shadow: 4px 4px 4px 4px var(--box-border-color);
+    /* Subtle shadow */
+    margin: 20px auto;
+    max-width: 40%;
+    margin-top: 15%;
+    margin-bottom: 25%
+        /* Limit width for readability */
+}
+
+.author-container {
+    margin: 2%;
+    display: flex;
+    justify-content: flex-start;
+}
