@@ -1,0 +1,94 @@
+.work-notepad-content {
+    margin-top: 3%;
+    /* Adjust the gap between columns */
+    /* Add padding to the whole content area */
+    background-color: var(--notepad-background-color);
+    /* Relative positioning for the flip */
+    font-family: var(--notepad-font-family);
+    /* Use your desired font family */
+    /* Darker border for content */
+    font-size: 0.6em;
+    /* Larger font size */
+    color: var(--text-color);
+    /* Lighter text color */
+    /* Justify text */
+    /* Equal width to the container */
+    height: 40%;
+    padding: 2%;
+}
+
+.left-column {
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+.right-column {
+    margin-top: 5%;
+}
+
+.image-company {
+    width: 60%;
+    /* Ensure the image does not exceed its container */
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Optional: Add border radius to the image */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle box shadow */
+}
+
+.content-about-experience {
+    /* Take up 2 parts of the available space */
+    margin-top: 20px;
+    /* Optional: Add top margin */
+    font-size: 1em;
+    /* Optional: Adjust font size */
+    color: var(--text-color);
+    /* Optional: Adjust text color */
+    /* Optional: Justify text */
+}
+
+.separation {
+    border-top: 3px dashed var(--box-border-color);
+}
+
+.skill-set-and-description {
+
+    /* Adjust the gap between columns */
+    /* Add padding to the whole content area */
+    background-color: var(--notepad-background-color);
+    /* Relative positioning for the flip */
+    font-family: var(--notepad-font-family);
+    /* Use your desired font family */
+    /* Darker border for content */
+    border-radius: 10px;
+    font-size: 0.5em;
+    /* Larger font size */
+    color: var(--text-color);
+    /* Lighter text color */
+    /* Justify text */
+    /* Equal width to the container */
+    text-align: left;
+}
+
+.keywords {
+    margin: 5%;
+}
+
+.work-notepad-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.work-notepad-content td {
+    white-space: nowrap;
+}
+
+
+
+.invertInDarkMode {
+    filter: var(--invert-filter);
+}
+
+.workpad-container {
+    padding: 2%
+}

@@ -2,16 +2,6 @@ import DoubleLinkedList from "../utils/DoubleLinkedList";
 import PlotGrades from "../components/PlotGrades/PlotGrades";
 import { mathYearOne, mathYearTwo, mathYearThree } from './GradesMath'
 import { physicsYearOne, physicsYearTwo, physicsYearThree } from './GradesPhysics'
-import WorkNotepadContent from "../components/workNotepadContent/WorkNotepadContent";
-
-
-import MBlogo from '../assets/images/MobileVikings-logo.png';
-import AHLogo from '../assets/images/AlbertHeijn-logo.png';
-import iinnoBeneluxLogo from '../assets/images/iinno-benelux-logo.png';
-import MSLogo from '../assets/images/MySherpa-logo.png';
-
-
-
 
 const testContent = <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus efficitur ligula, in aliquet justo congue ac. Sed vitae magna id metus posuere posuere. Nullam nec consectetur elit. Maecenas at ligula id lectus interdum feugiat a sit amet nunc. In ac fermentum dui. Sed euismod dapibus fermentum. Ut feugiat dui sed ipsum varius, vel euismod justo commodo. Sed euismod dui vel eros volutpat luctus. Sed tincidunt, libero ut pharetra convallis, nisl augue scelerisque lectus, eu lobortis arcu est eget ex. Fusce congue tellus eget purus aliquam, non vehicula lorem lobortis. Suspendisse potenti. Donec elementum, lacus id congue elementum, tortor dui euismod nisi, sit amet suscipit nulla libero vel lorem. Nulla ultricies lorem eget quam consectetur, vel rhoncus lorem vestibulum.
@@ -338,42 +328,62 @@ const physicsThirdYearContent = <>
 </>
 notepadsPhysics.addTail({ id: "Physics3", title: "My Third year", otherContent: <PlotGrades gradesData={physicsYearThree} />, textContent: physicsThirdYearContent, button: true, datePeriod: '2023-2024' });
 
-// Programming
 const notepadsProgramming = new DoubleLinkedList();
 
-const descriptionProgramming = <>
-    <p>
-        My journey into programming was filled with ups and downs, and it wasn't as straightforward as one might expect. When I first started, it was all about curiosity and the excitement of creating something from scratch. The initial excitement soon turned into frustration as I faced numerous challenges and setbacks. However, with persistence and a lot of late nights spent debugging code, I gradually improved and found my footing in the world of programming.
-    </p>
-    <p>
-        In this notepad, I will share my experiences, the hurdles I overcame, and the projects that have shaped my programming skills. From my first "Hello World" program to more complex projects involving databases, web development, and data analysis, each step in my programming journey has been a learning experience.
-    </p>
-</>
 notepadsProgramming.addHead({
-    id: "portfolios",
-    title: "Portfolio's",
-    otherContent: <p>
-        &#x1F6A7; Hold Tight, working on it! &#x1F6A7;
-    </p>,
+    id: "programming",
+    title: "Programming",
+    textContent: <>
+        <p>
+            My journey into programming was filled with ups and downs, and it wasn't as straightforward as one might expect. When I first started, it was all about curiosity and the excitement of creating something from scratch. The initial excitement soon turned into frustration as I faced numerous challenges and setbacks. However, with persistence and a lot of late nights spent debugging code, I gradually improved and found my footing in the world of programming.
+        </p>
+        <p>
+            In this notepad, I will share my experiences, the hurdles I overcame, and the projects that have shaped my programming skills. From my first "Hello World" program to more complex projects involving databases, web development, and data analysis, each step in my programming journey has been a learning experience.
+        </p>
+    </>,
     button: true,
-
+    datePeriod: '2019-...'
 });
 
 // Professional life
 const notepadsProfessionalLife = new DoubleLinkedList();
+notepadsProfessionalLife.addHead({
+    id: "professionalLife",
+    title: "Professional Life",
+    textContent: <>
+        <p>
+            My professional life has been a series of invaluable experiences, each teaching me something new about the industry and myself. From my first job to my current position, I've had the opportunity to work in various roles that have helped me grow both professionally and personally.
+        </p>
+        <p>
+            In this section, I will detail my career path, the skills I've acquired, and the lessons I've learned along the way. Each job has contributed to my development and has prepared me for the next step in my career.
+        </p>
+    </>,
+    button: true,
+    datePeriod: '2019-...'
+});
+
+
+notepadsProfessionalLife.addHead({
+    id: "professionalLife",
+    title: "Professional Life",
+    textContent: <>
+        <p>
+            My professional life has been a series of invaluable experiences, each teaching me something new about the industry and myself. From my first job to my current position, I've had the opportunity to work in various roles that have helped me grow both professionally and personally.
+        </p>
+        <p>
+            In this section, I will detail my career path, the skills I've acquired, and the lessons I've learned along the way. Each job has contributed to my development and has prepared me for the next step in my career.
+        </p>
+    </>,
+    button: true,
+    datePeriod: '2019-...'
+});
 
 const contentAboutExperienceAH = <>
     <p>
-        Albert Heijn was my first student job. I came to realize that the real world differed a lot of that on what we learn on school. This job also learned
-        me to express me more fluently with people I don't know, and helping them in an efficient and polite matter.
-    </p>
-    <p>
-        Due to the fact that a company isn't open during weekends, but retail is I continued working in the Albert Heijn for a decent amount of time. Once I got the feeling that
-        I would be more worth by using my analytical skills, I started to search for a study relevant job.
+
     </p>
 </>
-const workpadAH = <WorkNotepadContent title={"Warehouse worker"} location={"Hasselt, Flandres, Belgium · On Location"} skillSet={"Helping customers, keeping the store presentable and organized."}
-    image={AHLogo} contentAboutExperience={contentAboutExperienceAH} invertInDarkMode={false} />
+const workpadAH = <WorkNotepadContent skillSet={["Communicating with customers", ""]} nameImageCompany="AlbertHeijn-logo.png" contentAboutExperience={contentAboutExperienceAH} />
 
 notepadsProfessionalLife.addHead({
     id: "albertheijn",
@@ -386,23 +396,10 @@ notepadsProfessionalLife.addHead({
 
 const contentAboutExperienceiinoBenelux = <>
     <p>
-        The promising platform established by iinno-benelux named Jabba, provides intelligent AlphaESS battery control.
-        My tasks within the Jabba team is to create and maintain the technical architecture for automizing the onboarding process of new customers, using Python within the Odoo environment.
+
     </p>
-    <p>
-        More specifically, my tasks are:
-    </p>
-    <ul>
-        <li>Designed comprehensive onboarding flowcharts for new customers in collaboration with the team.</li>
-        <li>Implemented a support system to automatically generate helpdesk tickets for incomplete client details or failed processes.</li>
-        <li>Integrated backend APIs of close partners into our ticket system for seamless communication.</li>
-        <li>Programmed and designed customer detail acquisition forms and custom websites using XML, HTML, CSS, and JavaScript.</li>
-        <li>Developed object-oriented Python solutions within the Odoo framework, enhancing my understanding of software architecture.</li>
-        <li>Utilized Bitbucket and Git for version control, deploying software to live Odoo environments and refining CLI skills in Linux.</li>
-    </ul>
 </>
-const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} location={"Hasselt, Flandres, Belgium · Hybrid"} skillSet={'Odoo, Python Flask, Linux CLI, web devoplement (HMTL, CSS, JS, XML), architectural design'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
-    invertInDarkMode={false} />
+const workpadiinno = <WorkNotepadContent skillSet={["Working with Python", ""]} nameImageCompany="iinno-benelux-logo.png" contentAboutExperience={contentAboutExperienceiinoBenelux} />
 
 notepadsProfessionalLife.addHead({
     id: "iinnobenelux",
@@ -413,15 +410,10 @@ notepadsProfessionalLife.addHead({
 });
 const contentAboutExperienceMySherpa = <>
     <p>
-        I always liked teaching others, and explaining the complexities of a subject. I came to the thought to turn this eagerness into a real job by applying
-        at MySherpa. This way I helped several high school students to improve their Mathematics and Phyics. This meant going over their courses and revisiting core concepts.
-    </p>
-    <p>
-        Not only did I help them out, I also improved my teaching skills by being forced to talk in a clear and also concise matter.
+
     </p>
 </>
-const workpadMySherpa = <WorkNotepadContent title={"Math & Physics tutor"} location={"Flandres, Belgium · Hybrid"} skillSet={'Communication in a clear and concise manner, coaching'}
-    image={MSLogo} contentAboutExperience={contentAboutExperienceMySherpa} invertInDarkMode={false} />
+const workpadMySherpa = <WorkNotepadContent skillSet={["educating other people", ""]} nameImageCompany="MySherpa-logo.png" contentAboutExperience={contentAboutExperienceMySherpa} />
 
 notepadsProfessionalLife.addHead({
     id: "mysherpa",
@@ -433,12 +425,10 @@ notepadsProfessionalLife.addHead({
 
 const contentAboutExperienceMobileVikings = <>
     <p>
-        During my previous programming job at iinno-benelux, I mostly focussed on backend operations, and only in a basic, but sufficient amount of frontend.
-        At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
+
     </p>
 </>
-const workpadMB = <WorkNotepadContent title={"Frontend React developer"} location={"Hasselt, Flandres, Belgium · Hybrid"} skillSet={"React, Next JS and Radix-UI"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
-    invertInDarkMode={true} />
+const workpadMB = <WorkNotepadContent skillSet={["educating other people", ""]} nameImageCompany="MobileVikings-logo.png" contentAboutExperience={contentAboutExperienceMobileVikings} />
 
 notepadsProfessionalLife.addHead({
     id: "mobilevikings",
@@ -448,21 +438,6 @@ notepadsProfessionalLife.addHead({
     datePeriod: 'July 2024-...'
 });
 
-
-notepadsProfessionalLife.addHead({
-    id: "professionallife",
-    title: "Work Experience",
-    textContent: <>
-        <p>
-            My professional life has been a series of invaluable experiences, each teaching me something new about the industry and myself. From my first job to my current position, I've had the opportunity to work in various roles that have helped me grow both professionally and personally.
-        </p>
-        <p>
-            In this section, I will detail my career path, the skills I've acquired, and the lessons I've learned along the way. Each job has contributed to my development and has prepared me for the next step in my career.
-        </p>
-    </>,
-    button: true,
-    datePeriod: '2021-...'
-});
 
 // Math and physics combining
 const notepadsMathAndPhysics = new DoubleLinkedList();

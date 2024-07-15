@@ -30,7 +30,7 @@
     --course-table-border-color: #cccccc;
     --footer-background-color: rgb(57, 57, 57);
     --a-text-color: #80461B;
-
+    --invert-filter: invert(0%);
 }
 
 /* Dark Theme */
@@ -58,6 +58,7 @@
     --course-table-border-color: #444444;
     --footer-background-color: #111111;
     --a-text-color: #ff6347;
+    --invert-filter: invert(100%);
 }
 
 body {

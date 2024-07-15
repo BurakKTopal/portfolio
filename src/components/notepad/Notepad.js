@@ -98,6 +98,7 @@ function Notepad({ id, title, otherContent, textContent, button, setFunction, cu
                             <span style={{ fontStyle: 'italic' }}> {datePeriod}</span>
                         </div> : <div />}
                         {renderTextContentDiv()}
+
                         {otherContent}
 
                     </div>

@@ -58,8 +58,10 @@ function Home() {
     [currentNotepadMathematics.getPrevNode() ? [currentNotepadMathematics.getValue()] : ''],
     [currentNotepadPhysics.getPrevNode() ? { title: "Physics", id: "" } : { title: "Physics", id: "physics" }],
     [currentNotepadPhysics.getPrevNode() ? [currentNotepadPhysics.getValue()] : ''],
-    // currentNotepadProgramming.getValue(),
-    // currentNotepadProfessionalLife.getValue(),
+    currentNotepadProfessionalLife.getPrevNode() ? { title: "Work Experience", id: "" } : { title: "Work Experience", id: "professionallife" },
+    currentNotepadProfessionalLife.getPrevNode() ? [currentNotepadProfessionalLife.getValue()] : '',
+    currentNotepadProgramming.getValue(),
+
   ]
 
 
@@ -77,8 +79,8 @@ function Home() {
         <div className="notepads-style">
           {makeNotepadAndAssignSetFunction(currentNotepadAboutMe, null)}
           {makeNotepadAndAssignSetFunction(notepadMathAndPhysics, null)}
-          {/* {makeNotepadAndAssignSetFunction(currentNotepadProgramming, setCurrentNotepadProgramming)} */}
-          {/* {makeNotepadAndAssignSetFunction(currentNotepadProfessionalLife, setCurrentNotepadProfessionalLife)} */}
+          {makeNotepadAndAssignSetFunction(currentNotepadProfessionalLife, setCurrentNotepadProfessionalLife)}
+          {makeNotepadAndAssignSetFunction(currentNotepadProgramming, setCurrentNotepadProgramming)}
 
         </div>
 
