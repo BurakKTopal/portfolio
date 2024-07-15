@@ -36,7 +36,7 @@ const textAboutMe =
             of it by clicking on the arrow indicated at the bottom. You will notice that these notepads have more than two sides &#x1F609;
         </p>
         <p>
-            There are 5 different pads, and thus stories:
+            There are currenlty 2 different pads, and thus stories:
         </p>
         <ul>
             <li>
@@ -47,14 +47,20 @@ const textAboutMe =
                 can be found by clicking on the points of the plot that is presented for either Mathematics of Physics.
             </li>
             <li>
-                The second notepad will dive more into how the heck I even started with programming; it was not at all that smooth and nice as you'd expect!
+                The second one talks about my work experience and what my tasks were at these places.
             </li>
+        </ul>
+        <p>
+            The following are yet to be written, so keep tight!
+        </p>
+
+        <ul>
             <li>
-                The third pad will be more about my professional experiences. Where did it all start? What did each of these students jobs learn me?
-            </li>
-            <li>
-                This fourth part will be about the projects I've realized. This can go from the highlights of my study, to the programming portfolios I've
+                This third part will be about the projects I've realized. This can go from the highlights of my study, to the programming portfolios I've
                 made. I personally think that this will be the most interesting, as it is the most concrete one.
+            </li>
+            <li>
+                The fourth notepad will dive more into how the heck I even started with programming; it was not at all that smooth and nice as you'd expect!
             </li>
             <li>
                 At last, I've added the extra-curricular activities, and some special events that stands out. This will go more about my short 'professional' carreer
@@ -62,7 +68,9 @@ const textAboutMe =
             </li>
         </ul>
         <p>
-            If you are curious about any point in my story, you can contact me by the form at the end of this story, euhm page.
+            If you are curious about any point in my story, you can contact me by the form at the end of this story, euhm page. Btw, if you would suffer to
+            depression due to the dark color of this page, you can always switch to light mode by using the button at the upper left corner. I've set it default on dark to spare
+            my eyes when I work on this project in the late nights &#x1F601;
         </p>
 
 
