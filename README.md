@@ -1,2 +1,2 @@
 # burak-ktopal
-Own website
+React website to explore myself.
