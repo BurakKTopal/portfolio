@@ -380,7 +380,7 @@ const contentAboutExperienceAH = <>
         I would be more worth by using my analytical skills, I started to search for a study relevant job.
     </p>
 </>
-const workpadAH = <WorkNotepadContent title={"Warehouse worker"} location={"Hasselt, Flandres, Belgium · On Location"} skillSet={"Helping customers, keeping the store presentable and organized."}
+const workpadAH = <WorkNotepadContent title={"Warehouse worker"} location={"Hasselt, Flanders, Belgium · On Location"} skillSet={"Helping customers, keeping the store presentable and organized."}
     image={AHLogo} contentAboutExperience={contentAboutExperienceAH} invertInDarkMode={false} />
 
 notepadsProfessionalLife.addHead({
@@ -409,7 +409,7 @@ const contentAboutExperienceiinoBenelux = <>
         <li>Utilized Bitbucket and Git for version control, deploying software to live Odoo environments and refining CLI skills in Linux.</li>
     </ul>
 </>
-const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} location={"Hasselt, Flandres, Belgium · Hybrid"} skillSet={'Odoo, Python Flask, Linux CLI, web devoplement (HMTL, CSS, JS, XML), architectural design'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
+const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={'Odoo, Python Flask, Linux CLI, web devoplement (HMTL, CSS, JS, XML), architectural design'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
     invertInDarkMode={false} />
 
 notepadsProfessionalLife.addHead({
@@ -428,7 +428,7 @@ const contentAboutExperienceMySherpa = <>
         Not only did I help them out, I also improved my teaching skills by being forced to talk in a clear and also concise matter.
     </p>
 </>
-const workpadMySherpa = <WorkNotepadContent title={"Math & Physics tutor"} location={"Flandres, Belgium · Hybrid"} skillSet={'Communication in a clear and concise manner, coaching'}
+const workpadMySherpa = <WorkNotepadContent title={"Math & Physics tutor"} location={"Flanders, Belgium · Hybrid"} skillSet={'Communication in a clear and concise manner, coaching'}
     image={MSLogo} contentAboutExperience={contentAboutExperienceMySherpa} invertInDarkMode={false} />
 
 notepadsProfessionalLife.addHead({
@@ -445,7 +445,7 @@ const contentAboutExperienceMobileVikings = <>
         At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
     </p>
 </>
-const workpadMB = <WorkNotepadContent title={"Frontend React developer"} location={"Hasselt, Flandres, Belgium · Hybrid"} skillSet={"React, Next JS and Radix-UI"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
+const workpadMB = <WorkNotepadContent title={"Frontend React developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS and Radix-UI"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
     invertInDarkMode={true} />
 
 notepadsProfessionalLife.addHead({
