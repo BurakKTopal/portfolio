@@ -71,7 +71,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #333;
+  background-color: var(--contact-form-background-color);
   font-family: Arial, sans-serif;
 }
 
