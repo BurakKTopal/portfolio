@@ -445,7 +445,7 @@ const contentAboutExperienceMobileVikings = <>
         At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
     </p>
 </>
-const workpadMB = <WorkNotepadContent title={"Frontend React developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS and Radix-UI"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
+const workpadMB = <WorkNotepadContent title={"Frontend React developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS , TypeScript, Radix-UI"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
     invertInDarkMode={true} />
 
 notepadsProfessionalLife.addHead({
