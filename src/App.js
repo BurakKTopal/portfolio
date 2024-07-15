@@ -1,11 +1,5 @@
 import './App.css';
 import Home from './pages/home/Home.js';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
-import Footer from './components/footer/Footer.js';
 import "./styles/rootlayout.css"; // Ensure correct path to rootlayout.css
 import { useEffect, useState } from 'react';
 import { useAtom } from 'jotai';
@@ -27,13 +21,7 @@ function App() {
         <ThemeSwitcher theme={theme} setTheme={setTheme} />
 
         <FadeInSection>
-          <Router>
-            <Routes>
-
-              <Route exact path="/" element={<Home />} />
-            </Routes>
-            <Footer />
-          </Router>
+          <Home />
         </FadeInSection>
       </div>
     </>
