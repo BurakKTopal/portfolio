@@ -19,7 +19,7 @@
   border: 1px solid var(--box-border-color);
   border-radius: 5px;
   background-color: var(--contact-form-field-background-color);
-  color: #eee;
+  color: var(--text-color);
 }
 
 .contact-form textarea {
