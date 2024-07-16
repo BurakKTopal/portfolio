@@ -359,7 +359,7 @@ const descriptionProgramming = <>
 </>
 notepadsProgramming.addHead({
     id: "portfolios",
-    title: "Portfolio's",
+    title: "Projects",
     otherContent: <p>
         &#x1F6A7; Hold Tight, working on it! &#x1F6A7;
     </p>,
