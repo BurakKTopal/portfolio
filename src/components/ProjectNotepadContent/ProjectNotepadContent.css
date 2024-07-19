@@ -1,3 +1,7 @@
+.project-container {
+    padding: 2%
+}
+
 .work-notepad-content {
     margin-top: 3%;
     /* Adjust the gap between columns */
@@ -7,7 +11,7 @@
     font-family: var(--notepad-font-family);
     /* Use your desired font family */
     /* Darker border for content */
-    font-size: 0.6em;
+    font-size: 0.5em;
     /* Larger font size */
     color: var(--text-color);
     /* Lighter text color */
@@ -15,34 +19,10 @@
     /* Equal width to the container */
     height: 40%;
     padding: 2%;
-    line-height: 1.6;
-
 }
 
-.left-column {
-    margin-top: 2%;
-    margin-left: 20%;
-}
-
-.right-column {
-    margin-top: 5%;
-}
-
-.image-company {
-    width: 60%;
-    /* Ensure the image does not exceed its container */
-    /* Maintain aspect ratio */
-    border-radius: 10px;
-    /* Optional: Add border radius to the image */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional: Add a subtle box shadow */
-}
-
-.content-about-experience {
-    line-height: 1.6;
-
+.content-about-project {
     /* Take up 2 parts of the available space */
-    margin-top: 20px;
     /* Optional: Add top margin */
     font-size: 1em;
     /* Optional: Adjust font size */
@@ -56,6 +36,7 @@
 }
 
 .skill-set-and-description {
+    line-height: 1.6;
 
     /* Adjust the gap between columns */
     /* Add padding to the whole content area */
@@ -74,25 +55,29 @@
     text-align: left;
 }
 
-.keywords {
-    margin: 5%;
-}
 
 .work-notepad-content table {
     width: 100%;
-    border-collapse: collapse;
 }
 
 .work-notepad-content td {
     white-space: nowrap;
 }
 
-
-
-.invertInDarkMode {
-    filter: var(--invert-filter);
+.github-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--semesters-button-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.workpad-container {
-    padding: 2%
+.github-button:hover {
+    background-color: #555;
+    /* Darker shade on hover */
 }

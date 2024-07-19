@@ -170,7 +170,7 @@ li {
 
 .date-container {
   color: var(--text-color);
-  font-size: 0.6em;
+  font-size: 0.5em;
   margin-left: 4%;
   display: flex;
   justify-content: flex-start;

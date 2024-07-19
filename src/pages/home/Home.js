@@ -3,7 +3,7 @@ import './Home.css'
 import Notepad from "../../components/notepad/Notepad";
 import Navbar from "../../components/navbar/Navbar";
 import ContactForm from "../../components/contactForm/ContactForm";
-import { notepadsAboutMe, notepadsPhysics, notepadsMath, notepadsProgramming, notepadsProfessionalLife } from "../../data/notepadsHome.js"
+import { notepadsAboutMe, notepadsPhysics, notepadsMath, notepadsProgramming, notepadsProfessionalLife, notepadsExtraCurricular } from "../../data/notepadsHome.js"
 import { mathAndPhysicsIntroContent } from "../../data/notepadsHome.js"
 import Node from "../../utils/Node.js";
 import isMobile from "../../utils/UseMobileCheck.js";
@@ -18,6 +18,7 @@ function Home() {
   const [currentNotepadMathematics, setCurrentNotepadMathematics] = useState(notepadsMath.head)
   const [currentNotepadProgramming, setCurrentNotepadProgramming] = useState(notepadsProgramming.head)
   const [currentNotepadProfessionalLife, setCurrentNotepadProfessionalLife] = useState(notepadsProfessionalLife.head)
+  const [currentNotepadExtraCurricular, setCurrentNotepadExtraCurricular] = useState(notepadsExtraCurricular.head)
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [quoteFinished, setQuoteFinished] = useState(false)
   useEffect(() => {
@@ -60,7 +61,9 @@ function Home() {
     [currentNotepadPhysics.getPrevNode() ? [currentNotepadPhysics.getValue()] : ''],
     currentNotepadProfessionalLife.getPrevNode() ? { title: "Work Experience", id: "" } : { title: "Work Experience", id: "professionallife" },
     currentNotepadProfessionalLife.getPrevNode() ? [currentNotepadProfessionalLife.getValue()] : '',
-    currentNotepadProgramming.getValue(),
+    currentNotepadProgramming.getPrevNode() ? { title: "Programming", id: "" } : { title: "Programming", id: "programming" },
+    currentNotepadProgramming.getPrevNode() ? [currentNotepadProgramming.getValue()] : '',
+    currentNotepadExtraCurricular.getValue(),
 
   ]
 
@@ -81,6 +84,7 @@ function Home() {
           {makeNotepadAndAssignSetFunction(notepadMathAndPhysics, null)}
           {makeNotepadAndAssignSetFunction(currentNotepadProfessionalLife, setCurrentNotepadProfessionalLife)}
           {makeNotepadAndAssignSetFunction(currentNotepadProgramming, setCurrentNotepadProgramming)}
+          {makeNotepadAndAssignSetFunction(currentNotepadExtraCurricular, setCurrentNotepadExtraCurricular)}
 
         </div>
 

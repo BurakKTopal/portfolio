@@ -16,7 +16,7 @@ function PlotGrades({ gradesData }) {
     const [grades, setGrades] = useState([]);
     const [xValues, setXValues] = useState([]);
     const [courseDescriptionClicked, setCourseDescriptionClicked] = useState(false)
-    const [theme, setTheme] = useAtom(themeAtom)
+    const [theme] = useAtom(themeAtom)
     const gradesWholeYear = gradesData[0].concat(gradesData[1]);
 
     useEffect(() => {

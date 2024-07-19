@@ -9,6 +9,7 @@ import MBlogo from '../assets/images/MobileVikings-logo.png';
 import AHLogo from '../assets/images/AlbertHeijn-logo.png';
 import iinnoBeneluxLogo from '../assets/images/iinno-benelux-logo.png';
 import MSLogo from '../assets/images/MySherpa-logo.png';
+import ProjectNotepadContent from "../components/ProjectNotepadContent/ProjectNotepadContent";
 
 
 
@@ -346,26 +347,6 @@ const physicsThirdYearContent = <>
 </>
 notepadsPhysics.addTail({ id: "Physics3", title: "My Third year", otherContent: <PlotGrades gradesData={physicsYearThree} />, textContent: physicsThirdYearContent, button: true, datePeriod: '2023-2024' });
 
-// Programming
-const notepadsProgramming = new DoubleLinkedList();
-
-const descriptionProgramming = <>
-    <p>
-        My journey into programming was filled with ups and downs, and it wasn't as straightforward as one might expect. When I first started, it was all about curiosity and the excitement of creating something from scratch. The initial excitement soon turned into frustration as I faced numerous challenges and setbacks. However, with persistence and a lot of late nights spent debugging code, I gradually improved and found my footing in the world of programming.
-    </p>
-    <p>
-        In this notepad, I will share my experiences, the hurdles I overcame, and the projects that have shaped my programming skills. From my first "Hello World" program to more complex projects involving databases, web development, and data analysis, each step in my programming journey has been a learning experience.
-    </p>
-</>
-notepadsProgramming.addHead({
-    id: "portfolios",
-    title: "Projects",
-    textContent: <p>
-        &#x1F6A7; Hold Tight, working on it! &#x1F6A7;
-    </p>,
-    button: true,
-
-});
 
 // Professional life
 const notepadsProfessionalLife = new DoubleLinkedList();
@@ -504,6 +485,151 @@ const mathAndPhysicsIntroContent = (
     </>
 );
 
+
+// Programming
+const notepadsProgramming = new DoubleLinkedList();
+
+const descriptionProgramming = <>
+    <p>
+        Programming has had many ups and downs for me. I started with C++ in 2019. Naively, I chose this difficult language as my introduction to programming, which led to only a basic understanding of its syntax. I used this knowledge for a small numerical analysis assignment, but C++'s complexity demotivated me, and I stopped coding for a long time after that project.
+    </p>
+    <p>
+        Three years later, I gave programming another try, this time with Python. I followed courses on Codecademy, which steadily solidified my knowledge.
+    </p>
+    <p>
+        In 2023, perhaps influenced by COVID, I experienced a programming boom. I created my first chess engine with a GUI using Pygame and an alpha-beta pruning algorithm. That summer, I focused more on Python, designing a neural network from scratch and testing it on the MNIST dataset, achieving over 95% accuracy.
+    </p>
+    <p>
+        In my third year of my Bachelor's, I took an elective course in Computer Science: Computer Networks. I learned about the IP/TCP ISO model, and set up HTTP servers and proxies in Python. I concluded the course by developing an efficient synchronized gaming protocol on TCP, complete with RFC-like documentation.
+    </p>
+    <p>
+        After this project, I shifted my focus back to C++ and Qt, designing a banking app with a localhost implementation and transaction capabilities.
+    </p>
+    <p>
+        This is just the beginning, there are many more to come &#x1F60A;
+    </p>
+    <span style={{ fontStyle: 'italic' }}>
+        The following sections provide more insights into these projects, along with the GitHub repositories. Feel free to visit them!
+    </span>
+</>
+notepadsProgramming.addHead({
+    id: "programming",
+    title: "Programming",
+    textContent: descriptionProgramming,
+    button: true,
+    datePeriod: "2019 -..."
+
+});
+
+const bankingAppContent = <>
+    <p>
+        During my previous programming job at iinno-benelux, I mostly focussed on backend operations, and only in a basic, but sufficient amount of frontend. At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
+    </p>
+</>
+const notepadBankingApp = <ProjectNotepadContent skillSet="Qt, C++, C++/Qt networking, UI design" contentAboutProject={bankingAppContent}
+    githubLink="https://github.com/BurakKTopal/QtBankingApp"
+/>
+notepadsProgramming.addTail({
+    id: "bankingapp",
+    title: "Banking App in Qt",
+    otherContent: notepadBankingApp,
+    button: true,
+    datePeriod: "March 2024"
+});
+
+
+const sgpdescription = <>
+    <p>
+        During my previous programming job at iinno-benelux, I mostly focussed on backend operations, and only in a basic, but sufficient amount of frontend. At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
+    </p>
+</>
+const notepadSgp = <ProjectNotepadContent skillSet="Byte manipulation, optimization, Python networking, documentation" contentAboutProject={sgpdescription}
+    githubLink="https://github.com/BurakKTopal/Synchronized-Gaming-Protocol"
+/>
+
+notepadsProgramming.addTail({
+    id: "sgp",
+    title: "Synchronized gaming on TCP",
+    otherContent: notepadSgp,
+    button: true,
+    datePeriod: "Nov 2023-Dec 2023"
+});
+
+
+const AIDescription = <>
+    <p>
+        During my previous programming job at iinno-benelux, I mostly focussed on backend operations, and only in a basic, but sufficient amount of frontend. At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
+    </p>
+</>
+const notepadAI = <ProjectNotepadContent skillSet="Neural network design, Optimization, Python Flask, Numpy, web dev" contentAboutProject={AIDescription}
+    githubLink="https://github.com/BurakKTopal/PY-NumberRecognitionAI"
+/>
+
+notepadsProgramming.addTail({
+    id: "ai",
+    title: "Number recognition AI",
+    otherContent: notepadAI,
+    button: true,
+    datePeriod: "Aug 2023-Sep 2023"
+});
+
+
+const ChessDescription = <>
+    <p>
+        I got interested in playing chess at the age of 13 and really started playing when I was 14. At 16, I became the regional champion of my age category, and at 17, I became the champion of all age categories. However, my eagerness to play chess declined after that. To revive this interest and improve my Python skills, I started making a chess program in March 2023. After two hard weeks, I developed a program where moves could be played by entering them in the console using general chess notation. It didn't have an engine, wasn't optimized, and wasn't user-friendly, as not everyone knows proper chess notation. The code was a complex cluster of if and for loops and wasn't even commented. Despite its flaws, it worked, and I was happy with it. I knew that one day I'd need to clean it up to present it properly.
+    </p>
+    <p>
+        On August 15, I started looking back into my program. At first glance, it was really chaotic; it took me, the maker of the program, two days to go through it and clean it up. I wrote a program to count the number of positions available for a certain depth. At depth 4 from the starting position, it took 23 minutes to count 197,281 positions! The number seems impressive, but the time it took to achieve this was gigantically poor; it would mean 194 nodes per second. Compare this miserable number to that of the super-engine Stockfish: nodes per second. From here, the optimization journey begins!
+    </p>
+
+</>
+const notepadChess = <ProjectNotepadContent skillSet="Alpha-Beta Pruning, Hashing, Pygame, Python OOP" contentAboutProject={ChessDescription}
+    githubLink="https://github.com/BurakKTopal/Chess"
+/>
+
+notepadsProgramming.addTail({
+    id: "chess",
+    title: "Chess & Chess engine",
+    otherContent: notepadChess,
+    button: true,
+    datePeriod: "March 2023-Aug 2023"
+});
+
+
+// Projects
+const notepadsExtraCurricular = new DoubleLinkedList();
+
+const descriptionExtraCurricular = <>
+    <p>
+        The first real project we worked on, was during in my second to last year of high school about the Mathematical applications in the medical
+        world. This was in 2020. After this big project, there were many assignments and little tasks that were given by college, but I these are not
+        tasks that take hours and hours of work, but more side quests.
+    </p>
+    <p>
+        Actually, programming had a lot of ups and downs. It was in 2019 that I started with programming in C++, obviously underestimating how hard
+        this language is. Hence, I only got the understanding of the basic syntax. I did use this basic knowledge for some little assignment about
+        numerical analysis, which wasn't spectacular at all. After this, coding kind of cooled down for me.
+    </p>
+    <p>
+        It took 2 more years to get back to it. This time with the more logical approach by starting with Python. I followed some courses on
+        Codecademy and solidified my knowledge in this programming language. Slowly, yet surely.
+    </p>
+    <p>
+        In 2022, I experienced a programming boom and ever since intensively worked on improving my coding skills.
+    </p>
+
+</>
+notepadsExtraCurricular.addHead({
+    id: "extracurricular",
+    title: "Extra-curricular",
+    textContent: <p>
+        &#x1F6A7; Hold Tight, working on it! &#x1F6A7;
+    </p>,
+    button: true,
+
+});
+
+
 // Exporting all the double linked lists
 export {
     mathAndPhysicsIntroContent,
@@ -512,5 +638,6 @@ export {
     notepadsMath,
     notepadsMathAndPhysics,
     notepadsProgramming,
-    notepadsProfessionalLife
+    notepadsProfessionalLife,
+    notepadsExtraCurricular
 };
