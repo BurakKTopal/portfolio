@@ -6,13 +6,15 @@ import { useAtom } from 'jotai';
 import { themeAtom } from './styles/themeAtom.js';
 import ThemeSwitcher from './components/themeSwitcher/ThemeSwitcher.js';
 import FadeInSection from './UI/fadeInSection/FadeInSection.js';
+import isMobile from './utils/UseMobileCheck.js';
 
 
 function App() {
   const [theme, setTheme] = useAtom(themeAtom);
 
   useEffect(() => {
-    document.body.className = theme;
+    const isUsingMobile = isMobile();
+    document.body.className = `${theme} ${isUsingMobile ? "mobile" : "desktop"}`;
   }, [theme]);
 
   return (
@@ -30,6 +32,5 @@ function App() {
   );
 }
 
-//PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$
 
 export default App;

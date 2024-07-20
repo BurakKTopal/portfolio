@@ -12,6 +12,9 @@
     align-items: center;
     gap: 8px;
     transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+    /* a value higher than the overlapping elements */
+
 }
 
 .theme-switcher:hover {

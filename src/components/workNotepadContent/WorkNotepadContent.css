@@ -25,6 +25,7 @@
 }
 
 .right-column {
+    font-size: var(--right-column-worknotepad-font-size);
     margin-top: 5%;
 }
 
@@ -44,7 +45,6 @@
     /* Take up 2 parts of the available space */
     margin-top: 20px;
     /* Optional: Add top margin */
-    font-size: 1em;
     /* Optional: Adjust font size */
     color: var(--text-color);
     /* Optional: Adjust text color */
@@ -86,7 +86,6 @@
 .work-notepad-content td {
     white-space: nowrap;
 }
-
 
 
 .invertInDarkMode {

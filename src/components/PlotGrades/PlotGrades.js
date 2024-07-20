@@ -3,7 +3,7 @@ import Plot from 'react-plotly.js';
 import './PlotGrades.css'; // Import your CSS file
 import CourseDetails from '../courseDetails/CourseDetails';
 import { useAtom } from 'jotai';
-import { getAdditionalLayout } from '../../UI/plotGradesLayout';
+import { getAdditionalLayout } from './plotGradesLayout';
 import { themeAtom } from '../../styles/themeAtom';
 
 

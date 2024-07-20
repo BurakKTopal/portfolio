@@ -41,7 +41,7 @@ const textAboutMe =
             of it by clicking on the arrow indicated at the bottom. You will notice that these notepads have more than two sides &#x1F609;
         </p>
         <p>
-            There are currenlty 2 different pads, and thus stories:
+            There are currently 3 different pads, and thus stories:
         </p>
         <ul>
             <li>
@@ -54,19 +54,16 @@ const textAboutMe =
             <li>
                 The second one talks about my work experience and what my tasks were at these places.
             </li>
+            <li>
+                the third part will be about the programming projects I've realized. This can go from the highlights of my study, to the programming portfolios I've
+                made. I personally think that this will be the most interesting, as it is the most concrete one.
+            </li>
         </ul>
         <p>
             The following are yet to be written, so keep tight!
         </p>
 
         <ul>
-            <li>
-                This third part will be about the projects I've realized. This can go from the highlights of my study, to the programming portfolios I've
-                made. I personally think that this will be the most interesting, as it is the most concrete one.
-            </li>
-            <li>
-                The fourth notepad will dive more into how the heck I even started with programming; it was not at all that smooth and nice as you'd expect!
-            </li>
             <li>
                 At last, I've added the extra-curricular activities, and some special events that stands out. This will go more about my short 'professional' carreer
                 as chess player, all the way to how I got the chance to present my bachelor Thesis in front of more than 100 persons.

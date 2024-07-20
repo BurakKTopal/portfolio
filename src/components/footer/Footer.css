@@ -2,7 +2,7 @@
 .footer-style {
   background-color: var(--footer-background-color);
   /* Dark background color */
-  color: #fff;
+  color: var(--text-color);
   /* Light text color */
   padding: 20px;
   text-align: center;
@@ -25,7 +25,7 @@
 }
 
 .footer-content a {
-  color: #fff;
+  color: var(--text-color);
   /* Link color */
   text-decoration: none;
   /* Remove underline */
@@ -46,7 +46,7 @@
 }
 
 .social-icons a {
-  color: #fff;
+  color: var(--icon-color);
   /* Icon color */
   font-size: 1.5em;
   /* Icon size */
@@ -55,19 +55,6 @@
 }
 
 .social-icons a:hover {
-  color: #f0f0f0;
+  color: var(--icon-color);
   /* Darken icon color on hover */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .footer-content {
-    flex-direction: column;
-    /* Stack items vertically on smaller screens */
-  }
-
-  .footer-content a {
-    margin: 10px 0;
-    /* Adjust margin for links */
-  }
 }

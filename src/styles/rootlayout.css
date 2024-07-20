@@ -15,6 +15,7 @@
     --box-shadow-color: #b38952;
     --box-border-color: #b38952;
     --text-color: #333333;
+    --icon-color: #333333;
     --button-arrow-color: #80461B;
     --notepad-math-physics-background-color: #f0f0f0;
     --semesters-button-color: #80461B;
@@ -28,7 +29,7 @@
     --course-details-text-color: #333333;
     --course-details-table-color: #333333;
     --course-table-border-color: #cccccc;
-    --footer-background-color: rgb(57, 57, 57);
+    --footer-background-color: #cfcece;
     --a-text-color: #80461B;
     --invert-filter: invert(0%);
     --invert-filter-for-black: invert(100%);
@@ -48,6 +49,7 @@
     --box-shadow-color: #555555;
     --box-border-color: #555555;
     --text-color: #e0e0e0;
+    --icon-color: #e0e0e0;
     --button-arrow-color: #ff6347;
     --notepad-math-physics-background-color: #2c2c2c;
     --semesters-button-color: #ff6347;
@@ -61,7 +63,7 @@
     --course-details-text-color: #e0e0e0;
     --course-details-table-color: #e0e0e0;
     --course-table-border-color: #444444;
-    --footer-background-color: #111111;
+    --footer-background-color: #343333;
     --a-text-color: #ff6347;
     --invert-filter: invert(100%);
     --invert-filter-for-white: invert(83%);
@@ -70,6 +72,33 @@
     --invert-filter-for-black: invert(6%);
     --button-hover-color: #555;
 
+}
+
+.desktop {
+    --notepad-width: 45%;
+    --width-notepad-math-physics: 80%;
+    --Heading-max-width: 40%;
+    --right-column-worknotepad-font-size: 1.2em;
+    --width-notepad-content-style: 90%;
+    --width-plot-grades-container: 90%;
+    --Heading-margin-bottom: 50vh;
+    --Heading-quote-font-size: 2em;
+    --Heading-author-font-size: 1.6em;
+    --button-container-after-margin-left-or-right: 5px;
+}
+
+
+.mobile {
+    --width-notepad-math-physics: 90%;
+    --notepad-width: 90%;
+    --Heading-max-width: 80%;
+    --right-column-worknotepad-font-size: 0.6em;
+    --width-notepad-content-style: 85%;
+    --width-plot-grades-container: 85%;
+    --Heading-margin-bottom: 40vh;
+    --Heading-quote-font-size: 1.6em;
+    --Heading-author-font-size: 1.2em;
+    --button-container-after-margin-left-or-right: 1%;
 }
 
 body {

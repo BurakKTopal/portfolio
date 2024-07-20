@@ -7,7 +7,7 @@
   }
 
   .notepad-math-physics .container {
-    width: 80%;
+    width: var(--width-notepad-math-physics);
     background-color: var(--notepad-math-physics-background-color);
 
   }

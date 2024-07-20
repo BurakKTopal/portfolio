@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import './Heading.css'
-import { quotesArray } from "../../UI/quotes";
+import { quotesArray } from "../../data/quotes";
 
 export default function Heading({ quoteFinished, setQuoteFinished }) {
 
@@ -21,7 +21,7 @@ export default function Heading({ quoteFinished, setQuoteFinished }) {
         }
         setQuoteFinished(true)
 
-        generateAuthorWithDelay(`~ ${randomQuote.author}`, totalDelay / (randomQuote.author.length))
+        generateAuthorWithDelay(`~${randomQuote.author}`, totalDelay / (randomQuote.author.length))
 
     }
     const generateAuthorWithDelay = async (word, delay) => {
@@ -48,7 +48,9 @@ export default function Heading({ quoteFinished, setQuoteFinished }) {
     return (
         <>
             <header>
-                {heading}
+                <div className="header-content">
+                    {heading}
+                </div>
                 <br />
                 <div className="author-container">
                     {author}

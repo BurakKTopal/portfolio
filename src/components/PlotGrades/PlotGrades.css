@@ -1,5 +1,5 @@
 .plot-grades-container {
-    width: 90%;
+    width: var(--width-plot-grades-container);
     margin: auto;
     border: 1px solid var(--plot-grades-box-color);
     border-radius: 10px;

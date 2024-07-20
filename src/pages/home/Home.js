@@ -9,6 +9,7 @@ import Node from "../../utils/Node.js";
 import isMobile from "../../utils/UseMobileCheck.js";
 import Heading from "../../components/heading/Heading.js";
 import FadeInSection from "../../UI/fadeInSection/FadeInSection.js";
+import Footer from "../../components/footer/Footer.js";
 
 function Home() {
 
@@ -89,6 +90,7 @@ function Home() {
         </div>
 
         <ContactForm />
+        <Footer />
 
       </body >
     </>
