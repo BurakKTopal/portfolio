@@ -52,7 +52,7 @@ function Notepad({ id, title, otherContent, textContent, button, setFunction, cu
                         {/* <span style={{fontSize:"1.2em"}}>Curious for more?</span> */}
                         {currentNode.getPrevNode() === null ? <div /> : <button className="left-button" onClick={handleLeftClick}></button>}
 
-                        <div className="title-style">
+                        <div className={`${"title-style"} ${button ? "hasButton" : ""}`}>
                             <h2>{title}</h2>
                         </div>
                         {currentNode.getNextNode() === null ? <div /> : <button className="right-button" onClick={handleRightClick}></button>}
@@ -61,7 +61,7 @@ function Notepad({ id, title, otherContent, textContent, button, setFunction, cu
                 return (
                     <div className="button-container">
                         {currentNode.getPrevNode() === null ? <div /> : <button className="left-button" onClick={handleLeftClick}></button>}
-                        <div className="title-style">
+                        <div className={`${"title-style"} ${button ? "hasButton" : ""}`}>
                             <h2>{title}</h2>
                         </div>
                         {currentNode.getNextNode() === null ? <div /> : <button className="right-button" onClick={handleRightClick}></button>}

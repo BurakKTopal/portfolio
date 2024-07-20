@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import './Heading.css'
 import { quotesArray } from "../../data/quotes";
+import { scrollToSection } from "../navbar/Navbar";
 
 export default function Heading({ quoteFinished, setQuoteFinished }) {
 
@@ -56,6 +57,8 @@ export default function Heading({ quoteFinished, setQuoteFinished }) {
                     {author}
                 </div>
             </header>
+
+
         </>
     )
 }

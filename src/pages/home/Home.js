@@ -8,8 +8,9 @@ import { mathAndPhysicsIntroContent } from "../../data/notepadsHome.js"
 import Node from "../../utils/Node.js";
 import isMobile from "../../utils/UseMobileCheck.js";
 import Heading from "../../components/heading/Heading.js";
-import FadeInSection from "../../UI/fadeInSection/FadeInSection.js";
 import Footer from "../../components/footer/Footer.js";
+import ScrollDownButton from "../../components/scrollDownButton/ScrollDownButton.js";
+import DropdownMenu from "../../components/dropdownMenu/DropdownMenu.js";
 
 function Home() {
 
@@ -64,7 +65,8 @@ function Home() {
     currentNotepadProfessionalLife.getPrevNode() ? [currentNotepadProfessionalLife.getValue()] : '',
     currentNotepadProgramming.getPrevNode() ? { title: "Programming", id: "" } : { title: "Programming", id: "programming" },
     currentNotepadProgramming.getPrevNode() ? [currentNotepadProgramming.getValue()] : '',
-    currentNotepadExtraCurricular.getValue(),
+    // currentNotepadExtraCurricular.getValue(),
+    { title: 'Want to get in touch?', id: "contactMe" }
 
   ]
 
@@ -74,11 +76,13 @@ function Home() {
 
       <title>Home</title>
       <Heading setQuoteFinished={setQuoteFinished} />
+
       <body className={`fade-in ${isVisible ? 'visible' : ''}`}>
         <div className={`fade-in-after-quote ${quoteFinished ? 'after-quote-visible' : ''}`}>
-          {isMobileDevice ? <></> : <Navbar notepads={currentNotepads} />}
+          {isMobileDevice ? <DropdownMenu notepads={currentNotepads} /> : <Navbar notepads={currentNotepads} />}
+          <ScrollDownButton />
+
         </div>
-        <br></br>
 
         <div className="notepads-style">
           {makeNotepadAndAssignSetFunction(currentNotepadAboutMe, null)}

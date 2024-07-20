@@ -42,15 +42,20 @@
   font-size: 1.2em;
   /* Slightly larger font size */
   font-weight: bold;
-  margin: 3%;
-  margin-left: 3%;
-  margin-right: 3%;
+  margin-bottom: 3%;
   color: var(--text-color);
   /* Lighter text color */
   text-align: center;
   /* Center align text */
   width: 90%;
   /* Equal width to the container */
+}
+
+.hasButton {
+  margin: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+
 }
 
 .with-padding {

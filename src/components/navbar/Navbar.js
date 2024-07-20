@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import './Navbar.css'
 
 
-function scrollToSection(sectionId) {
+export function scrollToSection(sectionId) {
   const section = document.getElementById(sectionId);
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });

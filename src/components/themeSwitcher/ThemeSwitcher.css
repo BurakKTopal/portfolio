@@ -3,7 +3,9 @@
     background-color: var(--button-arrow-color);
     color: var(--text-color);
     border: none;
+    right: 1%;
     margin: 10px;
+    bottom: 0px;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;

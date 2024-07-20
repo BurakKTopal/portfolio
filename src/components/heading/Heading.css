@@ -1,6 +1,5 @@
 header {
     text-align: center;
-    font-family: 'Georgia', serif;
     /* Choose a serif font for a classic look */
     color: var(--text-color);
     /* Dark text color */
@@ -15,6 +14,8 @@ header {
     margin-top: 30vh;
     margin-bottom: var(--Heading-margin-bottom);
     /* Limit width for readability */
+    text-align: left;
+
 }
 
 .header-content {

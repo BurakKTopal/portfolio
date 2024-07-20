@@ -68,7 +68,6 @@
     --invert-filter: invert(100%);
     --invert-filter-for-white: invert(83%);
     --invert-filter-for-gray: invert(10%);
-
     --invert-filter-for-black: invert(6%);
     --button-hover-color: #555;
 
@@ -81,10 +80,11 @@
     --right-column-worknotepad-font-size: 1.2em;
     --width-notepad-content-style: 90%;
     --width-plot-grades-container: 90%;
-    --Heading-margin-bottom: 50vh;
+    --Heading-margin-bottom: 5vh;
     --Heading-quote-font-size: 2em;
     --Heading-author-font-size: 1.6em;
     --button-container-after-margin-left-or-right: 5px;
+    --Heading-scroll-down-button-margin-bottom: 20vh;
 }
 
 
@@ -95,10 +95,11 @@
     --right-column-worknotepad-font-size: 0.6em;
     --width-notepad-content-style: 85%;
     --width-plot-grades-container: 85%;
-    --Heading-margin-bottom: 40vh;
+    --Heading-margin-bottom: 5vh;
     --Heading-quote-font-size: 1.6em;
     --Heading-author-font-size: 1.2em;
-    --button-container-after-margin-left-or-right: 1%;
+    --button-container-after-margin-left-or-right: 0%;
+    --Heading-scroll-down-button-margin-bottom: 20vh;
 }
 
 body {
