@@ -510,7 +510,7 @@ const descriptionProgramming = <>
         After this project, I shifted my focus back to C++ and Qt, designing a banking app with a localhost implementation and transaction capabilities.
     </p>
     <p>
-        This is just the beginning, there are many more to come &#x1F60A;
+        And this is just the beginning, there are many more to come &#x1F60A;
     </p>
     <span style={{ fontStyle: 'italic' }}>
         The following sections provide more insights into these projects, along with the GitHub repositories. Feel free to visit them!
