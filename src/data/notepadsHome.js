@@ -3,16 +3,20 @@ import PlotGrades from "../components/PlotGrades/PlotGrades";
 import { mathYearOne, mathYearTwo, mathYearThree } from './GradesMath'
 import { physicsYearOne, physicsYearTwo, physicsYearThree } from './GradesPhysics'
 import WorkNotepadContent from "../components/workNotepadContent/WorkNotepadContent";
+import ProjectNotepadContent from "../components/ProjectNotepadContent/ProjectNotepadContent";
 
 
 import MBlogo from '../assets/images/MobileVikings-logo.png';
 import AHLogo from '../assets/images/AlbertHeijn-logo.png';
 import iinnoBeneluxLogo from '../assets/images/iinno-benelux-logo.png';
 import MSLogo from '../assets/images/MySherpa-logo.png';
-import ProjectNotepadContent from "../components/ProjectNotepadContent/ProjectNotepadContent";
-
-
-
+import chessGameExample from '../assets/images/chessGameExample.png'
+import terminalInfoChess from '../assets/images/terminalInfoChess.png'
+import NNStructure from '../assets/images/NNStructure.png'
+import synchronizationProtocol from '../assets/images/synchronizationProtocol.png'
+import avgByteTransfer from '../assets/images/avgByteTransfer.png'
+import BankingAppActions from '../assets/images/BankingAppActions.png'
+import BankingAppActionBetweenUsers from '../assets/images/BankingAppActionBetweenUsers.png'
 
 const testContent = <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus efficitur ligula, in aliquet justo congue ac. Sed vitae magna id metus posuere posuere. Nullam nec consectetur elit. Maecenas at ligula id lectus interdum feugiat a sit amet nunc. In ac fermentum dui. Sed euismod dapibus fermentum. Ut feugiat dui sed ipsum varius, vel euismod justo commodo. Sed euismod dui vel eros volutpat luctus. Sed tincidunt, libero ut pharetra convallis, nisl augue scelerisque lectus, eu lobortis arcu est eget ex. Fusce congue tellus eget purus aliquam, non vehicula lorem lobortis. Suspendisse potenti. Donec elementum, lacus id congue elementum, tortor dui euismod nisi, sit amet suscipit nulla libero vel lorem. Nulla ultricies lorem eget quam consectetur, vel rhoncus lorem vestibulum.
@@ -523,10 +527,27 @@ notepadsProgramming.addHead({
 
 const bankingAppContent = <>
     <p>
-        During my previous programming job at iinno-benelux, I mostly focussed on backend operations, and only in a basic, but sufficient amount of frontend. At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
+        All projects I had worked on were written in Python, it was time to diversify. One way I did this is by creating a C++ banking app using
+        Qt. You can create an account, and deposit as well as withdrawal money from it.
     </p>
+    <p>
+        The architecture that I've implemented is the client-server architecture. Suppose you do a withdrawal, in that case by using Byte streams, the information
+        is being sent to the remote server. By the usage of identifiers in your message, the server knows which action to perform. The action is being performed on the
+        local SQLite file, to which the server queries to read and update information.
+    </p>
+    <img src={BankingAppActions} className="invert-for-gray" />
+
+    <p>
+        By the use of C++/Qt threading, multiple clients are supported and can by using eachothers bank details deposit money to eachoter. Clients can by refreshing there transfers,
+        look at the recent one that has come in.
+    </p>
+
+    <img src={BankingAppActionBetweenUsers} className="invert-for-gray" />
+    <figcaption>Example of client transfering money to another client (BT being my own currency).
+    </figcaption>
+
 </>
-const notepadBankingApp = <ProjectNotepadContent skillSet="Qt, C++, C++/Qt networking, UI design" contentAboutProject={bankingAppContent}
+const notepadBankingApp = <ProjectNotepadContent skillSet="C++/Qt networking + Threading, SQLite, UI design" contentAboutProject={bankingAppContent}
     githubLink="https://github.com/BurakKTopal/QtBankingApp"
 />
 notepadsProgramming.addTail({
@@ -540,8 +561,45 @@ notepadsProgramming.addTail({
 
 const sgpdescription = <>
     <p>
-        During my previous programming job at iinno-benelux, I mostly focussed on backend operations, and only in a basic, but sufficient amount of frontend. At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
+        The motivation to create this so-called SGP protocol was by the course Computer Networks that I've taken in my third year. We had learned a lot about
+        how internet protocols (TCP, IP, HTTP, FTP and many, many more) thrive to optimize. I was really fascinated by how such a thought process is initiated and with the structure in the
+        documentation that is written alongside. </p>
+    <p>
+        As a result, in early november I started on an application protocol working on TCP and within a server-client architectural setup, which quickly became very interesting. The ground base I had was an offline
+        2D game that I've found, and my mission was to make it online by the use of a (application-layer) protocol.
     </p>
+    <p>
+        My first attempt in making this online game, was by using designing protocol
+        in which each client plays a move on his own device, immediately changing their own game state. Only after the client himself
+        has played the move, would it be sent to the server. This is all well and good, if the ping time is low. But
+        in scenarios where one player has a very low ping time, while the other has a very high ping time, the (supposedly) same
+        game would look totally different on their screens. One way to resolve high latency is by saving a buffer
+        at the server and if he sees a big mismatch he 'corrects' the game states of the players.
+    </p>
+    <p>
+        One can code this 'buffering/interpolating' system in a very sophisticated manner so that the other clients
+        wouldn't notice anything for decent pings. But I wanted to have a robust, and very low (application-layer) data transfer
+        working protocol which works decent, and does not buffer the game state of the
+        clients.
+    </p>
+    <p>
+        To do this, I have made use of two, rather 'weird', concepts; the <span style={{ fontSize: 'italic' }}>fake moves</span> which plays a move locally to check for
+        validity before it attempts to sends to the server, and
+        the concept of <span style={{ fontSize: 'italic' }}>echoing your own move</span> to be able to synchronize the screens of all players over different locations.
+        All these things only work together with the introduction of myself created algorithm: <span style={{ fontSize: 'italic' }}>the synchronization algorithm</span>.
+        This algorithm is visually represented as follows.
+    </p>
+    <img src={synchronizationProtocol} className="invert-for-white" />
+    <figcaption>Synchronization algorithm applied on two clients on two different devices</figcaption>
+    <h3>Super-efficient algorithm</h3>
+    <p>
+        Not only did this protocol work, within the game that I've made online it is super efficient. In the description of the Github repository, I've made some
+        data analysis. This analysis showed that for a game of 40 seconds, the average byte transfer between the server and the client and vice versa is only 1.36 bytes!
+        This is also nicely shown by the plot of the byte transfer of each client within the span of the game, that I've displayed here.
+    </p>
+    <img src={avgByteTransfer} className="invert-for-white" />
+    <figcaption>Statistics on the average byte transfer of two clients during 40 seconds game</figcaption>
+
 </>
 const notepadSgp = <ProjectNotepadContent skillSet="Byte manipulation, optimization, Python networking, documentation" contentAboutProject={sgpdescription}
     githubLink="https://github.com/BurakKTopal/Synchronized-Gaming-Protocol"
@@ -555,11 +613,81 @@ notepadsProgramming.addTail({
     datePeriod: "Nov 2023-Dec 2023"
 });
 
-
+const tableTrainingAI = <>
+    <table className="visualTable">
+        <caption>Training Hyperparameters and Results</caption>
+        <tr>
+            <th>Time per Epoch (s)</th>
+            <th>Epoch</th>
+            <th>LR</th>
+            <th>Accuracy (%)</th>
+        </tr>
+        <tr>
+            <td>266</td>
+            <td>1</td>
+            <td>0.1</td>
+            <td>89.43</td>
+        </tr>
+        <tr>
+            <td>246</td>
+            <td>2</td>
+            <td>0.05</td>
+            <td>96.17</td>
+        </tr>
+        <tr>
+            <td>222</td>
+            <td>3</td>
+            <td>0.025</td>
+            <td>97.06</td>
+        </tr>
+        <tr>
+            <td>180</td>
+            <td>4</td>
+            <td>0.0125</td>
+            <td>97.41</td>
+        </tr>
+        <tr>
+            <td>183</td>
+            <td>5</td>
+            <td>0.00625</td>
+            <td>97.54</td>
+        </tr>
+    </table>
+</>
 const AIDescription = <>
     <p>
-        During my previous programming job at iinno-benelux, I mostly focussed on backend operations, and only in a basic, but sufficient amount of frontend. At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
+        AI was in the past always a mistery box due to my lack of Mathematical knowledge. Starting with my study in Mathematics in college, this was no problem anymore.
+        Hence, I came to the idea to create my very own number recognition AI, and not using any library at all, but by writing is from scratch.
     </p>
+    <p>
+        Besides the design and the creation of the AI, I wanted some extra. This extra's embodies the implementation of a little own library to create
+        custom neural network designs. This means that you can choose the number of layers, and coupled to this layer you can also choose:
+    </p>
+    <ul>
+        <li>The number of nodes per layer</li>
+        <li>The activation function used for the layer</li>
+        <li>If there is a bias neuron or not in that layer</li>
+    </ul>
+    <p>
+        Not only can you choose the architectural design, it is also made possible to choose the weights adaptation, which encapsulates adapting each weight matrices':
+    </p>
+    <ul>
+        <li>Batch size: the number of training iterations before the weight matrices are updated</li>
+        <li>The learning rate of that specific weight matrix</li>
+    </ul>
+    Finally, I've also implemented a save and load feature. This way, after each training session, the model is saved in a *.pkl file, and read out in the following sessions.
+
+    <h3>Testing on the MNIST data set</h3>
+    <p>
+        I also have included a test of my AI on the MNIST data set. The architecture I'd chosen was a 3-layered 784x522x10 model, together with two bias neurons. The loss function
+        was MSE and the activation function for the hidden and the output layer where the typical sigmoid.
+    </p>
+    <img src={NNStructure} className="invert-for-white" />
+    <figcaption>3-Layered model</figcaption>
+    <p>
+        The statistics of the training, together with the accuracy on the test set can be found in the table below.
+    </p>
+    {tableTrainingAI}
 </>
 const notepadAI = <ProjectNotepadContent skillSet="Neural network design, Optimization, Python Flask, Numpy, web dev" contentAboutProject={AIDescription}
     githubLink="https://github.com/BurakKTopal/PY-NumberRecognitionAI"
@@ -576,11 +704,35 @@ notepadsProgramming.addTail({
 
 const ChessDescription = <>
     <p>
-        I got interested in playing chess at the age of 13 and really started playing when I was 14. At 16, I became the regional champion of my age category, and at 17, I became the champion of all age categories. However, my eagerness to play chess declined after that. To revive this interest and improve my Python skills, I started making a chess program in March 2023. After two hard weeks, I developed a program where moves could be played by entering them in the console using general chess notation. It didn't have an engine, wasn't optimized, and wasn't user-friendly, as not everyone knows proper chess notation. The code was a complex cluster of if and for loops and wasn't even commented. Despite its flaws, it worked, and I was happy with it. I knew that one day I'd need to clean it up to present it properly.
+        I got interested in playing chess at the age of 13 and really started playing when I was 14. At 16, I became the regional champion of my age category, and at 17, I became the regional champion of all age categories.
+        However, my eagerness to play chess took a slight dive after that. To revive this interest and improve my Python skills, I started making a chess program in March 2023 within the OOP paradigm.
+        After two hard weeks, I developed a program where moves could be played by entering them in the console using general chess notation. It didn't have an engine, wasn't optimized, and wasn't user-friendly,
+        as not everyone knows proper chess notation. The code was a complex cluster of if and for loops and wasn't even commented. Despite its flaws, it worked, and was happy with it. I knew that one day I'd need to clean it up to present it properly.
     </p>
     <p>
-        On August 15, I started looking back into my program. At first glance, it was really chaotic; it took me, the maker of the program, two days to go through it and clean it up. I wrote a program to count the number of positions available for a certain depth. At depth 4 from the starting position, it took 23 minutes to count 197,281 positions! The number seems impressive, but the time it took to achieve this was gigantically poor; it would mean 194 nodes per second. Compare this miserable number to that of the super-engine Stockfish: nodes per second. From here, the optimization journey begins!
+        On August 15 2023, I started looking back into my program. At first glance, it was really chaotic; it took me, the very own maker of the program, two full days to go through it and clean it up.
+        I've added an UI using Pygame, and made chess engines which can play on different search depths using alpha-beta pruning. I've also incorporated Zobrist hashing to encode every position to detect transpositions
+        to reduce the calculation time.
     </p>
+    <p>
+        It may not be that fast, but as a first decent, programming project I was and still satisfied with what I've built.
+    </p>
+
+
+    <table>
+        <tr>
+            <td>
+                <img className="invert-for-black" src={terminalInfoChess} />
+
+            </td>
+            <td>
+                <img src={chessGameExample} />
+
+            </td>
+        </tr>
+
+    </table>
+    <figcaption style={{ fontStyle: 'italic' }}>Game against (black) chess engine with game statistics</figcaption>
 
 </>
 const notepadChess = <ProjectNotepadContent skillSet="Alpha-Beta Pruning, Hashing, Pygame, Python OOP" contentAboutProject={ChessDescription}

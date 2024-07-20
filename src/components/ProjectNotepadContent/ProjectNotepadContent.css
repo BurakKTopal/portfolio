@@ -81,3 +81,57 @@
     background-color: #555;
     /* Darker shade on hover */
 }
+
+.content-about-project img {
+    width: 100%;
+}
+
+.content-about-project .invert-for-black {
+    filter: var(--invert-filter-for-black)
+}
+
+.content-about-project .invert-for-gray {
+    filter: var(--invert-filter-for-gray)
+}
+
+.content-about-project .invert-for-white {
+    filter: var(--invert-filter-for-white)
+}
+
+.content-about-project figcaption {
+    padding-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.visualTable {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.visualTable th,
+.visualTable td {
+    border: 1px solid var(--course-table-border-color);
+    text-align: start;
+    padding: 8px;
+}
+
+.visualTable th {
+    background-color: --var(--notepad-background-color);
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.visualTable tr:hover {
+    background-color: var(--box-border-color);
+}
+
+.visualTable caption {
+    caption-side: bottom;
+    text-align: left;
+    padding-top: 10px;
+    font-size: 14px;
+    color: var(--text-color);
+}

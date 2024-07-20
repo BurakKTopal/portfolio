@@ -11,7 +11,7 @@
     --contact-form-background-color: #f0f0f0;
     --contact-form-field-background-color: #e0e0e0;
     --webpage-background-color: #e6e3e3;
-    --notepad-background-color: #f0f0f0;
+    --notepad-background-color: hsl(0, 0%, 94%);
     --box-shadow-color: #b38952;
     --box-border-color: #b38952;
     --text-color: #333333;
@@ -31,15 +31,20 @@
     --footer-background-color: rgb(57, 57, 57);
     --a-text-color: #80461B;
     --invert-filter: invert(0%);
+    --invert-filter-for-black: invert(100%);
+    --button-hover-color: #555;
+    --invert-filter-for-white: invert(6%);
+    --invert-filter-for-gray: invert(10%);
+
 }
 
 /* Dark Theme */
 .dark-theme {
-    --notepad-title-color: #d3d3d3;
+    --notepad-title-color: hwb(0 83% 17%);
     --contact-form-background-color: #2c2c2c;
     --contact-form-field-background-color: #3b3b3b;
     --webpage-background-color: #1c1c1c;
-    --notepad-background-color: #2c2c2c;
+    --notepad-background-color: hsl(0, 0%, 17%);
     --box-shadow-color: #555555;
     --box-border-color: #555555;
     --text-color: #e0e0e0;
@@ -59,6 +64,12 @@
     --footer-background-color: #111111;
     --a-text-color: #ff6347;
     --invert-filter: invert(100%);
+    --invert-filter-for-white: invert(83%);
+    --invert-filter-for-gray: invert(10%);
+
+    --invert-filter-for-black: invert(6%);
+    --button-hover-color: #555;
+
 }
 
 body {

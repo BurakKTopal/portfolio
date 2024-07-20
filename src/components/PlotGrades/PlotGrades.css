@@ -42,7 +42,7 @@
 }
 
 .semester-button:hover {
-    background-color: #555;
+    background-color: var(--button-hover-color);
     transform: scale(1.05);
 }
 
