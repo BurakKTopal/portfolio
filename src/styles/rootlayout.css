@@ -36,7 +36,8 @@
     --button-hover-color: #555;
     --invert-filter-for-white: invert(6%);
     --invert-filter-for-gray: invert(10%);
-
+    --contact-me-button-background-color: #80461B;
+    --theme-button-background-color: #b38952;
 }
 
 /* Dark Theme */
@@ -70,6 +71,9 @@
     --invert-filter-for-gray: invert(10%);
     --invert-filter-for-black: invert(6%);
     --button-hover-color: #555;
+    --contact-me-button-background-color: #ff6347;
+    --theme-button-background-color: #ff6347;
+
 
 }
 
@@ -85,6 +89,7 @@
     --Heading-author-font-size: 1.6em;
     --button-container-after-margin-left-or-right: 5px;
     --Heading-scroll-down-button-margin-bottom: 20vh;
+    --theme-switcher-right: 1%;
 }
 
 
@@ -100,6 +105,7 @@
     --Heading-author-font-size: 1.2em;
     --button-container-after-margin-left-or-right: 0%;
     --Heading-scroll-down-button-margin-bottom: 20vh;
+    --theme-switcher-right: 3%;
 }
 
 body {

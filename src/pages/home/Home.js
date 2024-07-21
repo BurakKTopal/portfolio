@@ -11,6 +11,7 @@ import Heading from "../../components/heading/Heading.js";
 import Footer from "../../components/footer/Footer.js";
 import ScrollDownButton from "../../components/scrollDownButton/ScrollDownButton.js";
 import DropdownMenu from "../../components/dropdownMenu/DropdownMenu.js";
+import ContactMeButton from "../../components/contactMeButton/ContactMeButton.js";
 
 function Home() {
 
@@ -67,8 +68,19 @@ function Home() {
     currentNotepadProgramming.getPrevNode() ? [currentNotepadProgramming.getValue()] : '',
     // currentNotepadExtraCurricular.getValue(),
     { title: 'Want to get in touch?', id: "contactMe" }
-
   ]
+
+
+
+  const currentNotepadsSimplified = [
+    currentNotepadAboutMe.getValue(),
+    notepadMathAndPhysics.getValue(),
+    currentNotepadProfessionalLife.getPrevNode() ? { title: "Work Experience", id: currentNotepadProfessionalLife.getValue().id } : { title: "Work Experience", id: "professionallife" },
+    currentNotepadProgramming.getPrevNode() ? { title: "Programming", id: currentNotepadProgramming.getValue().id } : { title: "Programming", id: "programming" },
+    currentNotepadExtraCurricular.getValue(),
+    { title: 'Want to get in touch?', id: "contactMe" }
+  ]
+
 
 
   return (
@@ -79,7 +91,7 @@ function Home() {
 
       <body className={`fade-in ${isVisible ? 'visible' : ''}`}>
         <div className={`fade-in-after-quote ${quoteFinished ? 'after-quote-visible' : ''}`}>
-          {isMobileDevice ? <DropdownMenu notepads={currentNotepads} /> : <Navbar notepads={currentNotepads} />}
+          {isMobileDevice ? <DropdownMenu notepads={currentNotepadsSimplified} /> : <Navbar notepads={currentNotepads} />}
           <ScrollDownButton />
 
         </div>
@@ -92,7 +104,7 @@ function Home() {
           {makeNotepadAndAssignSetFunction(currentNotepadExtraCurricular, setCurrentNotepadExtraCurricular)}
 
         </div>
-
+        <ContactMeButton targetSectionId="contactMe" />
         <ContactForm />
         <Footer />
 

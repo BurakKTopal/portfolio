@@ -58,9 +58,16 @@
 
 }
 
-.with-padding {
-  padding: 10px
+
+.hasNoButton {
+  margin: 3%;
+  font-size: 0.9em;
+  padding-top: 6%;
+  padding-bottom: 6%;
+
 }
+
+
 
 .content-style {
   border: 2px dashed var(--content-box-border-color);
@@ -77,6 +84,8 @@
   width: var(--width-notepad-content-style);
   /* Equal width to the container */
 }
+
+
 
 .button-container {
   display: flex;

@@ -70,7 +70,7 @@ function Notepad({ id, title, otherContent, textContent, button, setFunction, cu
             }
         }
         return (
-            <div className="title-style with-padding">
+            <div className="title-style with-padding hasNoButton">
                 {title}
             </div>);
     }

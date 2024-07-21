@@ -3,9 +3,9 @@
     background-color: var(--button-arrow-color);
     color: var(--text-color);
     border: none;
-    right: 1%;
+    right: var(--theme-switcher-right);
     margin: 10px;
-    bottom: 0px;
+    top: 1%;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 16px;

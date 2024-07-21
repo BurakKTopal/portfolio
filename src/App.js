@@ -15,6 +15,7 @@ function App() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
     setIsVisible(true); // For fade in effect
     const isUsingMobile = isMobile();
     document.body.className = `${theme} ${isUsingMobile ? "mobile" : "desktop"}`;

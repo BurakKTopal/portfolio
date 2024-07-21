@@ -131,7 +131,7 @@ function ContactForm() {
 
   return (
     <>
-      <Notepad title={"Want to get in touch?"} otherContent={renderContactMe()} isInContentDiv={false} />
+      <Notepad title={<h1 style={{ margin: "0px" }}>Want to get in touch?</h1>} otherContent={renderContactMe()} isInContentDiv={false} />
     </>
   );
 }
