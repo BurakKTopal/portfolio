@@ -90,6 +90,8 @@
     --button-container-after-margin-left-or-right: 5px;
     --Heading-scroll-down-button-margin-bottom: 20vh;
     --theme-switcher-right: 1%;
+    --notepad-title-margin-top-and-bottom: 3%;
+
 }
 
 
@@ -106,6 +108,8 @@
     --button-container-after-margin-left-or-right: 0%;
     --Heading-scroll-down-button-margin-bottom: 20vh;
     --theme-switcher-right: 3%;
+    --notepad-title-margin-top-and-bottom: 6%;
+
 }
 
 body {

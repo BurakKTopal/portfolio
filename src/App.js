@@ -5,17 +5,19 @@ import { useEffect, useState } from 'react';
 import { useAtom } from 'jotai';
 import { themeAtom } from './styles/themeAtom.js';
 import ThemeSwitcher from './components/themeSwitcher/ThemeSwitcher.js';
-import FadeInSection from './UI/fadeInSection/FadeInSection.js';
 import isMobile from './utils/UseMobileCheck.js';
 
 
 function App() {
+
   const [theme, setTheme] = useAtom(themeAtom);
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top of the page
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  }, [])
+  useEffect(() => {
     setIsVisible(true); // For fade in effect
     const isUsingMobile = isMobile();
     document.body.className = `${theme} ${isUsingMobile ? "mobile" : "desktop"}`;

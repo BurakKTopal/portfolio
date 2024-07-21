@@ -48,7 +48,7 @@ export default function Heading({ quoteFinished, setQuoteFinished }) {
 
     return (
         <>
-            <header>
+            <header id="header-section">
                 <div className="header-content">
                     {heading}
                 </div>

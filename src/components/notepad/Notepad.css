@@ -53,17 +53,16 @@
 
 .hasButton {
   margin: 3%;
-  margin-left: 3%;
-  margin-right: 3%;
-
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 
 .hasNoButton {
   margin: 3%;
   font-size: 0.9em;
-  padding-top: 6%;
-  padding-bottom: 6%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 
 }
 
