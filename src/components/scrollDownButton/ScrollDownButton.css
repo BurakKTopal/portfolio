@@ -2,6 +2,8 @@
     top: 20px;
     text-align: center;
     margin-bottom: var(--Heading-scroll-down-button-margin-bottom);
+    background-color: none;
+
 }
 
 .scroll-button a {
@@ -32,7 +34,7 @@
 }
 
 .scroll-button button {
-    background-color: var(--webpage-background-color);
+    background-color: inherit;
     border: 0px;
 }
 

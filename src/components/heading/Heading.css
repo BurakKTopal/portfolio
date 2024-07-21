@@ -3,6 +3,7 @@ header {
     /* Choose a serif font for a classic look */
     color: var(--text-color);
     /* Dark text color */
+    background-color: inherit;
     /* Light gray background */
     padding: 20px;
     border-radius: 8px;
@@ -19,6 +20,8 @@ header {
 }
 
 .header-content {
+    background-color: inherit;
+
     font-size: var(--Heading-quote-font-size);
 }
 
