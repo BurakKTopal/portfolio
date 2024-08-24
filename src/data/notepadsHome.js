@@ -17,6 +17,7 @@ import synchronizationProtocol from '../assets/images/synchronizationProtocol.pn
 import avgByteTransfer from '../assets/images/avgByteTransfer.png'
 import BankingAppActions from '../assets/images/BankingAppActions.png'
 import BankingAppActionBetweenUsers from '../assets/images/BankingAppActionBetweenUsers.png'
+import LetsLinkLogo from '../assets/images/LetsLink-logo.png'
 
 const testContent = <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus efficitur ligula, in aliquet justo congue ac. Sed vitae magna id metus posuere posuere. Nullam nec consectetur elit. Maecenas at ligula id lectus interdum feugiat a sit amet nunc. In ac fermentum dui. Sed euismod dapibus fermentum. Ut feugiat dui sed ipsum varius, vel euismod justo commodo. Sed euismod dui vel eros volutpat luctus. Sed tincidunt, libero ut pharetra convallis, nisl augue scelerisque lectus, eu lobortis arcu est eget ex. Fusce congue tellus eget purus aliquam, non vehicula lorem lobortis. Suspendisse potenti. Donec elementum, lacus id congue elementum, tortor dui euismod nisi, sit amet suscipit nulla libero vel lorem. Nulla ultricies lorem eget quam consectetur, vel rhoncus lorem vestibulum.
@@ -390,8 +391,11 @@ const contentAboutExperienceiinoBenelux = <>
         <li>Developed object-oriented Python solutions within the Odoo framework, enhancing my understanding of software architecture.</li>
         <li>Utilized Bitbucket and Git for version control, deploying software to live Odoo environments and refining CLI skills in Linux.</li>
     </ul>
+    <p>
+        This project is one which I can be proud of: even though it was my first job as developer, I was able to present an efficient and well-working software. This software completely automatized the onboarding flow, resulting in an easier follow-up, while also sparing a tremendous amount of time.
+    </p>
 </>
-const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={'Odoo, Python Flask, Linux CLI, web devoplement (HMTL, CSS, JS, XML), architectural design'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
+const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={'Management function, git, Intercompany technical communication, Workflow Automation & Design, Backend Development (Python - Odoo), Linux CLI, Web development'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
     invertInDarkMode={false} />
 
 notepadsProfessionalLife.addHead({
@@ -399,7 +403,7 @@ notepadsProfessionalLife.addHead({
     title: "iinno-benelux",
     otherContent: workpadiinno,
     button: true,
-    datePeriod: 'April 2023-...'
+    datePeriod: 'April 2023-Jul 2024'
 });
 const contentAboutExperienceMySherpa = <>
     <p>
@@ -423,21 +427,43 @@ notepadsProfessionalLife.addHead({
 
 const contentAboutExperienceMobileVikings = <>
     <p>
-        During my previous programming job at iinno-benelux, I mostly focussed on backend operations, and only in a basic, but sufficient amount of frontend.
-        At Mobile Vikings, I emphasized on purely frontend development in React (also used for this website) in combination with Next JS and radix-UI.
+        During my internship at Mobile Vikings, I covered a broad spectrum of programming. I developed a complete frontend for their mock server using React and Next.js, along with Radix-UI. My implementation provided our frontend team with a tool to facilitate user testing and created a project that will be used for many years across different teams due to its UI/UX friendliness and flexibility in making adjustments, thanks to its clean code.
     </p>
-</>
-const workpadMB = <WorkNotepadContent title={"Frontend React developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS , TypeScript, Radix-UI"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
-    invertInDarkMode={true} />
+    <p>
+        Additionally, I improved the Node.js mock server for which I developed the frontend. At the beginning of my internship, this primarily involved adapting several endpoints to make the appropriate calls. As the project progressed, our team realized that the architecture of the mock server could be enhanced. After completing the frontend, I rolled up my sleeves and restructured the entire system into an ORM-based Node.js server using Prisma.
+    </p>
+    <p>
+        In my previous role at iinno-benelux, the technical team was very small. At Mobile Vikings, I further developed my teamwork and presentation skills while also gaining a strong grasp of advanced Git operations.
+    </p>
 
+</>
+const workpadMB = <WorkNotepadContent title={"Frontend React developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, TypeScript, Radix-UI, Presentational skills, agile technologies, clean code, Node"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
+    invertInDarkMode={true} />
 notepadsProfessionalLife.addHead({
     id: "mobilevikings",
     title: "Mobile Vikings",
     otherContent: workpadMB,
     button: true,
-    datePeriod: 'July 2024-...'
+    datePeriod: 'July 2024-Aug 2024'
 });
 
+
+const contentAboutLetslink = <>
+    <p>
+        As lead developer I've made an API, together with a full frontend to run our algorithm on.
+    </p>
+
+</>
+
+const workpadLetsLink = <WorkNotepadContent title={"Lead Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, CRUD API engineering, authentication, Python Flask, documentation - swagger, tech stack design"} image={LetsLinkLogo} contentAboutExperience={contentAboutLetslink}
+/>
+notepadsProfessionalLife.addHead({
+    id: "letslink",
+    title: "LetsLink",
+    otherContent: workpadLetsLink,
+    button: true,
+    datePeriod: 'July 2024-Present'
+});
 
 notepadsProfessionalLife.addHead({
     id: "professionallife",

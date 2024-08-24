@@ -4,8 +4,11 @@ import Notepad from '../notepad/Notepad';
 import emailjs from '@emailjs/browser';
 import contactFromSuccessImage from '../../assets/images/contactFormSuccess.png';
 import contactFromFailedImage from '../../assets/images/contactFormFailed.png';
+import useScrollToHash from '../../hooks/useScrollToHash';
 
-function ContactForm() {
+function ContactForm({ quoteFinished }) {
+
+  useScrollToHash('contactMe', quoteFinished); // Scrolls to #contactMe after 1 second
   const form = useRef();
   const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
   const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;

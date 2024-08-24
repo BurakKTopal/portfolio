@@ -61,7 +61,7 @@
 .hasNoButton {
   margin: 3%;
   font-size: 0.9em;
-  padding-top: 3%;
+  padding-top: var(--notepad-title-margin-top-and-bottom)3%;
   padding-bottom: 3%;
 
 }

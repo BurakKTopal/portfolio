@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Notepad.css'
+import useScrollToHash from "../../hooks/useScrollToHash";
 
 
 function scrollToSection(sectionId) {
@@ -12,7 +13,8 @@ function scrollToSection(sectionId) {
 }
 
 
-function Notepad({ id, title, otherContent, textContent, button, setFunction, currentNode, datePeriod }) {
+function Notepad({ id, title, otherContent, textContent, button, setFunction, currentNode, datePeriod, quoteFinished }) {
+    useScrollToHash(id, quoteFinished)
     const [mouseOver, setMouseOver] = useState(false)
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -84,10 +86,6 @@ function Notepad({ id, title, otherContent, textContent, button, setFunction, cu
         }
     }
 
-
-    const renderNotepad = () => {
-
-    }
     return (
         <>
             <center>

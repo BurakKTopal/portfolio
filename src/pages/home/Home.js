@@ -10,8 +10,8 @@ import isMobile from "../../utils/UseMobileCheck.js";
 import Heading from "../../components/heading/Heading.js";
 import Footer from "../../components/footer/Footer.js";
 import ScrollDownButton from "../../components/scrollDownButton/ScrollDownButton.js";
-import DropdownMenu from "../../components/dropdownMenu/DropdownMenu.js";
 import ContactMeButton from "../../components/contactMeButton/ContactMeButton.js";
+import DropdownMenu from '../../components/dropdownMenu/DropdownMenu.js'
 
 function Home() {
 
@@ -24,6 +24,7 @@ function Home() {
   const [currentNotepadExtraCurricular, setCurrentNotepadExtraCurricular] = useState(notepadsExtraCurricular.head)
   const [isMobileDevice, setIsMobileDevice] = useState(false);
   const [quoteFinished, setQuoteFinished] = useState(false)
+  const [quoteWithAuthorFinished, setQuoteWithAuthorFinished] = useState(false)
   useEffect(() => {
     setIsVisible(true); // For fade in effect
     setIsMobileDevice(isMobile()); // Check if the device is mobile when component mounts
@@ -41,6 +42,7 @@ function Home() {
       setFunction={setFunction} // To change the current notepad that is shown from the child
       currentNode={currentNotepad} // Reading the current notepad to conditionally add buttons to go back or forth
       datePeriod={datePeriod}
+      quoteFinished={quoteWithAuthorFinished}
     />
   }
 
@@ -87,7 +89,7 @@ function Home() {
     <>
 
       <title>Home</title>
-      <Heading setQuoteFinished={setQuoteFinished} />
+      <Heading setQuoteFinished={setQuoteFinished} setQuoteWithAuthorFinished={setQuoteWithAuthorFinished} />
 
       <body className={`fade-in ${isVisible ? 'visible' : ''}`}>
         <div className={`fade-in-after-quote ${quoteFinished ? 'after-quote-visible' : ''}`}>
@@ -95,7 +97,6 @@ function Home() {
           <ScrollDownButton />
 
         </div>
-
         <div className="notepads-style">
           {makeNotepadAndAssignSetFunction(currentNotepadAboutMe, null)}
           {makeNotepadAndAssignSetFunction(notepadMathAndPhysics, null)}
@@ -105,7 +106,7 @@ function Home() {
 
         </div>
         <ContactMeButton targetSectionId="contactMe" />
-        <ContactForm />
+        <ContactForm quoteFinished={quoteWithAuthorFinished} />
         <Footer />
 
       </body >

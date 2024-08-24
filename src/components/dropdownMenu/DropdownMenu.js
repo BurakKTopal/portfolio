@@ -34,7 +34,7 @@ const DropdownMenu = ({ notepads }) => {
                                         scrollToSection(notepad.id);
                                     }}
                                 >
-                                    {notepad.title ? ` ${notepad.title}` : ''}
+                                    {notepad.title ? `${notepad.title}` : ''}
                                 </a>
                             ) : (
                                 <a

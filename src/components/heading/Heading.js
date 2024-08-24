@@ -3,7 +3,7 @@ import './Heading.css'
 import { quotesArray } from "../../data/quotes";
 import { scrollToSection } from "../navbar/Navbar";
 
-export default function Heading({ quoteFinished, setQuoteFinished }) {
+export default function Heading({ quoteFinished, setQuoteFinished, setQuoteWithAuthorFinished }) {
 
     const [heading, setHeading] = useState(undefined)
     const [author, setAuthor] = useState(undefined)
@@ -30,6 +30,7 @@ export default function Heading({ quoteFinished, setQuoteFinished }) {
             await sleep(delay ? delay : 100)
             setAuthor(word.slice(0, index))
         }
+        setQuoteWithAuthorFinished(true)
     }
 
     const getRandomElement = (arr) => {
