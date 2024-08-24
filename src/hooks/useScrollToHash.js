@@ -13,7 +13,7 @@ function useScrollToHash(elementId, quoteFinished) {
                 };
 
                 // Delay the scroll to account for any animations or lazy loading
-                setTimeout(scrollToElement, 1000);
+                setTimeout(scrollToElement, 400);
             }
         }
     }, [quoteFinished]);

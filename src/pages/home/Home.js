@@ -42,7 +42,7 @@ function Home() {
       setFunction={setFunction} // To change the current notepad that is shown from the child
       currentNode={currentNotepad} // Reading the current notepad to conditionally add buttons to go back or forth
       datePeriod={datePeriod}
-      quoteFinished={quoteWithAuthorFinished}
+      quoteFinished={quoteFinished}
     />
   }
 
@@ -106,7 +106,7 @@ function Home() {
 
         </div>
         <ContactMeButton targetSectionId="contactMe" />
-        <ContactForm quoteFinished={quoteWithAuthorFinished} />
+        <ContactForm quoteFinished={quoteFinished} />
         <Footer />
 
       </body >
