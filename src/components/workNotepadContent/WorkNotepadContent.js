@@ -1,7 +1,10 @@
 import React from 'react';
 import './WorkNotepadContent.css'; // Import your CSS file for component-specific styles
+import { themeAtom } from '../../styles/themeAtom';
+import { useAtom } from 'jotai';
 
-export default function WorkNotepadContent({ title, location, skillSet, image, contentAboutExperience, invertInDarkMode }) {
+export default function WorkNotepadContent({ title, location, skillSet, image, contentAboutExperience, invertInDarkMode, darkThemeImage }) {
+    const [theme, setTheme] = useAtom(themeAtom);
 
     return (
         <>
@@ -13,7 +16,15 @@ export default function WorkNotepadContent({ title, location, skillSet, image, c
                         <tr>
                             <td>
                                 <div className="left-column">
-                                    <img src={image} className={`image-company ${invertInDarkMode ? "invertInDarkMode" : ""}`} alt="Company Logo" />
+                                    {darkThemeImage && theme == "light-theme" ?
+                                        <img
+                                            src={darkThemeImage}
+                                            className={`image-company ${invertInDarkMode ? "invertInDarkMode" : ""}`}
+                                            alt="Company Logo" /> :
+                                        <img
+                                            src={image}
+                                            className={`image-company ${invertInDarkMode ? "invertInDarkMode" : ""}`}
+                                            alt="Company Logo" />}
                                 </div>
                             </td>
                             <td>

@@ -54,7 +54,7 @@ function Home() {
     </div>
   </>
 
-  const notepadMathAndPhysics = new Node({ id: "mathAndPhysics", title: "Bachelor's degree(s)", textContent: mathAndPhysicsIntroContent, otherContent: mathAndPhysicsContent, button: false, datePeriod: '2021-2024' })
+  const notepadMathAndPhysics = new Node({ id: "education", title: "Bachelor's degree(s)", textContent: mathAndPhysicsIntroContent, otherContent: mathAndPhysicsContent, button: false, datePeriod: '2021-2024' })
 
 
   const currentNotepads = [

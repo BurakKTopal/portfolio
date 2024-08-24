@@ -30,10 +30,11 @@
 }
 
 .image-company {
-    width: 60%;
+    width: 50%;
     /* Ensure the image does not exceed its container */
     /* Maintain aspect ratio */
     border-radius: 10px;
+    padding: 5%;
     /* Optional: Add border radius to the image */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     /* Optional: Add a subtle box shadow */

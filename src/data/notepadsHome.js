@@ -17,7 +17,8 @@ import synchronizationProtocol from '../assets/images/synchronizationProtocol.pn
 import avgByteTransfer from '../assets/images/avgByteTransfer.png'
 import BankingAppActions from '../assets/images/BankingAppActions.png'
 import BankingAppActionBetweenUsers from '../assets/images/BankingAppActionBetweenUsers.png'
-import LetsLinkLogo from '../assets/images/LetsLink-logo.png'
+import LetsLinkLogoLight from '../assets/images/LetsLink-logo-light.png'
+import LetsLinkLogoDark from '../assets/images/LetsLink-logo-dark.png'
 
 const testContent = <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus efficitur ligula, in aliquet justo congue ac. Sed vitae magna id metus posuere posuere. Nullam nec consectetur elit. Maecenas at ligula id lectus interdum feugiat a sit amet nunc. In ac fermentum dui. Sed euismod dapibus fermentum. Ut feugiat dui sed ipsum varius, vel euismod justo commodo. Sed euismod dui vel eros volutpat luctus. Sed tincidunt, libero ut pharetra convallis, nisl augue scelerisque lectus, eu lobortis arcu est eget ex. Fusce congue tellus eget purus aliquam, non vehicula lorem lobortis. Suspendisse potenti. Donec elementum, lacus id congue elementum, tortor dui euismod nisi, sit amet suscipit nulla libero vel lorem. Nulla ultricies lorem eget quam consectetur, vel rhoncus lorem vestibulum.
@@ -450,12 +451,18 @@ notepadsProfessionalLife.addHead({
 
 const contentAboutLetslink = <>
     <p>
-        As lead developer I've made an API, together with a full frontend to run our algorithm on.
+        We all know how hard it can be to find new connections on events, let alone make one. Letslinks stands for facilitating this hard, and somewhere
+        awkward process. By introducing a smart algorithm to group persons based on the information they give in a short survey asking adequate, we make it match them to their suitable group.
+    </p>
+    <p>
+        This smart algorithm is what I've implemented and optimized. As it doesn't stop with merely an algorithm, I've made a CRUD API in Flask-RestX, and a complete frontend. Hence this could be seen is an automation software,
+        making it easier to apply the smart algorithm, while being able to easily change the necessary parameters.
     </p>
 
 </>
 
-const workpadLetsLink = <WorkNotepadContent title={"Lead Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, CRUD API engineering, authentication, Python Flask, documentation - swagger, tech stack design"} image={LetsLinkLogo} contentAboutExperience={contentAboutLetslink}
+const workpadLetsLink = <WorkNotepadContent title={"Lead Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, CRUD API engineering, authentication, Python Flask, documentation - swagger, tech stack design"} image={LetsLinkLogoLight} contentAboutExperience={contentAboutLetslink}
+    darkThemeImage={LetsLinkLogoDark}
 />
 notepadsProfessionalLife.addHead({
     id: "letslink",

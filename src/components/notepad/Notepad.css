@@ -137,6 +137,10 @@
   /* Triangle width and color */
 }
 
+.with-padding {
+  padding-top: 3%;
+}
+
 .button-container .left-button {
   background-color: var(--notepad-background-color);
   /* Button background color */
