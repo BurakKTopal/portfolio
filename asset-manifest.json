@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.30d954d7.css",
-    "main.js": "/static/js/main.a25240c6.js",
+    "main.css": "/static/css/main.8e56ec10.css",
+    "main.js": "/static/js/main.b37b04b8.js",
     "static/js/453.f48946e4.chunk.js": "/static/js/453.f48946e4.chunk.js",
     "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/NNStructure.png": "/static/media/NNStructure.889e0686e8d2a10b6b30.png",
@@ -10,7 +10,9 @@
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
     "static/media/contactFormSuccess.png": "/static/media/contactFormSuccess.3afebeee97d890f4e541.png",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
-    "static/media/MySherpa-logo.png": "/static/media/MySherpa-logo.ff2bae8b686cfbdb8905.png",
+    "static/media/MySherpa-logo.png": "/static/media/MySherpa-logo.240473577d21c302b70d.png",
+    "static/media/LetsLink-logo-dark.png": "/static/media/LetsLink-logo-dark.d81b4caf183944f19ef0.png",
+    "static/media/LetsLink-logo-light.png": "/static/media/LetsLink-logo-light.9b8f561096bb3d9d4154.png",
     "static/media/chessGameExample.png": "/static/media/chessGameExample.7b7239ad37f1184c6e59.png",
     "static/media/AlbertHeijn-logo.png": "/static/media/AlbertHeijn-logo.644891a10a044ee0bf19.png",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
@@ -25,12 +27,12 @@
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/index.html",
-    "main.30d954d7.css.map": "/static/css/main.30d954d7.css.map",
-    "main.a25240c6.js.map": "/static/js/main.a25240c6.js.map",
+    "main.8e56ec10.css.map": "/static/css/main.8e56ec10.css.map",
+    "main.b37b04b8.js.map": "/static/js/main.b37b04b8.js.map",
     "453.f48946e4.chunk.js.map": "/static/js/453.f48946e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30d954d7.css",
-    "static/js/main.a25240c6.js"
+    "static/css/main.8e56ec10.css",
+    "static/js/main.b37b04b8.js"
   ]
 }
