@@ -501,7 +501,7 @@ const mathAndPhysicsIntroContent = (
     <>
         <div id="mathematics-and-physics-intro">
             <p>
-                Since I was young, I've always had a passion for creating and observing how things work. Initially, pursuing an engineering degree seemed like the perfect fit, and everyone around me agreed. However, everything changed during my last year of high school.
+                I've always had a passion for creating and observing how things work. Initially, pursuing an engineering degree seemed like the perfect fit, and everyone around me agreed. However, everything changed during my last year of high school.
             </p>
         </div>
         <p>

@@ -2,11 +2,13 @@
 
 /* styles.css */
 :root {
-    --notepad-font-family: 'Exo 2', sans-serif;
+    --notepad-font-family: 'Agency FB', "Beiruti", sans-serif;
+    --root-font-family: "Agency FB", "Beiruti" 'sans-serif';
 }
 
 /* Light Theme */
 .light-theme {
+
     --notepad-title-color: #563727;
     --contact-form-background-color: #f0f0f0;
     --contact-form-field-background-color: #e0e0e0;
@@ -118,7 +120,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat; */
     color: var(--text-color);
-    font-family: var(--notepad-font-family);
+    font-family: 'Agency FB', "Beiruti", sans-serif;
 }
 
 .header-background {

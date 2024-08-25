@@ -1,5 +1,7 @@
 .project-container {
-    padding: 2%
+    padding: 2%;
+    font-family: var(--root-font-family);
+
 }
 
 .work-notepad-content {
@@ -24,7 +26,7 @@
 .content-about-project {
     /* Take up 2 parts of the available space */
     /* Optional: Add top margin */
-    font-size: 1em;
+    font-size: 19.2px;
     /* Optional: Adjust font size */
     color: var(--text-color);
     /* Optional: Adjust text color */

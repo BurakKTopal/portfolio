@@ -16,6 +16,8 @@
     transition: background-color 0.3s, color 0.3s;
     z-index: 1000;
     /* a value higher than the overlapping elements */
+    font-family: var(--root-font-family);
+    font-size: 18px;
 
 }
 

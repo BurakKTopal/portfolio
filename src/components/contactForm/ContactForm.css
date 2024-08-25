@@ -7,7 +7,6 @@
 }
 
 .contact-form label {
-  font-size: 1em;
   color: var(--text-color);
 }
 
@@ -47,7 +46,7 @@
   justify-content: center;
   height: 100vh;
   background-color: #333;
-  font-family: Arial, sans-serif;
+  font-family: var(--notepad-font-family)
 }
 
 .error-container h1 {
@@ -72,7 +71,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--contact-form-background-color);
-  font-family: Arial, sans-serif;
+  font-family: var(--notepad-font-family);
 }
 
 .success-container h1 {

@@ -7,7 +7,7 @@
     font-family: var(--notepad-font-family);
     /* Use your desired font family */
     /* Darker border for content */
-    font-size: 0.6em;
+    font-size: 0.8em;
     /* Larger font size */
     color: var(--text-color);
     /* Lighter text color */
@@ -30,7 +30,7 @@
 }
 
 .image-company {
-    width: 50%;
+    width: 40%;
     /* Ensure the image does not exceed its container */
     /* Maintain aspect ratio */
     border-radius: 10px;
@@ -42,7 +42,8 @@
 
 .content-about-experience {
     line-height: 1.6;
-
+    font-size: 19.2px;
+    font-family: var(--root-font-family);
     /* Take up 2 parts of the available space */
     margin-top: 20px;
     /* Optional: Add top margin */
@@ -66,7 +67,7 @@
     /* Use your desired font family */
     /* Darker border for content */
     border-radius: 10px;
-    font-size: 0.5em;
+    font-size: 0.6em;
     /* Larger font size */
     color: var(--text-color);
     /* Lighter text color */
