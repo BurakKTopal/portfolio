@@ -80,6 +80,7 @@
 }
 
 .desktop {
+    --margin-notepad-button: 5px;
     --notepad-width: 45%;
     --width-notepad-math-physics: 80%;
     --Heading-max-width: 40%;
@@ -98,6 +99,7 @@
 
 
 .mobile {
+    --margin-notepad-button: 5%;
     --width-notepad-math-physics: 90%;
     --notepad-width: 90%;
     --Heading-max-width: 80%;

@@ -103,7 +103,7 @@
   /* Button background color */
   color: #ffffff;
   /* Button text color */
-  margin: 5px;
+  margin: var(--margin-notepad-button);
   width: 5%;
   height: 5%;
   border: none;
@@ -146,7 +146,7 @@
   /* Button background color */
   color: #ffffff;
   /* Button text color */
-  margin: 5px;
+  margin: var(--margin-notepad-button);
   width: 5%;
   height: 5%;
   border: none;
