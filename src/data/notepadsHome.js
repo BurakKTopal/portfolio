@@ -455,13 +455,12 @@ const contentAboutLetslink = <>
         awkward process. By introducing a smart algorithm to group persons based on the information they give in a short survey asking adequate, we make it match them to their suitable group.
     </p>
     <p>
-        This smart algorithm is what I've implemented and optimized. As it doesn't stop with merely an algorithm, I've made a CRUD API in Flask-RestX, and a complete frontend. Hence this could be seen is an automation software,
-        making it easier to apply the smart algorithm, while being able to easily change the necessary parameters.
+        This smart algorithm is what I've implemented and optimized. As it doesn't stop with merely an algorithm, I've made an authenticated dashboard, by implementing a REST API in Flask-RestX, and a corresponding frontend in Next.js.
     </p>
 
 </>
 
-const workpadLetsLink = <WorkNotepadContent title={"Lead Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, CRUD API engineering, authentication, Python Flask, documentation - swagger, tech stack design"} image={LetsLinkLogoLight} contentAboutExperience={contentAboutLetslink}
+const workpadLetsLink = <WorkNotepadContent title={"Full Stack Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, REST API engineering, authentication, Python Flask, documentation - swagger, tech stack design"} image={LetsLinkLogoLight} contentAboutExperience={contentAboutLetslink}
     darkThemeImage={LetsLinkLogoDark}
 />
 notepadsProfessionalLife.addHead({
