@@ -81,16 +81,16 @@
 
 .desktop {
     --margin-notepad-button: 5px;
-    --notepad-width: 45%;
-    --width-notepad-math-physics: 80%;
-    --Heading-max-width: 40%;
+    --notepad-width: 60%;
+    --width-notepad-math-physics: 92%;
+    --Heading-max-width: 55%;
     --right-column-worknotepad-font-size: 1.2em;
     --width-notepad-content-style: 90%;
     --width-plot-grades-container: 90%;
     --Heading-margin-bottom: 5vh;
     --Heading-quote-font-size: 2em;
     --Heading-author-font-size: 1.6em;
-    --button-container-after-margin-left-or-right: 5px;
+    --button-container-after-margin-left-or-right: 30%;
     --Heading-scroll-down-button-margin-bottom: 20vh;
     --theme-switcher-right: 1%;
     --notepad-title-margin-top-and-bottom: 3%;
