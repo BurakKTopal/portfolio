@@ -20,20 +20,34 @@ import BankingAppActionBetweenUsers from '../assets/images/BankingAppActionBetwe
 import LetsLinkLogoLight from '../assets/images/LetsLink-logo-light.png'
 import LetsLinkLogoDark from '../assets/images/LetsLink-logo-dark.png'
 
+function calculateAge(birthDateString) {
+    const birthDate = new Date(birthDateString); // Parse the input birthdate
+    const today = new Date(); // Get the current date
+
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDifference = today.getMonth() - birthDate.getMonth();
+    // Adjust age if the birthday hasn't occurred yet this year
+    if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
+}
+
 const testContent = <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus efficitur ligula, in aliquet justo congue ac. Sed vitae magna id metus posuere posuere. Nullam nec consectetur elit. Maecenas at ligula id lectus interdum feugiat a sit amet nunc. In ac fermentum dui. Sed euismod dapibus fermentum. Ut feugiat dui sed ipsum varius, vel euismod justo commodo. Sed euismod dui vel eros volutpat luctus. Sed tincidunt, libero ut pharetra convallis, nisl augue scelerisque lectus, eu lobortis arcu est eget ex. Fusce congue tellus eget purus aliquam, non vehicula lorem lobortis. Suspendisse potenti. Donec elementum, lacus id congue elementum, tortor dui euismod nisi, sit amet suscipit nulla libero vel lorem. Nulla ultricies lorem eget quam consectetur, vel rhoncus lorem vestibulum.
 
     Vestibulum at posuere odio. Phasellus vitae ex ac lectus euismod eleifend. Vivamus at est non arcu varius viverra. Ut aliquet metus in justo tincidunt tincidunt. Duis vestibulum ligula ac nisl congue, sit amet mollis justo tincidunt. Quisque at interdum elit. Proin laoreet a magna et feugiat. Integer in lorem arcu. Nulla tristique, libero eu tincidunt fermentum, lacus mauris ultricies odio, id maximus tellus ligula ut quam. Curabitur non tellus vitae leo lobortis scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer nec lacus non nunc fermentum cursus. Duis auctor lacus sit amet velit mollis, nec ullamcorper libero varius. Maecenas suscipit magna in purus suscipit vestibulum. Nullam eu nisi in mi consectetur ullamcorper.
 </p>
 
-
+const age = calculateAge("11-06-2004")
 
 const textAboutMe =
     <>
         <div id="aboutMe-intro">
             Hello there &#x1F604;
             <p>
-                I'm Burak Kucuktopal and I'm 20 years old. Since I was young, I always wanted to reveal my thoughts to the broader public,
+                I'm Burak Kucuktopal and I'm {age} years old. Since I was young, I always wanted to reveal my thoughts to the broader public,
                 and have some website to gather all my experiences, projects and also important dates. Something that resembles a biography. Due to the lack
                 of knowledge and the limited programming skills, it quite took some time to realize this. But here it is!
             </p>
@@ -468,7 +482,7 @@ notepadsProfessionalLife.addHead({
     title: "LetsLink",
     otherContent: workpadLetsLink,
     button: true,
-    datePeriod: 'July 2024-Present'
+    datePeriod: 'July 2024-Sep 2024'
 });
 
 notepadsProfessionalLife.addHead({
