@@ -15,7 +15,7 @@
     /* Equal width to the container */
     height: 40%;
     padding: 2%;
-    line-height: 1.6;
+    line-height: var(--line-height);
 
 }
 
@@ -41,7 +41,7 @@
 }
 
 .content-about-experience {
-    line-height: 1.6;
+    line-height: var(--line-height);
     font-size: 19.2px;
     font-family: var(--root-font-family);
     /* Take up 2 parts of the available space */

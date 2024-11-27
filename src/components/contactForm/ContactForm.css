@@ -60,7 +60,7 @@
 .error-container p {
   font-size: 1.2rem;
   text-align: center;
-  line-height: 1.6;
+  line-height: var(--line-height);
   color: #6c757d;
   /* Bootstrap's secondary color */
 }
@@ -85,7 +85,7 @@
 .success-container p {
   font-size: 1.2rem;
   text-align: center;
-  line-height: 1.6;
+  line-height: var(--line-height);
   color: #6c757d;
   /* Bootstrap's secondary color */
 }

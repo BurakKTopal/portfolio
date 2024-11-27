@@ -858,7 +858,9 @@ notepadsExtraCurricular.addHead({
     id: "extracurricular",
     title: "Extra-curricular",
     textContent: <p>
-        &#x1F6A7; Hold Tight, working on it! &#x1F6A7;
+        <center>
+            &#x1F6A7; Hold Tight, working on it! &#x1F6A7;
+        </center>
     </p>,
     button: true,
 
