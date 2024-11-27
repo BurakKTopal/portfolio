@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap');
 
-/* styles.css */
+/* styles.css
 :root {
     --notepad-font-family: 'Exo 2', 'Proxima Nova', sans-serif;
     --root-font-family: 'Exo 2', 'Proxima Nova', sans-serif;
     --line-height: 1.5
-}
+} */
 
 /* Light Theme */
 .light-theme {
@@ -81,6 +81,9 @@
 }
 
 .desktop {
+    --line-height: 1.5;
+    --notepad-font-family: 'Exo 2', 'Proxima Nova', sans-serif;
+    --root-font-family: 'Exo 2', 'Proxima Nova', sans-serif;
     --margin-notepad-button: 5px;
     --notepad-width: 60%;
     --width-notepad-math-physics: 92%;
@@ -100,6 +103,9 @@
 
 
 .mobile {
+    --line-height: 1.4;
+    --notepad-font-family: 'Beiruti', sans-serif;
+    --root-font-family: 'Beiruti', sans-serif;
     --margin-notepad-button: 5%;
     --width-notepad-math-physics: 90%;
     --notepad-width: 90%;
