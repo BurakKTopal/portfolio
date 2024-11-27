@@ -19,6 +19,8 @@ import BankingAppActions from '../assets/images/BankingAppActions.png'
 import BankingAppActionBetweenUsers from '../assets/images/BankingAppActionBetweenUsers.png'
 import LetsLinkLogoLight from '../assets/images/LetsLink-logo-light.png'
 import LetsLinkLogoDark from '../assets/images/LetsLink-logo-dark.png'
+import BijlesHuisLogoLight from '../assets/images/BijlesHuisLogoLight.png'
+import ASMLLogo from '../assets/images/ASMLLogo.png'
 
 function calculateAge(birthDateString) {
     const birthDate = new Date(birthDateString); // Parse the input birthdate
@@ -437,7 +439,7 @@ notepadsProfessionalLife.addHead({
     title: "MySherpa",
     otherContent: workpadMySherpa,
     button: true,
-    datePeriod: 'April 2024-...'
+    datePeriod: 'April 2024-Oct 2024'
 });
 
 const contentAboutExperienceMobileVikings = <>
@@ -483,6 +485,44 @@ notepadsProfessionalLife.addHead({
     otherContent: workpadLetsLink,
     button: true,
     datePeriod: 'July 2024-Sep 2024'
+});
+
+
+const contentAboutBijleshuis = <>
+    <p>
+        After finishing my Bachelor's in Mathematics and Physics, I wanted to open up more possibilities in helping others via BijlesHuis. This meant further
+        sharpening my narrative skills, especially being able to concisely and precisely tutoring Mathematics & Statistics.
+    </p>
+</>
+
+const workpadBijlesHuis = <WorkNotepadContent title={"Mathematics Tutor"} location={"Limburg, Flanders, Belgium · Hybrid"} skillSet={"SPSS"} image={BijlesHuisLogoLight} contentAboutExperience={contentAboutBijleshuis}
+
+/>
+notepadsProfessionalLife.addHead({
+    id: "bijleshuis",
+    title: "BijlesHuis",
+    otherContent: workpadBijlesHuis,
+    button: true,
+    datePeriod: 'Sep 2024-...'
+});
+
+
+const contentAboutASML = <>
+    <p>
+        ASML was on my mind the day I realized to go into the practical side of Mathematics. By the good-word of my supervisor of my Bachelor Thesis and my several job experiences, I was a good candidate to get into the Machine Control group.
+        My task was to use Coco to verify a new design.
+    </p>
+</>
+
+const workpadASML = <WorkNotepadContent title={"Design Engineering Intern"} location={"Veldhoven, Netherlands · On-Site"} skillSet={"Coco, C++"} image={ASMLLogo} contentAboutExperience={contentAboutASML}
+
+/>
+notepadsProfessionalLife.addHead({
+    id: "asml",
+    title: "ASML",
+    otherContent: workpadASML,
+    button: true,
+    datePeriod: 'Nov 2024-...'
 });
 
 notepadsProfessionalLife.addHead({
