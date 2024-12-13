@@ -49,7 +49,7 @@ const textAboutMe =
         <div id="aboutMe-intro">
             Hello there &#x1F604;
             <p>
-                I'm Burak Kucuktopal and I'm {age} years old. Since I was young, I always wanted to reveal my thoughts to the broader public,
+                I'm Burak Kucuktopal and I'm {(!isNaN(age) && age) ? age : "20"} years old. Since I was young, I always wanted to reveal my thoughts to the broader public,
                 and have some website to gather all my experiences, projects and also important dates. Something that resembles a biography. Due to the lack
                 of knowledge and the limited programming skills, it quite took some time to realize this. But here it is!
             </p>
