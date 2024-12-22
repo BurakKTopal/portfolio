@@ -108,6 +108,10 @@
     filter: var(--invert-filter-for-gray)
 }
 
+.content-about-project .particle-simulation {
+    font-size: var(--particle-simulation-font-size)
+}
+
 .content-about-project .invert-for-white {
     filter: var(--invert-filter-for-white)
 }

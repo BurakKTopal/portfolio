@@ -607,11 +607,11 @@ const particleSimulation = <>
 
     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div style={{ width: '48%' }}>
-            <h3 style={{ fontStyle: 'italic', marginBottom: '1%' }}>DLA Initialization</h3>
+            <h3 style={{ fontStyle: 'italic', marginBottom: '1%' }} className="particle-simulation">DLA Initialization</h3>
             <img alt="Diffusion particle simulation" className="DLA-simulation-class" />
         </div>
         <div style={{ width: '48%' }}>
-            <h3 style={{ fontStyle: 'italic', marginBottom: '1%' }}>Random Initialization</h3>
+            <h3 style={{ fontStyle: 'italic', marginBottom: '1%' }} className="particle-simulation">Random Initialization</h3>
             <img alt="Particle Simulation - random initialization" className="random-particle-simulation-class" />
         </div>
     </div>

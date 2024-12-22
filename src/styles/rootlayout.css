@@ -94,6 +94,7 @@
     --width-notepad-math-physics: 92%;
     --Heading-max-width: 55%;
     --right-column-worknotepad-font-size: 1.2em;
+    --particle-simulation-font-size: 1.6em;
     --width-notepad-content-style: 90%;
     --width-plot-grades-container: 90%;
     --Heading-margin-bottom: 5vh;
@@ -125,6 +126,7 @@
     --Heading-scroll-down-button-margin-bottom: 20vh;
     --theme-switcher-right: 3%;
     --notepad-title-margin-top-and-bottom: 6%;
+    --particle-simulation-font-size: 0.9em;
 
 }
 
