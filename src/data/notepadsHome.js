@@ -340,7 +340,7 @@ const contentAboutExperienceAH = <>
         I would be more valuable by using my analytical skills, I started to search for a study-relevant job.
     </p>
 </>
-const workpadAH = <WorkNotepadContent title={"Warehouse worker"} location={"Hasselt, Flanders, Belgium · On Location"} skillSet={"Helping customers, Keeping the store presentable and organized."}
+const workpadAH = <WorkNotepadContent title={"Warehouse worker"} activity={""} location={"Hasselt, Flanders, Belgium · On Location"} skillSet={"Helping customers, Keeping the store presentable and organized."}
     image={AHLogo} contentAboutExperience={contentAboutExperienceAH} invertInDarkMode={false} />
 
 notepadsProfessionalLife.addHead({
@@ -371,7 +371,7 @@ const contentAboutExperienceiinoBenelux = <>
         This project is one that I can be proud of: even though it was my first job as a developer, I was able to present efficient and well-working software. This software completely automated the onboarding flow, resulting in easier follow-up while also saving a tremendous amount of time.
     </p>
 </>
-const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={'Management function, Git, Intercompany technical communication, Workflow automation & design, Backend development (Python - Odoo), Linux CLI, Web development'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
+const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} activity={""} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={'Management function, Git, Intercompany technical communication, Workflow automation & design, Backend development (Python - Odoo), Linux CLI, Web development'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
     invertInDarkMode={false} />
 
 notepadsProfessionalLife.addHead({
@@ -412,7 +412,7 @@ const contentAboutExperienceMobileVikings = <>
         In my previous role at iinno-benelux, the technical team was very small. At Mobile Vikings, I further developed my teamwork and presentation skills while also gaining a strong grasp of advanced Git operations.
     </p>
 </>
-const workpadMB = <WorkNotepadContent title={"Frontend React Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, TypeScript, Radix-UI, Presentational skills, Agile technologies, Clean code, Node"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
+const workpadMB = <WorkNotepadContent title={"Frontend Developer"} activity={"Internship"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, TypeScript, Radix-UI, Presentational skills, Agile technologies, Clean code, Node"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
     invertInDarkMode={true} />
 notepadsProfessionalLife.addHead({
     id: "mobilevikings",
@@ -432,7 +432,7 @@ const contentAboutLetslink = <>
     </p>
 </>
 
-const workpadLetsLink = <WorkNotepadContent title={"Full Stack Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, REST API engineering, Authentication, Python Flask, Documentation - Swagger, Tech stack design"} image={LetsLinkLogoLight} contentAboutExperience={contentAboutLetslink}
+const workpadLetsLink = <WorkNotepadContent title={"Full Stack Developer"} activity={""} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, REST API engineering, Authentication, Python Flask, Documentation - Swagger, Tech stack design"} image={LetsLinkLogoLight} contentAboutExperience={contentAboutLetslink}
     darkThemeImage={LetsLinkLogoDark}
 />
 notepadsProfessionalLife.addHead({
@@ -467,7 +467,7 @@ const contentAboutASML = <>
     </p>
 </>
 
-const workpadASML = <WorkNotepadContent title={"Design Engineering Intern"} location={"Veldhoven, Netherlands · On-Site"} skillSet={"Formal Verification Techniques, Coco, C++"} image={ASMLLogo} contentAboutExperience={contentAboutASML}
+const workpadASML = <WorkNotepadContent title={"Design Engineer"} activity={"Internship"} location={"Veldhoven, Netherlands · On-Site"} skillSet={"Formal Verification Techniques, Coco, C++"} image={ASMLLogo} contentAboutExperience={contentAboutASML}
 />
 notepadsProfessionalLife.addHead({
     id: "asml",

@@ -1,43 +1,31 @@
 .work-notepad-content {
-    margin-top: 3%;
-    /* Adjust the gap between columns */
-    /* Add padding to the whole content area */
-    background-color: var(--notepad-background-color);
-    /* Relative positioning for the flip */
-    font-family: var(--notepad-font-family);
-    /* Use your desired font family */
-    /* Darker border for content */
-    /* font-size: 0.8em; */
-    /* Larger font size */
-    color: var(--text-color);
-    /* Lighter text color */
-    /* Justify text */
-    /* Equal width to the container */
-    height: 40%;
-    padding: 2%;
+    margin: 0px;
     line-height: var(--line-height);
-
 }
 
 .left-column {
-    margin-top: 2%;
-    margin-left: 20%;
+    text-align: center;
+    margin-right: 2%;
+    align-items: left;
 }
+
 
 .right-column {
     font-size: var(--right-column-worknotepad-font-size);
-    margin-top: 5%;
+    width: 100%;
+    /* Add padding to the left of the right column */
+    text-align: left;
+    font-size: var(--font-size-keywords)
 }
+
 
 .image-company {
     width: var(--width-image-company);
-    /* Ensure the image does not exceed its container */
-    /* Maintain aspect ratio */
+    max-width: 120px;
+    box-shadow: 2px 2px 2px var(--box-border-color);
+    padding: 2%;
     border-radius: 10px;
-    padding: 5%;
-    /* Optional: Add border radius to the image */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Optional: Add a subtle box shadow */
+
 }
 
 .content-about-experience {
@@ -45,14 +33,7 @@
     font-size: var(--font-size-outside-notepad-box);
     font-family: var(--root-font-family);
     line-height: 1.6;
-
-    /* Take up 2 parts of the available space */
-    margin-top: 20px;
-    /* Optional: Add top margin */
-    /* Optional: Adjust font size */
     color: var(--text-color);
-    /* Optional: Adjust text color */
-    /* Optional: Justify text */
 }
 
 .separation {
@@ -75,22 +56,20 @@
     /* Lighter text color */
     /* Justify text */
     /* Equal width to the container */
-    text-align: left;
+    /* text-align: left; */
 }
 
 .keywords {
-    margin: 5%;
+    margin: 2%;
+    font-size: var(--font-size-keywords);
 }
 
-.work-notepad-content table {
+.work-notepad-content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
 }
-
-.work-notepad-content td {
-    white-space: nowrap;
-}
-
 
 .invertInDarkMode {
     filter: var(--invert-filter);

@@ -3,7 +3,7 @@ import './WorkNotepadContent.css'; // Import your CSS file for component-specifi
 import { themeAtom } from '../../styles/themeAtom';
 import { useAtom } from 'jotai';
 
-export default function WorkNotepadContent({ title, location, skillSet, image, contentAboutExperience, invertInDarkMode, darkThemeImage }) {
+export default function WorkNotepadContent({ title, activity, location, skillSet, image, contentAboutExperience, invertInDarkMode, darkThemeImage }) {
     const [theme, setTheme] = useAtom(themeAtom);
 
     return (
@@ -12,39 +12,33 @@ export default function WorkNotepadContent({ title, location, skillSet, image, c
                 <div className="work-notepad-content">
 
 
-                    <table>
-                        <tr>
-                            <td>
-                                <div className="left-column">
-                                    {darkThemeImage && theme == "light-theme" ?
-                                        <img
-                                            src={darkThemeImage}
-                                            className={`image-company ${invertInDarkMode ? "invertInDarkMode" : ""}`}
-                                            alt="Company Logo" /> :
-                                        <img
-                                            src={image}
-                                            className={`image-company ${invertInDarkMode ? "invertInDarkMode" : ""}`}
-                                            alt="Company Logo" />}
-                                </div>
-                            </td>
-                            <td>
-
-                                <div className="right-column">
-                                    <h1>{title}</h1>
-                                    <p>
-                                        {location}
-                                    </p>
-                                </div>
-                            </td>
-                        </tr>
+                    <div className="left-column">
+                        {darkThemeImage && theme == "light-theme" ?
+                            <img
+                                src={darkThemeImage}
+                                className={`image-company ${invertInDarkMode ? "invertInDarkMode" : ""}`}
+                                alt="Company Logo" /> :
+                            <img
+                                src={image}
+                                className={`image-company ${invertInDarkMode ? "invertInDarkMode" : ""}`}
+                                alt="Company Logo" />}
+                    </div>
 
 
-                    </table>
-
-
-
-
+                    <div className="right-column" >
+                        <h1 style={{ margin: "0px" }}>{title}</h1>
+                        <div >
+                            <p style={{ margin: "0px", fontSize: "1.2em", fontStyle: "italic" }}> {activity}</p>
+                            <span style={{ fontSize: "1.1em" }}>
+                                {location}
+                            </span>
+                        </div>
+                    </div>
                 </div>
+
+
+
+
 
                 <div className='skill-set-and-description'>
                     <div className='keywords'>
@@ -57,7 +51,7 @@ export default function WorkNotepadContent({ title, location, skillSet, image, c
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     );
 }

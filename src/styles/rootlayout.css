@@ -94,7 +94,7 @@
     --notepad-width: 60%;
     --width-notepad-math-physics: 92%;
     --Heading-max-width: 55%;
-    --right-column-worknotepad-font-size: 1.2em;
+    --right-column-worknotepad-font-size: 1.3em;
     --particle-simulation-font-size: 1.6em;
     --width-notepad-content-style: 90%;
     --width-plot-grades-container: 90%;
@@ -108,9 +108,11 @@
     --font-size-plot-grades-text: 0.65em;
     --translate-button-right: 20%;
     --translate-button-left: -20%;
-    --width-image-company: 40%;
+    --width-image-company: 30%;
     --main-text-font-size: 0.8em;
     --font-size-outside-notepad-box: 1.2em;
+    --font-size-keywords: 1.1em;
+
 }
 
 
@@ -136,10 +138,10 @@
     --font-size-plot-grades-text: 0.6em;
     --translate-button-left: -70%;
     --translate-button-right: 70%;
-    --width-image-company: 70%;
+    --width-image-company: 60%;
     --main-text-font-size: 1em;
     --font-size-outside-notepad-box: 1.2em;
-
+    --font-size-keywords: 0.8em;
 }
 
 body {
