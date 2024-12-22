@@ -54,7 +54,6 @@ const textAboutMe =
             </p>
         </div>
         <p>
-                // Start of Selection
             I have introduced the concept of 'notepads' in this blog. This means that every story is written on a single notepad, and you can look at the backside
             of it by clicking on the arrows indicated at the bottom: <span style={{ color: 'var(--button-arrow-color)' }}>&#x25C0;</span> to go back and <span style={{ color: 'var(--button-arrow-color)' }}>&#x25B6;</span> to go forward. You will notice that these notepads have more than two sides &#x1F609;
         </p>
@@ -528,7 +527,6 @@ const mathAndPhysicsIntroContent = (
 // Programming
 const notepadsProgramming = new DoubleLinkedList();
 
-// Start of Selection
 const descriptionProgramming = <>
     <p>
         Programming has had many ups and downs for me. I started with C++ in 2019. Naively, I chose this difficult language as my introduction to programming, which led to only a basic understanding of its syntax. I used this knowledge for a small numerical analysis assignment, but C++'s complexity demotivated me, and I stopped coding for a long time after that project.
@@ -563,7 +561,6 @@ notepadsProgramming.addHead({
 
 
 
-// Start of Selection
 const particleSimulation = <>
     <p>
         This project is inspired by the diffusion limited aggregation process. I've taken the idea that you initialize particles, and let them randomly move until they collide.

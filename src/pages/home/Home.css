@@ -28,6 +28,10 @@
     /* Transition opacity over 0.5 seconds */
   }
 
+  .main-text {
+    font-size: var(--main-text-font-size);
+  }
+
   .visible {
     opacity: 1;
     /* Change opacity to 1 (fully opaque) when .visible class is applied */

@@ -91,7 +91,7 @@ function Home() {
       <title>Home</title>
       <Heading setQuoteFinished={setQuoteFinished} setQuoteWithAuthorFinished={setQuoteWithAuthorFinished} />
 
-      <body className={`fade-in ${isVisible ? 'visible' : ''}`}>
+      <body className={`main-text fade-in ${isVisible ? 'visible' : ''}`}>
         <div className={`fade-in-after-quote ${quoteFinished ? 'after-quote-visible' : ''}`}>
           {isMobileDevice ? <DropdownMenu notepads={currentNotepadsSimplified} /> : <Navbar notepads={currentNotepads} />}
           <ScrollDownButton />
