@@ -87,8 +87,8 @@ const textAboutMe =
             </li>
         </ul>
         <p>
-            If you are curious about any point in my story, you can contact me via the form at the end of this story, um, page. By the way, if you suffer from
-            depression due to the dark color of this page, you can always switch to light mode by using the button at the upper left corner. I've set it to default on dark to spare
+            If you are curious about any point in my story, you can contact me via the form at the end of this story, um, page. By the way, if you don't enjoy the darkness
+            of this page, you can always switch to light mode by using the button at the upper left corner. I've set it to default on dark to spare
             my eyes when I work on this project late at night &#x1F601;
         </p>
     </>
