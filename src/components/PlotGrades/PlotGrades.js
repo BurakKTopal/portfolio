@@ -60,7 +60,12 @@ function PlotGrades({ gradesData }) {
 
 
     const layout = {
-        title: `Grades During ${currentSemesterNumber != null ? `Semester ${currentSemesterNumber + 1}` : "the Year"}`,
+        title: {
+            text: `Grades During ${currentSemesterNumber != null ? `Semester ${currentSemesterNumber + 1}` : "the Year"}`,
+            font: {
+                size: 18 // Adjust the font size as needed
+            },
+        },
         ...getAdditionalLayout(theme)
     };
 

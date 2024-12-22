@@ -8,20 +8,20 @@ export const getAdditionalLayout = (theme) => {
         margin: {
             r: 10,
             b: 20,
-            l: 35,
+            l: 30,
         },
         xaxis: {
             color: rootStyles.getPropertyValue('--text-color').trim(),
             font: {
                 family: rootStyles.getPropertyValue('--root-font-family').trim(),
-                size: 16
+                size: 12
             },
         },
         yaxis: {
             // title: 'Grades',
             font: {
                 family: rootStyles.getPropertyValue('--root-font-family').trim(),
-                size: 16
+                size: 12
             },
             color: rootStyles.getPropertyValue('--text-color').trim(),
         },
@@ -32,14 +32,14 @@ export const getAdditionalLayout = (theme) => {
         font: {
             color: rootStyles.getPropertyValue('--text-color').trim(),
             family: rootStyles.getPropertyValue('--root-font-family').trim(),
-            size: 16
+            size: 13
         },
         hoverlabel: {
             bgcolor: rootStyles.getPropertyValue('--box-border-color').trim(),
             font: {
                 color: rootStyles.getPropertyValue('--text-color').trim(),
                 family: rootStyles.getPropertyValue('--root-font-family').trim(),
-                size: 16
+                size: 14
             }
         }
     };

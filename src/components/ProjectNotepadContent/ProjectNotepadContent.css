@@ -24,9 +24,13 @@
 }
 
 .content-about-project {
+    font-size: var(--font-size-outside-notepad-box);
+    line-height: 1.6;
+
     /* Take up 2 parts of the available space */
     /* Optional: Add top margin */
-    font-size: 19.2px;
+    /* font-size: 19.2px; */
+
     /* Optional: Adjust font size */
     color: var(--text-color);
     /* Optional: Adjust text color */

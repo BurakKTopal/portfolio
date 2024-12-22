@@ -7,7 +7,7 @@
     font-family: var(--notepad-font-family);
     /* Use your desired font family */
     /* Darker border for content */
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
     /* Larger font size */
     color: var(--text-color);
     /* Lighter text color */
@@ -42,8 +42,10 @@
 
 .content-about-experience {
     line-height: var(--line-height);
-    font-size: 19.2px;
+    font-size: var(--font-size-outside-notepad-box);
     font-family: var(--root-font-family);
+    line-height: 1.6;
+
     /* Take up 2 parts of the available space */
     margin-top: 20px;
     /* Optional: Add top margin */
