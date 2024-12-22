@@ -30,7 +30,7 @@
 }
 
 .image-company {
-    width: 40%;
+    width: var(--width-image-company);
     /* Ensure the image does not exceed its container */
     /* Maintain aspect ratio */
     border-radius: 10px;

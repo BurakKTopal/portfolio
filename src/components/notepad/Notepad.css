@@ -114,6 +114,7 @@
   /* Pointer cursor on hover */
   position: relative;
   /* Position relative for pseudo-element */
+  animation: moveButtonRight 1s infinite alternate;
 }
 
 .button-container .right-button::after {
@@ -125,8 +126,8 @@
   /* Center vertically */
   right: var(--button-container-after-margin-left-or-right);
   /* Adjust position */
-  transform: translateY(-50%);
-  /* Center vertically */
+  transform: translateY(-50%) translateX(0);
+  /* Center vertically and initial horizontal position */
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
@@ -135,6 +136,27 @@
   /* Triangle height */
   border-left: 30px solid var(--button-arrow-color);
   /* Triangle width and color */
+  /* Animate to indicate interactivity */
+}
+
+@keyframes moveButtonRight {
+  from {
+    transform: translateY(-50%) translateX(0%);
+  }
+
+  to {
+    transform: translateY(-50%) translateX(var(--translate-button-right));
+  }
+}
+
+@keyframes moveButtonLeft {
+  from {
+    transform: translateY(-50%) translateX(0%);
+  }
+
+  to {
+    transform: translateY(-50%) translateX(var(--translate-button-left));
+  }
 }
 
 .with-padding {
@@ -158,6 +180,8 @@
   /* Pointer cursor on hover */
   position: relative;
   /* Position relative for pseudo-element */
+  animation: moveButtonLeft 1s infinite alternate;
+  animation-delay: 0.5s;
 }
 
 .button-container .left-button::after {

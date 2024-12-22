@@ -6,9 +6,15 @@
     color: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: var(--notepad-background-color);
-    padding: 20px;
+    padding: 10px;
     margin-top: 20px;
     font-family: var(--root-font-family);
+}
+
+.plot-grades-text {
+    font-style: italic;
+    color: var(--semesters-button-color);
+    font-size: var(--font-size-plot-grades-text);
 }
 
 .plot-grades-title {

@@ -54,8 +54,9 @@ const textAboutMe =
             </p>
         </div>
         <p>
+                // Start of Selection
             I have introduced the concept of 'notepads' in this blog. This means that every story is written on a single notepad, and you can look at the backside
-            of it by clicking on the arrow indicated at the bottom. You will notice that these notepads have more than two sides &#x1F609;
+            of it by clicking on the arrows indicated at the bottom: <span style={{ color: 'var(--button-arrow-color)' }}>&#x25C0;</span> to go back and <span style={{ color: 'var(--button-arrow-color)' }}>&#x25B6;</span> to go forward. You will notice that these notepads have more than two sides &#x1F609;
         </p>
         <p>
             There are currently 3 different pads, and thus stories:
@@ -76,7 +77,7 @@ const textAboutMe =
                 made. I personally think that this will be the most interesting, as it is the most concrete one.
             </li>
         </ul>
-        <p>
+        {/* <p>
             The following are yet to be written, so keep tight!
         </p>
 
@@ -85,10 +86,9 @@ const textAboutMe =
                 At last, I've added the extra-curricular activities and some special events that stand out. This will delve more into my short 'professional' career
                 as a chess player, all the way to how I got the chance to present my bachelor thesis in front of more than 100 people.
             </li>
-        </ul>
+        </ul> */}
         <p>
-            If you are curious about any point in my story, you can contact me via the form at the end of this story, um, page. By the way, if you don't enjoy the darkness
-            of this page, you can always switch to light mode by using the button at the upper left corner. I've set it to default on dark to spare
+            If you are curious about any point in my story, you can contact me via the form at the end of this story, um, page. By the way, if you don't enjoy the dark mode, you can always switch to light mode by using the button at the upper left corner. I've set it to default on dark to spare
             my eyes when I work on this project late at night &#x1F601;
         </p>
     </>
@@ -160,11 +160,7 @@ const mathYearOneContent = <>
         <li>Numerical Methods 1</li>
     </ul>
 
-    <p>
-        <span style={{ fontStyle: 'italic' }}>
-            In the scatterplot below, you can look into my grades. By tapping on the dots, a text will appear below the plot, showcasing my specific experience with that subject!
-        </span>
-    </p>
+
 
 </>
 notepadsMath.addTail({ id: "mathematics1", title: "My first year", otherContent: <PlotGrades gradesData={mathYearOne} />, textContent: mathYearOneContent, button: true, datePeriod: '2021-2022' });
@@ -273,11 +269,6 @@ const physicsFirstYearContent = <>
         <li>Physics of Planet Earth, Climate, and Life</li>
         <li>Introduction to Astronomy and Astrophysics</li>
     </ul>
-    <p>
-        <span style={{ fontStyle: 'italic' }}>
-            In the scatterplot below, you can look into my grades. By tapping on the dots, a text will appear below the plot, showcasing my specific experience with that subject!
-        </span>
-    </p>
 </>
 notepadsPhysics.addTail({ id: "Physics1", title: "My first year", otherContent: <PlotGrades gradesData={physicsYearOne} />, textContent: physicsFirstYearContent, button: true, datePeriod: '2021-2022' });
 
@@ -307,11 +298,6 @@ const physicsSecondYearContent = <>
         <li>Electrodynamics</li>
         <li>Experimental Techniques</li>
     </ul>
-    <p>
-        <span style={{ fontStyle: 'italic' }}>
-            In the scatterplot below, you can look into my grades. By tapping on the dots, a text will appear below the plot, showcasing my specific experience with that subject!
-        </span>
-    </p>
 </>
 notepadsPhysics.addTail({ id: "Physics2", title: "My second year", otherContent: <PlotGrades gradesData={physicsYearTwo} />, textContent: physicsSecondYearContent, button: true, datePeriod: '2022-2023' });
 
@@ -339,11 +325,6 @@ const physicsThirdYearContent = <>
         <li>Gravity</li>
         <li>Physics+</li>
     </ul>
-    <p>
-        <span style={{ fontStyle: 'italic' }}>
-            In the scatterplot below, you can look into my grades. By tapping on the dots, a text will appear below the plot, showcasing my specific experience with that subject!
-        </span>
-    </p>
 </>
 notepadsPhysics.addTail({ id: "Physics3", title: "My Third year", otherContent: <PlotGrades gradesData={physicsYearThree} />, textContent: physicsThirdYearContent, button: true, datePeriod: '2023-2024' });
 
@@ -848,6 +829,15 @@ notepadsProgramming.addTail({
 
 // Projects
 const notepadsExtraCurricular = new DoubleLinkedList();
+
+const YSCDescription = <>
+    <p>
+        In May 2024 I had the opportunity to present the work on my bachelor thesis about how perturbations can be used on two-state Markov systems.
+        This conference that had been organized by UHasselt gave me the opportunity to clearly express myself in front of an audience of 100 people.
+    </p>
+
+</>
+
 
 const descriptionExtraCurricular = <>
     <p>

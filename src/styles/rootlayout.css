@@ -100,11 +100,14 @@
     --Heading-margin-bottom: 5vh;
     --Heading-quote-font-size: 2em;
     --Heading-author-font-size: 1.6em;
-    --button-container-after-margin-left-or-right: 30%;
+    --button-container-after-margin-left-or-right: 60%;
     --Heading-scroll-down-button-margin-bottom: 20vh;
     --theme-switcher-right: 1%;
     --notepad-title-margin-top-and-bottom: 3%;
-
+    --font-size-plot-grades-text: 0.7em;
+    --translate-button-right: 20%;
+    --translate-button-left: -20%;
+    --width-image-company: 40%;
 }
 
 
@@ -118,7 +121,7 @@
     --Heading-max-width: 80%;
     --right-column-worknotepad-font-size: 0.6em;
     --width-notepad-content-style: 85%;
-    --width-plot-grades-container: 85%;
+    --width-plot-grades-container: 90%;
     --Heading-margin-bottom: 5vh;
     --Heading-quote-font-size: 1.6em;
     --Heading-author-font-size: 1.2em;
@@ -127,7 +130,10 @@
     --theme-switcher-right: 3%;
     --notepad-title-margin-top-and-bottom: 6%;
     --particle-simulation-font-size: 0.9em;
-
+    --font-size-plot-grades-text: 0.6em;
+    --translate-button-left: -70%;
+    --translate-button-right: 70%;
+    --width-image-company: 50%;
 }
 
 body {

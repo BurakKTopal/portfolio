@@ -90,17 +90,23 @@ function PlotGrades({ gradesData }) {
                         <Plot
                             data={data}
                             layout={layout}
-                            style={{ width: '100%', height: '400px' }}
+                            style={{ width: '100%', height: '400px', margin: '0px' }}
                             className="plot-grades"
                             onClick={handlePlotClick} // Attach the click event handler
                         />
-
+                        <p>
+                            <span className="plot-grades-text">
+                                Tap on the dots to see more information about each course.
+                            </span>
+                        </p>
                     </div>
+
                     <div className="semester-button-container">
                         <button className="semester-button" onClick={() => setCurrentSemesterNumber(0)}>Sem 1</button>
                         <button className="semester-button" onClick={() => setCurrentSemesterNumber(1)}>Sem 2</button>
                         <button className="semester-button" onClick={() => setCurrentSemesterNumber(null)}>Whole year</button>
                     </div>
+
                 </>
             )
         }
@@ -108,6 +114,7 @@ function PlotGrades({ gradesData }) {
     return (
         <>
             {renderPlot()}
+
         </>
     );
 }

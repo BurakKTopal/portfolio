@@ -7,9 +7,10 @@ export const getAdditionalLayout = (theme) => {
     return {
         margin: {
             r: 10,
+            b: 20,
+            l: 35,
         },
         xaxis: {
-            title: 'Course',
             color: rootStyles.getPropertyValue('--text-color').trim(),
             font: {
                 family: rootStyles.getPropertyValue('--root-font-family').trim(),
@@ -17,7 +18,7 @@ export const getAdditionalLayout = (theme) => {
             },
         },
         yaxis: {
-            title: 'Grades',
+            // title: 'Grades',
             font: {
                 family: rootStyles.getPropertyValue('--root-font-family').trim(),
                 size: 16

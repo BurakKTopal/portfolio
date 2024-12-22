@@ -79,7 +79,7 @@ function Home() {
     notepadMathAndPhysics.getValue(),
     currentNotepadProfessionalLife.getPrevNode() ? { title: "Work Experience", id: currentNotepadProfessionalLife.getValue().id } : { title: "Work Experience", id: "professionallife" },
     currentNotepadProgramming.getPrevNode() ? { title: "Programming", id: currentNotepadProgramming.getValue().id } : { title: "Programming", id: "programming" },
-    currentNotepadExtraCurricular.getValue(),
+    // currentNotepadExtraCurricular.getValue(),
     { title: 'Want to get in touch?', id: "contactMe" }
   ]
 
@@ -102,7 +102,7 @@ function Home() {
           {makeNotepadAndAssignSetFunction(notepadMathAndPhysics, null)}
           {makeNotepadAndAssignSetFunction(currentNotepadProfessionalLife, setCurrentNotepadProfessionalLife)}
           {makeNotepadAndAssignSetFunction(currentNotepadProgramming, setCurrentNotepadProgramming)}
-          {makeNotepadAndAssignSetFunction(currentNotepadExtraCurricular, setCurrentNotepadExtraCurricular)}
+          {/* {makeNotepadAndAssignSetFunction(currentNotepadExtraCurricular, setCurrentNotepadExtraCurricular)} */}
 
         </div>
         <ContactMeButton targetSectionId="contactMe" />
