@@ -1,26 +1,31 @@
 import DoubleLinkedList from "../utils/DoubleLinkedList";
 import PlotGrades from "../components/PlotGrades/PlotGrades";
-import { mathYearOne, mathYearTwo, mathYearThree } from './GradesMath'
-import { physicsYearOne, physicsYearTwo, physicsYearThree } from './GradesPhysics'
+import { mathYearOne, mathYearTwo, mathYearThree } from './GradesMath';
+import { physicsYearOne, physicsYearTwo, physicsYearThree } from './GradesPhysics';
 import WorkNotepadContent from "../components/workNotepadContent/WorkNotepadContent";
 import ProjectNotepadContent from "../components/ProjectNotepadContent/ProjectNotepadContent";
-
 
 import MBlogo from '../assets/images/MobileVikings-logo.png';
 import AHLogo from '../assets/images/AlbertHeijn-logo.png';
 import iinnoBeneluxLogo from '../assets/images/iinno-benelux-logo.png';
 import MSLogo from '../assets/images/MySherpa-logo.png';
-import chessGameExample from '../assets/images/chessGameExample.png'
-import terminalInfoChess from '../assets/images/terminalInfoChess.png'
-import NNStructure from '../assets/images/NNStructure.png'
-import synchronizationProtocol from '../assets/images/synchronizationProtocol.png'
-import avgByteTransfer from '../assets/images/avgByteTransfer.png'
-import BankingAppActions from '../assets/images/BankingAppActions.png'
-import BankingAppActionBetweenUsers from '../assets/images/BankingAppActionBetweenUsers.png'
-import LetsLinkLogoLight from '../assets/images/LetsLink-logo-light.png'
-import LetsLinkLogoDark from '../assets/images/LetsLink-logo-dark.png'
-import BijlesHuisLogoLight from '../assets/images/BijlesHuisLogoLight.png'
-import ASMLLogo from '../assets/images/ASMLLogo.png'
+import chessGameExample from '../assets/images/chessGameExample.png';
+import terminalInfoChess from '../assets/images/terminalInfoChess.png';
+import NNStructure from '../assets/images/NNStructure.png';
+import synchronizationProtocol from '../assets/images/synchronizationProtocol.png';
+import avgByteTransfer from '../assets/images/avgByteTransfer.png';
+import BankingAppActions from '../assets/images/BankingAppActions.png';
+import BankingAppActionBetweenUsers from '../assets/images/BankingAppActionBetweenUsers.png';
+import LetsLinkLogoLight from '../assets/images/LetsLink-logo-light.png';
+import LetsLinkLogoDark from '../assets/images/LetsLink-logo-dark.png';
+import BijlesHuisLogoLight from '../assets/images/BijlesHuisLogoLight.png';
+import ASMLLogo from '../assets/images/ASMLLogo.png';
+
+import DLASimulationWhiteBackground from '../assets/gifs/WB_DLA_Particle_Sim.gif';
+import DLASimulationBlackBackground from '../assets/gifs/BB_DLA_Particle_Sim.gif';
+import RandomSimulationWhiteBackground from '../assets/gifs/WB_Random_Particle_Sim.gif';
+import RandomSimulationBlackBackground from '../assets/gifs/BB_Random_Particle_Sim.gif';
+
 
 function calculateAge(birthDateString) {
     const birthDate = new Date(birthDateString); // Parse the input birthdate
@@ -36,22 +41,16 @@ function calculateAge(birthDateString) {
     return age;
 }
 
-const testContent = <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce faucibus efficitur ligula, in aliquet justo congue ac. Sed vitae magna id metus posuere posuere. Nullam nec consectetur elit. Maecenas at ligula id lectus interdum feugiat a sit amet nunc. In ac fermentum dui. Sed euismod dapibus fermentum. Ut feugiat dui sed ipsum varius, vel euismod justo commodo. Sed euismod dui vel eros volutpat luctus. Sed tincidunt, libero ut pharetra convallis, nisl augue scelerisque lectus, eu lobortis arcu est eget ex. Fusce congue tellus eget purus aliquam, non vehicula lorem lobortis. Suspendisse potenti. Donec elementum, lacus id congue elementum, tortor dui euismod nisi, sit amet suscipit nulla libero vel lorem. Nulla ultricies lorem eget quam consectetur, vel rhoncus lorem vestibulum.
-
-    Vestibulum at posuere odio. Phasellus vitae ex ac lectus euismod eleifend. Vivamus at est non arcu varius viverra. Ut aliquet metus in justo tincidunt tincidunt. Duis vestibulum ligula ac nisl congue, sit amet mollis justo tincidunt. Quisque at interdum elit. Proin laoreet a magna et feugiat. Integer in lorem arcu. Nulla tristique, libero eu tincidunt fermentum, lacus mauris ultricies odio, id maximus tellus ligula ut quam. Curabitur non tellus vitae leo lobortis scelerisque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer nec lacus non nunc fermentum cursus. Duis auctor lacus sit amet velit mollis, nec ullamcorper libero varius. Maecenas suscipit magna in purus suscipit vestibulum. Nullam eu nisi in mi consectetur ullamcorper.
-</p>
-
-const age = calculateAge("11-06-2004")
+const age = calculateAge("11-06-2004");
 
 const textAboutMe =
     <>
         <div id="aboutMe-intro">
             Hello there &#x1F604;
             <p>
-                I'm Burak Kucuktopal and I'm {(!isNaN(age) && age) ? age : "20"} years old. Since I was young, I always wanted to reveal my thoughts to the broader public,
-                and have some website to gather all my experiences, projects and also important dates. Something that resembles a biography. Due to the lack
-                of knowledge and the limited programming skills, it quite took some time to realize this. But here it is!
+                I'm Burak Kucuktopal, and I'm {(!isNaN(age) && age) ? age : "20"} years old. Since I was young, I have always wanted to reveal my thoughts to the broader public,
+                and have a website to gather all my experiences, projects, and also important dates. Something that resembles a biography. Due to the lack
+                of knowledge and limited programming skills, it took quite some time to realize this. But here it is!
             </p>
         </div>
         <p>
@@ -63,17 +62,17 @@ const textAboutMe =
         </p>
         <ul>
             <li>
-                The first will talk some about my educational carreer. I have finished Mathematics and Physics for my Bachelor's. Since
-                these are two different fields, I will talk about my feeling for each of these fields. Additionally, I have
-                added my results in a plot for each semester, or a year in total. I felt these three years as a really special track, which
-                motivates why I would not only give my grades, but the thoughts and expectations I got for each of these subjects. The description
-                can be found by clicking on the points of the plot that is presented for either Mathematics of Physics.
+                The first will talk about my educational career. I have finished Mathematics and Physics for my Bachelor's. Since
+                these are two different fields, I will talk about my feelings for each of these fields. Additionally, I have
+                added my results in a plot for each semester, or a year in total. I felt these three years were a really special track, which
+                motivates why I would not only give my grades but also the thoughts and expectations I have for each of these subjects. The description
+                can be found by clicking on the points of the plot that are presented for either Mathematics or Physics.
             </li>
             <li>
                 The second one talks about my work experience and what my tasks were at these places.
             </li>
             <li>
-                the third part will be about the programming projects I've realized. This can go from the highlights of my study, to the programming portfolios I've
+                The third part will be about the programming projects I've realized. This can range from the highlights of my study to the programming portfolios I've
                 made. I personally think that this will be the most interesting, as it is the most concrete one.
             </li>
         </ul>
@@ -83,17 +82,15 @@ const textAboutMe =
 
         <ul>
             <li>
-                At last, I've added the extra-curricular activities, and some special events that stands out. This will go more about my short 'professional' carreer
-                as chess player, all the way to how I got the chance to present my bachelor Thesis in front of more than 100 persons.
+                At last, I've added the extra-curricular activities and some special events that stand out. This will delve more into my short 'professional' career
+                as a chess player, all the way to how I got the chance to present my bachelor thesis in front of more than 100 people.
             </li>
         </ul>
         <p>
-            If you are curious about any point in my story, you can contact me by the form at the end of this story, euhm page. Btw, if you would suffer to
-            depression due to the dark color of this page, you can always switch to light mode by using the button at the upper left corner. I've set it default on dark to spare
-            my eyes when I work on this project in the late nights &#x1F601;
+            If you are curious about any point in my story, you can contact me via the form at the end of this story, um, page. By the way, if you suffer from
+            depression due to the dark color of this page, you can always switch to light mode by using the button at the upper left corner. I've set it to default on dark to spare
+            my eyes when I work on this project late at night &#x1F601;
         </p>
-
-
     </>
 const notepadsAboutMe = new DoubleLinkedList();
 notepadsAboutMe.addHead({ id: "aboutMe", title: "My story...", textContent: textAboutMe, button: false, datePeriod: '2004-...' });
@@ -105,15 +102,15 @@ const notepadsMath = new DoubleLinkedList();
 
 const mathIntroContent = <>
     <p>
-        In 2021 I started my bachelor in Mathematics. In this three years we have focussed on the following fields:
+        In 2021, I started my bachelor in Mathematics. In these three years, we have focused on the following fields:
     </p>
 
     <ul>
         <li>(Linear) Algebra</li>
         <li>Real & Complex Analysis</li>
-        <li>Modelling (R & Matlab & Python)</li>
+        <li>Modeling (R & Matlab & Python)</li>
         <li>Statistics (Linear, Multi-linear, metrics to identify significance, …)</li>
-        <li>In depth analysis of Calculus</li>
+        <li>In-depth analysis of Calculus</li>
         <li>Partial/ordinary differential equations</li>
         <li>Numerical methods (Time Discretization Methods, Error Analysis, Finite-Elements/Volumes, …)</li>
         <li>(Differential) Geometry</li>
@@ -128,12 +125,11 @@ const mathIntroContent = <>
 
     <p>
         <span style={{ fontStyle: 'italic' }}>
-            Press the button on the right upper-corner to see get a more detailed view on each year!
+            Press the button in the right upper corner to get a more detailed view of each year!
         </span>
     </p>
 
 </>
-
 
 notepadsMath.addHead({ id: "mathematics", title: "Mathematics", textContent: mathIntroContent, button: true, datePeriod: '2021-2024' });
 
@@ -147,19 +143,18 @@ const mathYearOneContent = <>
         <li>Mechanics</li>
     </ul>
     <p>
-        It was after this half-semester, that I started with the TWIN track. For the first semester, I only had the following courses for Mathematics, which
+        It was after this half-semester that I started with the TWIN track. For the first semester, I only had the following courses for Mathematics, which
         started to deviate a lot from what I already knew. From this point on, attention was needed!
     </p>
     <ul>
-        <li>Basic Concepts in the Algebra and Analysis</li>
+        <li>Basic Concepts in Algebra and Analysis</li>
         <li>Calculus 2</li>
-
     </ul>
     <p>
-        In my second semester, it was Mathematics that got the overhand in number of courses:
+        In my second semester, Mathematics had the upper hand in the number of courses:
     </p>
     <ul>
-        <li>Data analysis and statistical models 1</li>
+        <li>Data Analysis and Statistical Models 1</li>
         <li>Analysis 1</li>
         <li>Linear Algebra</li>
         <li>Numerical Methods 1</li>
@@ -183,15 +178,7 @@ const mathYearTwoContent = <>
         <li>Algebra 1</li>
         <li>Differential Geometry 1: Curves and Surfaces</li>
     </ul>
-    {/* <p>
-    The first semester of my second year was personally the most difficult one! After we had had Analysis 1, we continued to delve further into the abstractness of Analysis 2.
-    This subject was unanimously agreed as the hardest course of the bachelor by the students. It counted over 100 pages, to which there was a proof for nearly every page! Nonetheless,
-    with keeping track of what's happening throughout the year, it is certainly possible to perform well.  
-</p>
-<p>
-    Additionlly, there was algebra 1, which talks more about abstract structures should as groups, p-sylow subgroups and many more.
-</p> */}
-    <p>The second semester consisted of</p>
+    <p>The second semester consisted of:</p>
     <ul>
         <li>Algebra 2</li>
         <li>Functional and Fourier Analysis</li>
@@ -199,37 +186,36 @@ const mathYearTwoContent = <>
         <li>Geometry</li>
         <li>Numerical Methods 2</li>
     </ul>
-
 </>
 notepadsMath.addTail({ id: "mathematics2", title: "My second year", otherContent: <PlotGrades gradesData={mathYearTwo} />, textContent: mathYearTwoContent, button: true, datePeriod: '2022-2023' });
 
 const mathYearThreeContent = <>
     <p>
-        In my first and second year, there was almost no room to take additional courses because this was already fully scheduled by the TWIN-track. Starting from the third year, there
-        was some more room for this. Actually, this little bit of breathing room is not made to take some extra courses and increase the workload, but to actually work hard and good on your
-        bachelor thesis, which I discuss in my portfolios section, as it is expected to be satisfying (high expectations I suppose).
+        In my first and second years, there was almost no room to take additional courses because this was already fully scheduled by the TWIN track. Starting from the third year, there
+        was some more room for this. Actually, this little bit of breathing room is not meant to take some extra courses and increase the workload, but to actually work hard and well on your
+        bachelor thesis, which I discuss in my portfolios section, as it is expected to be satisfying (high expectations, I suppose).
     </p>
     <p>
-        Although the warning, I did take some non-mandatory courses for TWIN at Mathematics, but this was only at the second semester. In my first semester, I had the two courses:
+        Although with this warning, I did take some non-mandatory courses for TWIN in Mathematics, but this was only in the second semester. In my first semester, I had the following two courses:
     </p>
     <ul>
         <li>Complex Analysis</li>
-        <li>Fundamentals in probability Theory and Statistics (Statistics 3)</li>
+        <li>Fundamentals in Probability Theory and Statistics (Statistics 3)</li>
     </ul>
     <p>
-        In my second semester, I had far more subjects, counting up to 6 courses for Mathematics. Three compulsory, three optional
+        In my second semester, I had far more subjects, counting up to 6 courses for Mathematics. Three compulsory and three optional.
     </p>
-    <p>compulsory:</p>
+    <p>Compulsory:</p>
     <ul>
         <li>Dynamical Systems</li>
         <li>Partial Differential Equations</li>
         <li>Programming and Algorithmic Thinking</li>
     </ul>
-    <p>Optional</p>
+    <p>Optional:</p>
     <ul>
         <li>Databases</li>
         <li>Numerical Methods 3</li>
-        <li>Modelling week</li>
+        <li>Modeling Week</li>
     </ul>
 </>
 notepadsMath.addTail({ id: "mathematics3", title: "My Third year", otherContent: <PlotGrades gradesData={mathYearThree} />, textContent: mathYearThreeContent, button: true, datePeriod: '2023-2024' });
@@ -240,9 +226,9 @@ const notepadsPhysics = new DoubleLinkedList();
 const physicsIntroContent = <>
     <div>
         <p>
-            To be honest, I would have never thought that I would be studying pure Physics. I understood the concepts and my understanding represented this well, but
-            doing a bachelor in Physics never came to mind. But as I want to seize every opportunity, I'd taken the TWIN track as a challenge and picked up Physics along the way, and
-            did not have any regret.
+            To be honest, I would have never thought that I would be studying pure Physics. I understood the concepts, and my understanding represented this well, but
+            doing a bachelor's in Physics never came to mind. But as I wanted to seize every opportunity, I took the TWIN track as a challenge and picked up Physics along the way, and
+            did not have any regrets.
         </p>
     </div>
     <p>
@@ -258,19 +244,18 @@ const physicsIntroContent = <>
         <li>Solid-state Physics</li>
     </ul>
     <p>
-        Due to my high interest in Computer science, I’ve also taken the extra course:
+        Due to my high interest in Computer Science, I’ve also taken the extra course:
     </p>
     <ul>
         <li>Computer Networks (Full discussion on the TCP/IP protocol stack
             together with Python implementations)</li>
     </ul>
-
 </>
 notepadsPhysics.addHead({ id: "physics", title: "Physics", textContent: physicsIntroContent, button: true, datePeriod: '2021-2024' });
 
 const physicsFirstYearContent = <>
     <p>
-        The first half-semester for Physics was identical for Mathematics (only difference being some extra labs). The second part of the first semester deviated quite some bit
+        The first half-semester for Physics was identical to Mathematics (the only difference being some extra labs). The second part of the first semester deviated quite a bit.
     </p>
     <p>
         More specifically, I finished my first semester as a Physicist with the following courses:
@@ -280,30 +265,27 @@ const physicsFirstYearContent = <>
         <li>Special Relativity</li>
     </ul>
     <p>
-        In contrast to the first semester, the second counted much more subjects:
+        In contrast to the first semester, the second counted many more subjects:
     </p>
     <ul>
         <li>Quantum Mechanics 1</li>
         <li>Electromagnetism</li>
-        <li>Physics of Planet Earth, Climate and Life</li>
-        <li>Introduction to astronomy and astrophysics</li>
+        <li>Physics of Planet Earth, Climate, and Life</li>
+        <li>Introduction to Astronomy and Astrophysics</li>
     </ul>
     <p>
         <span style={{ fontStyle: 'italic' }}>
             In the scatterplot below, you can look into my grades. By tapping on the dots, a text will appear below the plot, showcasing my specific experience with that subject!
         </span>
     </p>
-
 </>
 notepadsPhysics.addTail({ id: "Physics1", title: "My first year", otherContent: <PlotGrades gradesData={physicsYearOne} />, textContent: physicsFirstYearContent, button: true, datePeriod: '2021-2022' });
 
-
-
 const physicsSecondYearContent = <>
     <p>
-        This year, and certainly this semester I experienced as the hardest one, but also the most successful one! This was due to the fact that I had many courses from
-        Physics, but also one of the hardest courses in Mathematics, one being Analysis 2. Additionally, the schema for my exams
-        were very tough. More specifically, the first week I had 2 exams on Tuesday, and two exams in that same week on Thursday! Yet, with some
+        This year, and certainly this semester, I experienced as the hardest one, but also the most successful one! This was due to the fact that I had many courses from
+        Physics, but also one of the hardest courses in Mathematics, which was Analysis 2. Additionally, the schedule for my exams
+        was very tough. More specifically, in the first week, I had 2 exams on Tuesday and two exams in that same week on Thursday! Yet, with some
         stress and dedication, I managed.
     </p>
     <p>
@@ -313,8 +295,8 @@ const physicsSecondYearContent = <>
         <li>Hydrodynamics</li>
         <li>Quantum Mechanics 2</li>
         <li>Thermodynamics</li>
-        <li>Vectorcalculus</li>
-        <li>Mathematical methods of physics</li>
+        <li>Vector Calculus</li>
+        <li>Mathematical Methods of Physics</li>
         <li>Advanced Measurement Methods</li>
     </ul>
     <p>
@@ -333,30 +315,29 @@ const physicsSecondYearContent = <>
 </>
 notepadsPhysics.addTail({ id: "Physics2", title: "My second year", otherContent: <PlotGrades gradesData={physicsYearTwo} />, textContent: physicsSecondYearContent, button: true, datePeriod: '2022-2023' });
 
-
 const physicsThirdYearContent = <>
     <p>
-        In the past two years, we mainly focussed on getting our basics right. In the final year of our study, we started to delve into
+        In the past two years, we mainly focused on getting our basics right. In the final year of our study, we started to delve into
         the more serious subjects.
     </p>
     <p>
-        The first semester the subsequent courses were:
+        In the first semester, the subsequent courses were:
     </p>
     <ul>
         <li>Statistical Physics</li>
         <li>Philosophy of Science</li>
-        <li>Solid State Physic</li>
+        <li>Solid State Physics</li>
         <li>Quantum Mechanics 3</li>
-        <li>Computer networks</li>
+        <li>Computer Networks</li>
     </ul>
     <p>
-        The final semester was mainly focussed on the Bachelor thesis, and for me finally the course which I've looked up to my whole three years:
+        The final semester was mainly focused on the Bachelor thesis, and for me, finally, the course which I've looked forward to my whole three years:
         General Relativity!
     </p>
     <ul>
         <li>Nuclei and Particles</li>
         <li>Gravity</li>
-        <li>Phyisics+</li>
+        <li>Physics+</li>
     </ul>
     <p>
         <span style={{ fontStyle: 'italic' }}>
@@ -366,18 +347,17 @@ const physicsThirdYearContent = <>
 </>
 notepadsPhysics.addTail({ id: "Physics3", title: "My Third year", otherContent: <PlotGrades gradesData={physicsYearThree} />, textContent: physicsThirdYearContent, button: true, datePeriod: '2023-2024' });
 
-
 // Professional life
 const notepadsProfessionalLife = new DoubleLinkedList();
 
 const contentAboutExperienceAH = <>
     <p>
-        Albert Heijn was my first student job. I came to realize that the real world differed a lot of that on what we learn on school. This job also learned
-        me to express me more fluently with people I don't know, and helping them in an efficient and polite matter.
+        Albert Heijn was my first student job. I came to realize that the real world differed a lot from what we learn in school. This job also taught
+        me to express myself more fluently with people I don't know and to help them in an efficient and polite manner.
     </p>
     <p>
-        Due to the fact that a company isn't open during weekends, but retail is I continued working in the Albert Heijn for a decent amount of time. Once I got the feeling that
-        I would be more worth by using my analytical skills, I started to search for a study relevant job.
+        Due to the fact that a company isn't open during weekends, but retail is, I continued working at Albert Heijn for a decent amount of time. Once I got the feeling that
+        I would be more valuable by using my analytical skills, I started to search for a study-relevant job.
     </p>
 </>
 const workpadAH = <WorkNotepadContent title={"Warehouse worker"} location={"Hasselt, Flanders, Belgium · On Location"} skillSet={"Helping customers, keeping the store presentable and organized."}
@@ -391,11 +371,10 @@ notepadsProfessionalLife.addHead({
     datePeriod: 'Aug 2021- December 2023'
 });
 
-
 const contentAboutExperienceiinoBenelux = <>
     <p>
-        The promising platform established by iinno-benelux named Jabba, provides intelligent AlphaESS battery control.
-        My tasks within the Jabba team is to create and maintain the technical architecture for automizing the onboarding process of new customers, using Python within the Odoo environment.
+        The promising platform established by iinno-benelux named Jabba provides intelligent AlphaESS battery control.
+        My tasks within the Jabba team are to create and maintain the technical architecture for automating the onboarding process of new customers, using Python within the Odoo environment.
     </p>
     <p>
         More specifically, my tasks are:
@@ -409,10 +388,10 @@ const contentAboutExperienceiinoBenelux = <>
         <li>Utilized Bitbucket and Git for version control, deploying software to live Odoo environments and refining CLI skills in Linux.</li>
     </ul>
     <p>
-        This project is one which I can be proud of: even though it was my first job as developer, I was able to present an efficient and well-working software. This software completely automatized the onboarding flow, resulting in an easier follow-up, while also sparing a tremendous amount of time.
+        This project is one that I can be proud of: even though it was my first job as a developer, I was able to present efficient and well-working software. This software completely automated the onboarding flow, resulting in easier follow-up while also saving a tremendous amount of time.
     </p>
 </>
-const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={'Management function, git, Intercompany technical communication, Workflow Automation & Design, Backend Development (Python - Odoo), Linux CLI, Web development'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
+const workpadiinno = <WorkNotepadContent title={"Junior Python Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={'Management function, git, intercompany technical communication, workflow automation & design, backend development (Python - Odoo), Linux CLI, web development'} image={iinnoBeneluxLogo} contentAboutExperience={contentAboutExperienceiinoBenelux}
     invertInDarkMode={false} />
 
 notepadsProfessionalLife.addHead({
@@ -424,11 +403,11 @@ notepadsProfessionalLife.addHead({
 });
 const contentAboutExperienceMySherpa = <>
     <p>
-        I always liked teaching others, and explaining the complexities of a subject. I came to the thought to turn this eagerness into a real job by applying
-        at MySherpa. This way I helped several high school students to improve their Mathematics and Phyics. This meant going over their courses and revisiting core concepts.
+        I have always liked teaching others and explaining the complexities of a subject. I came to the thought of turning this eagerness into a real job by applying
+        at MySherpa. This way, I helped several high school students improve their Mathematics and Physics. This meant going over their courses and revisiting core concepts.
     </p>
     <p>
-        Not only did I help them out, I also improved my teaching skills by being forced to talk in a clear and also concise matter.
+        Not only did I help them out, but I also improved my teaching skills by being forced to talk in a clear and concise manner.
     </p>
 </>
 const workpadMySherpa = <WorkNotepadContent title={"Math & Physics tutor"} location={"Flanders, Belgium · Hybrid"} skillSet={'Communication in a clear and concise manner, coaching'}
@@ -452,9 +431,8 @@ const contentAboutExperienceMobileVikings = <>
     <p>
         In my previous role at iinno-benelux, the technical team was very small. At Mobile Vikings, I further developed my teamwork and presentation skills while also gaining a strong grasp of advanced Git operations.
     </p>
-
 </>
-const workpadMB = <WorkNotepadContent title={"Frontend React developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, TypeScript, Radix-UI, Presentational skills, agile technologies, clean code, Node"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
+const workpadMB = <WorkNotepadContent title={"Frontend React Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, TypeScript, Radix-UI, presentational skills, agile technologies, clean code, Node"} image={MBlogo} contentAboutExperience={contentAboutExperienceMobileVikings}
     invertInDarkMode={true} />
 notepadsProfessionalLife.addHead({
     id: "mobilevikings",
@@ -464,16 +442,14 @@ notepadsProfessionalLife.addHead({
     datePeriod: 'July 2024-Aug 2024'
 });
 
-
 const contentAboutLetslink = <>
     <p>
-        We all know how hard it can be to find new connections on events, let alone make one. Letslinks stands for facilitating this hard, and somewhere
-        awkward process. By introducing a smart algorithm to group persons based on the information they give in a short survey asking adequate, we make it match them to their suitable group.
+        We all know how hard it can be to find new connections at events, let alone make one. Letslink stands for facilitating this hard, and somewhat
+        awkward process. By introducing a smart algorithm to group people based on the information they provide in a short survey, we match them to their suitable group.
     </p>
     <p>
-        This smart algorithm is what I've implemented and optimized. As it doesn't stop with merely an algorithm, I've made an authenticated dashboard, by implementing a REST API in Flask-RestX, and a corresponding frontend in Next.js.
+        This smart algorithm is what I've implemented and optimized. As it doesn't stop with merely an algorithm, I've made an authenticated dashboard by implementing a REST API in Flask-RestX, and a corresponding frontend in Next.js.
     </p>
-
 </>
 
 const workpadLetsLink = <WorkNotepadContent title={"Full Stack Developer"} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, REST API engineering, authentication, Python Flask, documentation - swagger, tech stack design"} image={LetsLinkLogoLight} contentAboutExperience={contentAboutLetslink}
@@ -487,16 +463,14 @@ notepadsProfessionalLife.addHead({
     datePeriod: 'July 2024-Sep 2024'
 });
 
-
 const contentAboutBijleshuis = <>
     <p>
         After finishing my Bachelor's in Mathematics and Physics, I wanted to open up more possibilities in helping others via BijlesHuis. This meant further
-        sharpening my narrative skills, especially being able to concisely and precisely tutoring Mathematics & Statistics.
+        sharpening my narrative skills, especially being able to concisely and precisely tutor Mathematics & Statistics.
     </p>
 </>
 
 const workpadBijlesHuis = <WorkNotepadContent title={"Mathematics Tutor"} location={"Limburg, Flanders, Belgium · Hybrid"} skillSet={"SPSS"} image={BijlesHuisLogoLight} contentAboutExperience={contentAboutBijleshuis}
-
 />
 notepadsProfessionalLife.addHead({
     id: "bijleshuis",
@@ -506,16 +480,14 @@ notepadsProfessionalLife.addHead({
     datePeriod: 'Sep 2024-...'
 });
 
-
 const contentAboutASML = <>
     <p>
-        ASML was on my mind the day I realized to go into the practical side of Mathematics. By the good-word of my supervisor of my Bachelor Thesis and my several job experiences, I was a good candidate to get into the Machine Control group.
+        ASML was on my mind the day I realized I wanted to go into the practical side of Mathematics. By the good word of my supervisor of my Bachelor Thesis and my several job experiences, I was a good candidate to get into the Machine Control group.
         My task was to use Coco to verify a new design.
     </p>
 </>
 
 const workpadASML = <WorkNotepadContent title={"Design Engineering Intern"} location={"Veldhoven, Netherlands · On-Site"} skillSet={"Coco, C++"} image={ASMLLogo} contentAboutExperience={contentAboutASML}
-
 />
 notepadsProfessionalLife.addHead({
     id: "asml",
@@ -545,7 +517,7 @@ const notepadsMathAndPhysics = new DoubleLinkedList();
 notepadsMathAndPhysics.addHead({
     id: "bachelorThesis",
     title: "Bachelor Thesis",
-    otherContent: testContent,
+    otherContent: <p></p>,
     button: true,
     datePeriod: '2024'
 });
@@ -558,10 +530,10 @@ const mathAndPhysicsIntroContent = (
             </p>
         </div>
         <p>
-            Since Languages aren't my strongest part, Mathematics and Physics became my beloved subjects. During summer breaks, I eagerly awaited the delivery of my books to dive deeper into Mathematical concepts. However, I never considered pursuing these subjects further in college, as I associated Mathematics solely with teaching high school—a path that didn't appeal to me. Engineering had been my childhood dream, and I intended to pursue it.
+            Since languages aren't my strongest suit, Mathematics and Physics became my beloved subjects. During summer breaks, I eagerly awaited the delivery of my books to dive deeper into Mathematical concepts. However, I never considered pursuing these subjects further in college, as I associated Mathematics solely with teaching high school—a path that didn't appeal to me. Engineering had been my childhood dream, and I intended to pursue it.
         </p>
         <p>
-            That all changed during the 'thematic days' in my final year of high school. Despite already dedicating eight hours a week to Mathematics by my studies, I chose to delve deeper into 'logic'. Those three days became the highlight of my year. While it wasn't the complex proofs I'd encounter later, the abstract nature and rigorous approach sparked something within me. It was then that I realized pursuing engineering might not fulfill my desire for theoretical rigor and abstract problem-solving. As for future career prospects, I was uncertain, but following my passion and dreams seemed like the right path forward.
+            That all changed during the 'thematic days' in my final year of high school. Despite already dedicating eight hours a week to Mathematics through my studies, I chose to delve deeper into 'logic'. Those three days became the highlight of my year. While it wasn't the complex proofs I'd encounter later, the abstract nature and rigorous approach sparked something within me. It was then that I realized pursuing engineering might not fulfill my desire for theoretical rigor and abstract problem-solving. As for future career prospects, I was uncertain, but following my passion and dreams seemed like the right path forward.
         </p>
         <p>
             In 2021, I enrolled in Mathematics. By the end of my first semester, I qualified for the 'TWIN-track', allowing me to study additional Physics subjects alongside Mathematics. This dual-degree track, however, didn't require me to complete 360 credits in three years due to overlapping coursework. I eventually completed 245 credits, thanks to exemptions granted based on my performance in related subjects.
@@ -572,31 +544,31 @@ const mathAndPhysicsIntroContent = (
     </>
 );
 
-
 // Programming
 const notepadsProgramming = new DoubleLinkedList();
 
+// Start of Selection
 const descriptionProgramming = <>
     <p>
         Programming has had many ups and downs for me. I started with C++ in 2019. Naively, I chose this difficult language as my introduction to programming, which led to only a basic understanding of its syntax. I used this knowledge for a small numerical analysis assignment, but C++'s complexity demotivated me, and I stopped coding for a long time after that project.
     </p>
     <p>
-        Three years later, I gave programming another try, this time with Python. I followed courses on Codecademy, which steadily solidified my knowledge.
+        Three years later, I gave programming another try, this time with Python. I followed courses on Codecademy, which steadily solidified my knowledge. Throughout the years I got the chance to get real-life experience in programming, but
+        in the meanwhile I personally also tried to realize projects. As only with projects you can really learn how to program.
     </p>
     <p>
-        In 2023, perhaps influenced by COVID, I experienced a programming boom. I created my first chess engine with a GUI using Pygame and an alpha-beta pruning algorithm. That summer, I focused more on Python, designing a neural network from scratch and testing it on the MNIST dataset, achieving over 95% accuracy.
+        It took some time before I'd gained the knowledge to work on more complicated project.
+        There are quite some things I've programmed, but the ones I'm most proud of are listed below:
     </p>
-    <p>
-        In my third year of my Bachelor's, I took an elective course in Computer Science: Computer Networks. I learned about the IP/TCP ISO model, and set up HTTP servers and proxies in Python. I concluded the course by developing an efficient synchronized gaming protocol on TCP, complete with RFC-like documentation.
-    </p>
-    <p>
-        After this project, I shifted my focus back to C++ and Qt, designing a banking app with a localhost implementation and transaction capabilities.
-    </p>
-    <p>
-        And this is just the beginning, there are many more to come &#x1F60A;
-    </p>
+    <ul>
+        <li><span style={{ fontStyle: 'italic' }}> March 2023</span>: perhaps influenced by COVID, I experienced a programming boom. I created my first chess engine with a GUI using Pygame and an alpha-beta pruning algorithm.</li>
+        <li><span style={{ fontStyle: 'italic' }}> August 2023</span>: Designed a neural network from scratch and tested it on the MNIST dataset, achieving over 95% accuracy.</li>
+        <li><span style={{ fontStyle: 'italic' }}> November 2023</span>: Developed an efficient synchronized gaming protocol on TCP, complete with RFC-like documentation.</li>
+        <li><span style={{ fontStyle: 'italic' }}> March 2024</span>: Shifted focus to C++ and Qt, designing a banking app with a localhost implementation and transaction capabilities.</li>
+        <li><span style={{ fontStyle: 'italic' }}> November 2024</span>: Created a particle diffusion simulation in C++, using OpenGL to visualize the particles.</li>
+    </ul>
     <span style={{ fontStyle: 'italic' }}>
-        The following sections provide more insights into these projects, along with the GitHub repositories. Feel free to visit them!
+        The pads provide more insights into these projects, along with the GitHub repositories. Feel free to visit them!
     </span>
 </>
 notepadsProgramming.addHead({
@@ -605,30 +577,81 @@ notepadsProgramming.addHead({
     textContent: descriptionProgramming,
     button: true,
     datePeriod: "2019 -..."
-
 });
+
+
+
+
+// Start of Selection
+const particleSimulation = <>
+    <p>
+        This project is inspired by the diffusion limited aggregation process. I've taken the idea that you initialize particles, and let them randomly move until they collide.
+        After the collision they stand still (aggregate). Other particles can then collide further into them, revealing interesting dynamics.
+    </p>
+    <p>
+        With the classical Diffusion Limited Aggregation (DLA), there are particles at the edge, and one (or multiple) in the middle. I implemented this, but wanted a bit more flexibility in this. So, by using OOP structures
+        such as inheritance, virtual functions, namespaces and many more I made a dynamic code which can opt for different initializations:
+    </p>
+    <ul>
+        <li>Edge-initialization: the particles are put on the edge of the space, whereafter the simulation starts</li>
+        <li>Random-initialization: the particles are randomly distributed among the grid.</li>
+        <li>DLA configuration: you can initialize to have a big 'cloth' of particles, or one particle in the center. In either setup, only the strict centered
+            particle will be initially stationary, the others surrounding it in a snake-like pattern are free to move. Due to this shell pattern, only the other ones will be able
+            to interact with the edge particles.</li>
+    </ul>
+    <p>
+        Besides improving my OOP in C++, I also focussed more on efficiency and modular, clean code. The efficiency is obtained by making use of pointers.
+        Instead of saving the whole matrix (which scales as O(n^2)), I only saved the pointers of the particle objects. With this, you scale as O(p), where p
+        is the number of particles! As a result, the computations can be done very fast, resulting in a simulation cycle which can be chosen to be low milliseconds.
+    </p>
+
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <div style={{ width: '48%' }}>
+            <h3 style={{ fontStyle: 'italic', marginBottom: '1%' }}>DLA Initialization</h3>
+            <img alt="Diffusion particle simulation" className="DLA-simulation-class" />
+        </div>
+        <div style={{ width: '48%' }}>
+            <h3 style={{ fontStyle: 'italic', marginBottom: '1%' }}>Random Initialization</h3>
+            <img alt="Particle Simulation - random initialization" className="random-particle-simulation-class" />
+        </div>
+    </div>
+</>
+const notepadDiffusionLimitedAggregation = <ProjectNotepadContent skillSet="C++ OOP, openGL, clean code, simulation in C++" contentAboutProject={particleSimulation}
+    githubLink="https://github.com/BurakKTopal/particle-diffusion-simulation"
+/>
+notepadsProgramming.addTail({
+    id: "particleDiffusionSimulation",
+    title: "Particle diffusion simulation in C++",
+    otherContent: notepadDiffusionLimitedAggregation,
+    button: true,
+    datePeriod: "November 2024"
+});
+
+
+
+
+
 
 const bankingAppContent = <>
     <p>
-        All projects I had worked on were written in Python, it was time to diversify. One way I did this is by creating a C++ banking app using
-        Qt. You can create an account, and deposit as well as withdrawal money from it.
+        All projects I had worked on were written in Python; it was time to diversify. One way I did this was by creating a C++ banking app using
+        Qt. You can create an account and deposit as well as withdraw money from it.
     </p>
     <p>
-        The architecture that I've implemented is the client-server architecture. Suppose you do a withdrawal, in that case by using Byte streams, the information
-        is being sent to the remote server. By the usage of identifiers in your message, the server knows which action to perform. The action is being performed on the
+        The architecture that I've implemented is the client-server architecture. Suppose you do a withdrawal; in that case, by using byte streams, the information
+        is sent to the remote server. By using identifiers in your message, the server knows which action to perform. The action is performed on the
         local SQLite file, to which the server queries to read and update information.
     </p>
     <img src={BankingAppActions} className="invert-for-gray" />
 
     <p>
-        By the use of C++/Qt threading, multiple clients are supported and can by using eachothers bank details deposit money to eachoter. Clients can by refreshing there transfers,
-        look at the recent one that has come in.
+        By using C++/Qt threading, multiple clients are supported and can use each other's bank details to deposit money to each other. Clients can refresh their transfers
+        to look at the recent ones that have come in.
     </p>
 
     <img src={BankingAppActionBetweenUsers} className="invert-for-gray" />
-    <figcaption>Example of client transfering money to another client (BT being my own currency).
+    <figcaption>Example of a client transferring money to another client (BT being my own currency).
     </figcaption>
-
 </>
 const notepadBankingApp = <ProjectNotepadContent skillSet="C++/Qt networking + Threading, SQLite, UI design" contentAboutProject={bankingAppContent}
     githubLink="https://github.com/BurakKTopal/QtBankingApp"
@@ -641,48 +664,47 @@ notepadsProgramming.addTail({
     datePeriod: "March 2024"
 });
 
-
 const sgpdescription = <>
     <p>
-        The motivation to create this so-called SGP protocol was by the course Computer Networks that I've taken in my third year. We had learned a lot about
-        how internet protocols (TCP, IP, HTTP, FTP and many, many more) thrive to optimize. I was really fascinated by how such a thought process is initiated and with the structure in the
-        documentation that is written alongside. </p>
-    <p>
-        As a result, in early november I started on an application protocol working on TCP and within a server-client architectural setup, which quickly became very interesting. The ground base I had was an offline
-        2D game that I've found, and my mission was to make it online by the use of a (application-layer) protocol.
+        The motivation to create this so-called SGP protocol was from the course Computer Networks that I've taken in my third year. We had learned a lot about
+        how internet protocols (TCP, IP, HTTP, FTP, and many, many more) strive to optimize. I was really fascinated by how such a thought process is initiated and the structure in the
+        documentation that is written alongside.
     </p>
     <p>
-        My first attempt in making this online game, was by using designing protocol
-        in which each client plays a move on his own device, immediately changing their own game state. Only after the client himself
-        has played the move, would it be sent to the server. This is all well and good, if the ping time is low. But
-        in scenarios where one player has a very low ping time, while the other has a very high ping time, the (supposedly) same
+        As a result, in early November, I started on an application protocol working on TCP and within a server-client architectural setup, which quickly became very interesting. The foundation I had was an offline
+        2D game that I found, and my mission was to make it online by using an (application-layer) protocol.
+    </p>
+    <p>
+        My first attempt at making this online game was by designing a protocol
+        in which each client plays a move on their own device, immediately changing their own game state. Only after the client themselves
+        have played the move would it be sent to the server. This is all well and good if the ping time is low. But
+        in scenarios where one player has a very low ping time while the other has a very high ping time, the (supposedly) same
         game would look totally different on their screens. One way to resolve high latency is by saving a buffer
-        at the server and if he sees a big mismatch he 'corrects' the game states of the players.
+        at the server, and if it sees a big mismatch, it 'corrects' the game states of the players.
     </p>
     <p>
         One can code this 'buffering/interpolating' system in a very sophisticated manner so that the other clients
-        wouldn't notice anything for decent pings. But I wanted to have a robust, and very low (application-layer) data transfer
-        working protocol which works decent, and does not buffer the game state of the
+        wouldn't notice anything for decent pings. But I wanted to have a robust and very low (application-layer) data transfer
+        working protocol that works well and does not buffer the game state of the
         clients.
     </p>
     <p>
-        To do this, I have made use of two, rather 'weird', concepts; the <span style={{ fontSize: 'italic' }}>fake moves</span> which plays a move locally to check for
-        validity before it attempts to sends to the server, and
+        To do this, I have made use of two rather 'weird' concepts: the <span style={{ fontSize: 'italic' }}>fake moves</span>, which play a move locally to check for
+        validity before attempting to send it to the server, and
         the concept of <span style={{ fontSize: 'italic' }}>echoing your own move</span> to be able to synchronize the screens of all players over different locations.
-        All these things only work together with the introduction of myself created algorithm: <span style={{ fontSize: 'italic' }}>the synchronization algorithm</span>.
+        All these things only work together with the introduction of my self-created algorithm: <span style={{ fontSize: 'italic' }}>the synchronization algorithm</span>.
         This algorithm is visually represented as follows.
     </p>
     <img src={synchronizationProtocol} className="invert-for-white" />
     <figcaption>Synchronization algorithm applied on two clients on two different devices</figcaption>
     <h3>Super-efficient algorithm</h3>
     <p>
-        Not only did this protocol work, within the game that I've made online it is super efficient. In the description of the Github repository, I've made some
+        Not only did this protocol work, but within the game that I've made online, it is super efficient. In the description of the GitHub repository, I've made some
         data analysis. This analysis showed that for a game of 40 seconds, the average byte transfer between the server and the client and vice versa is only 1.36 bytes!
-        This is also nicely shown by the plot of the byte transfer of each client within the span of the game, that I've displayed here.
+        This is also nicely shown by the plot of the byte transfer of each client within the span of the game, which I've displayed here.
     </p>
     <img src={avgByteTransfer} className="invert-for-white" />
-    <figcaption>Statistics on the average byte transfer of two clients during 40 seconds game</figcaption>
-
+    <figcaption>Statistics on the average byte transfer of two clients during a 40-second game</figcaption>
 </>
 const notepadSgp = <ProjectNotepadContent skillSet="Byte manipulation, optimization, Python networking, documentation" contentAboutProject={sgpdescription}
     githubLink="https://github.com/BurakKTopal/Synchronized-Gaming-Protocol"
@@ -739,12 +761,12 @@ const tableTrainingAI = <>
 </>
 const AIDescription = <>
     <p>
-        AI was in the past always a mistery box due to my lack of Mathematical knowledge. Starting with my study in Mathematics in college, this was no problem anymore.
-        Hence, I came to the idea to create my very own number recognition AI, and not using any library at all, but by writing is from scratch.
+        AI was in the past always a mystery box due to my lack of Mathematical knowledge. Starting with my study in Mathematics in college, this was no longer a problem.
+        Hence, I came up with the idea to create my very own number recognition AI, not using any library at all, but by writing it from scratch.
     </p>
     <p>
-        Besides the design and the creation of the AI, I wanted some extra. This extra's embodies the implementation of a little own library to create
-        custom neural network designs. This means that you can choose the number of layers, and coupled to this layer you can also choose:
+        Besides the design and creation of the AI, I wanted something extra. This extra embodies the implementation of my own little library to create
+        custom neural network designs. This means that you can choose the number of layers, and coupled with this layer, you can also choose:
     </p>
     <ul>
         <li>The number of nodes per layer</li>
@@ -752,23 +774,23 @@ const AIDescription = <>
         <li>If there is a bias neuron or not in that layer</li>
     </ul>
     <p>
-        Not only can you choose the architectural design, it is also made possible to choose the weights adaptation, which encapsulates adapting each weight matrices':
+        Not only can you choose the architectural design, but it is also possible to choose the weights adaptation, which encapsulates adapting each weight matrix:
     </p>
     <ul>
         <li>Batch size: the number of training iterations before the weight matrices are updated</li>
         <li>The learning rate of that specific weight matrix</li>
     </ul>
-    Finally, I've also implemented a save and load feature. This way, after each training session, the model is saved in a *.pkl file, and read out in the following sessions.
+    Finally, I've also implemented a save and load feature. This way, after each training session, the model is saved in a *.pkl file and read out in the following sessions.
 
-    <h3>Testing on the MNIST data set</h3>
+    <h3>Testing on the MNIST dataset</h3>
     <p>
-        I also have included a test of my AI on the MNIST data set. The architecture I'd chosen was a 3-layered 784x522x10 model, together with two bias neurons. The loss function
-        was MSE and the activation function for the hidden and the output layer where the typical sigmoid.
+        I also have included a test of my AI on the MNIST dataset. The architecture I chose was a 3-layered 784x522x10 model, together with two bias neurons. The loss function
+        was MSE, and the activation function for the hidden and output layers was the typical sigmoid.
     </p>
     <img src={NNStructure} className="invert-for-white" />
     <figcaption>3-Layered model</figcaption>
     <p>
-        The statistics of the training, together with the accuracy on the test set can be found in the table below.
+        The statistics of the training, together with the accuracy on the test set, can be found in the table below.
     </p>
     {tableTrainingAI}
 </>
@@ -784,39 +806,33 @@ notepadsProgramming.addTail({
     datePeriod: "Aug 2023-Sep 2023"
 });
 
-
 const ChessDescription = <>
     <p>
         I got interested in playing chess at the age of 13 and really started playing when I was 14. At 16, I became the regional champion of my age category, and at 17, I became the regional champion of all age categories.
         However, my eagerness to play chess took a slight dive after that. To revive this interest and improve my Python skills, I started making a chess program in March 2023 within the OOP paradigm.
         After two hard weeks, I developed a program where moves could be played by entering them in the console using general chess notation. It didn't have an engine, wasn't optimized, and wasn't user-friendly,
-        as not everyone knows proper chess notation. The code was a complex cluster of if and for loops and wasn't even commented. Despite its flaws, it worked, and was happy with it. I knew that one day I'd need to clean it up to present it properly.
+        as not everyone knows proper chess notation. The code was a complex cluster of if and for loops and wasn't even commented. Despite its flaws, it worked, and I was happy with it. I knew that one day I'd need to clean it up to present it properly.
     </p>
     <p>
-        On August 15 2023, I started looking back into my program. At first glance, it was really chaotic; it took me, the very own maker of the program, two full days to go through it and clean it up.
-        I've added an UI using Pygame, and made chess engines which can play on different search depths using alpha-beta pruning. I've also incorporated Zobrist hashing to encode every position to detect transpositions
+        On August 15, 2023, I started looking back into my program. At first glance, it was really chaotic; it took me, the very own maker of the program, two full days to go through it and clean it up.
+        I've added a UI using Pygame and made chess engines that can play at different search depths using alpha-beta pruning. I've also incorporated Zobrist hashing to encode every position to detect transpositions
         to reduce the calculation time.
     </p>
     <p>
-        It may not be that fast, but as a first decent, programming project I was and still satisfied with what I've built.
+        It may not be that fast, but as a first decent programming project, I was and still am satisfied with what I've built.
     </p>
-
 
     <table>
         <tr>
             <td>
                 <img className="invert-for-black" src={terminalInfoChess} />
-
             </td>
             <td>
                 <img src={chessGameExample} />
-
             </td>
         </tr>
-
     </table>
     <figcaption style={{ fontStyle: 'italic' }}>Game against (black) chess engine with game statistics</figcaption>
-
 </>
 const notepadChess = <ProjectNotepadContent skillSet="Alpha-Beta Pruning, Hashing, Pygame, Python OOP" contentAboutProject={ChessDescription}
     githubLink="https://github.com/BurakKTopal/Chess"
@@ -830,29 +846,27 @@ notepadsProgramming.addTail({
     datePeriod: "March 2023-Aug 2023"
 });
 
-
 // Projects
 const notepadsExtraCurricular = new DoubleLinkedList();
 
 const descriptionExtraCurricular = <>
     <p>
-        The first real project we worked on, was during in my second to last year of high school about the Mathematical applications in the medical
-        world. This was in 2020. After this big project, there were many assignments and little tasks that were given by college, but I these are not
+        The first real project we worked on was during my second to last year of high school about the Mathematical applications in the medical
+        world. This was in 2020. After this big project, there were many assignments and little tasks that were given by college, but these are not
         tasks that take hours and hours of work, but more side quests.
     </p>
     <p>
-        Actually, programming had a lot of ups and downs. It was in 2019 that I started with programming in C++, obviously underestimating how hard
-        this language is. Hence, I only got the understanding of the basic syntax. I did use this basic knowledge for some little assignment about
+        Actually, programming had a lot of ups and downs. It was in 2019 that I started programming in C++, obviously underestimating how hard
+        this language is. Hence, I only got an understanding of the basic syntax. I did use this basic knowledge for a small assignment about
         numerical analysis, which wasn't spectacular at all. After this, coding kind of cooled down for me.
     </p>
     <p>
-        It took 2 more years to get back to it. This time with the more logical approach by starting with Python. I followed some courses on
+        It took 2 more years to get back to it. This time with a more logical approach by starting with Python. I followed some courses on
         Codecademy and solidified my knowledge in this programming language. Slowly, yet surely.
     </p>
     <p>
-        In 2022, I experienced a programming boom and ever since intensively worked on improving my coding skills.
+        In 2022, I experienced a programming boom and have since intensively worked on improving my coding skills.
     </p>
-
 </>
 notepadsExtraCurricular.addHead({
     id: "extracurricular",
@@ -863,9 +877,7 @@ notepadsExtraCurricular.addHead({
         </center>
     </p>,
     button: true,
-
 });
-
 
 // Exporting all the double linked lists
 export {

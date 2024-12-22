@@ -41,6 +41,9 @@
     --invert-filter-for-gray: invert(10%);
     --contact-me-button-background-color: #80461B;
     --theme-button-background-color: #b38952;
+
+    --path-DLA: url('../assets/gifs/WB_DLA_Particle_Sim.gif');
+    --path-Random: url('../assets/gifs/WB_Random_Particle_Sim.gif');
 }
 
 /* Dark Theme */
@@ -77,6 +80,8 @@
     --contact-me-button-background-color: #ff6347;
     --theme-button-background-color: #ff6347;
 
+    --path-DLA: url('../assets/gifs/BB_DLA_Particle_Sim.gif');
+    --path-Random: url('../assets/gifs/BB_Random_Particle_Sim.gif');
 
 }
 

@@ -38,7 +38,7 @@
 }
 
 .skill-set-and-description {
-    line-height:var(--line-height);
+    line-height: var(--line-height);
 
     /* Adjust the gap between columns */
     /* Add padding to the whole content area */
@@ -88,8 +88,20 @@
     width: 100%;
 }
 
-.content-about-project .invert-for-black {
+.content-about-project .dark-theme .invert-for-black {
     filter: var(--invert-filter-for-black)
+}
+
+.content-about-project .DLA-simulation-class {
+    content: var(--path-DLA);
+    height: auto;
+    display: block;
+}
+
+.content-about-project .random-particle-simulation-class {
+    content: var(--path-Random);
+    height: auto;
+    display: block;
 }
 
 .content-about-project .invert-for-gray {
