@@ -15,7 +15,7 @@
     width: 100%;
     /* Add padding to the left of the right column */
     text-align: left;
-    font-size: var(--font-size-keywords)
+    font-size: var(--right-column-worknotepad-font-size)
 }
 
 

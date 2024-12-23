@@ -45,7 +45,7 @@ export default function WorkNotepadContent({ title, activity, location, skillSet
                         <span style={{ fontWeight: "bold" }}>Skill set</span> - {skillSet}
                     </div>
                     <div className='separation'>
-                        <h2>Description</h2>
+                        <h3>Description</h3>
                         <div className="content-about-experience">
                             {contentAboutExperience}
                         </div>

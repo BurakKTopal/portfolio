@@ -94,7 +94,7 @@
     --notepad-width: 60%;
     --width-notepad-math-physics: 92%;
     --Heading-max-width: 55%;
-    --right-column-worknotepad-font-size: 1.3em;
+    --right-column-worknotepad-font-size: 1.1em;
     --particle-simulation-font-size: 1.6em;
     --width-notepad-content-style: 90%;
     --width-plot-grades-container: 90%;
@@ -124,7 +124,7 @@
     --width-notepad-math-physics: 90%;
     --notepad-width: 90%;
     --Heading-max-width: 80%;
-    --right-column-worknotepad-font-size: 0.8em;
+    --right-column-worknotepad-font-size: 0.9em;
     --width-notepad-content-style: 85%;
     --width-plot-grades-container: 90%;
     --Heading-margin-bottom: 5vh;
@@ -140,7 +140,7 @@
     --translate-button-right: 70%;
     --width-image-company: 60%;
     --main-text-font-size: 1em;
-    --font-size-outside-notepad-box: 1.2em;
+    --font-size-outside-notepad-box: 1em;
     --font-size-keywords: 0.8em;
 }
 

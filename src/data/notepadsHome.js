@@ -432,7 +432,7 @@ const contentAboutLetslink = <>
     </p>
 </>
 
-const workpadLetsLink = <WorkNotepadContent title={"Full Stack Developer"} activity={""} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, REST API engineering, Authentication, Python Flask, Documentation - Swagger, Tech stack design"} image={LetsLinkLogoLight} contentAboutExperience={contentAboutLetslink}
+const workpadLetsLink = <WorkNotepadContent title={"Full-Stack Developer"} activity={""} location={"Hasselt, Flanders, Belgium · Hybrid"} skillSet={"React, Next JS, Firebase, REST API engineering, Authentication, Python Flask, Documentation - Swagger, Tech stack design"} image={LetsLinkLogoLight} contentAboutExperience={contentAboutLetslink}
     darkThemeImage={LetsLinkLogoDark}
 />
 notepadsProfessionalLife.addHead({
