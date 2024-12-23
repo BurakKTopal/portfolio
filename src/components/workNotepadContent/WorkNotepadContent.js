@@ -12,7 +12,7 @@ export default function WorkNotepadContent({ title, activity, location, skillSet
                 <div className="work-notepad-content">
 
 
-                    <div className="left-column">
+                    <div className="left-column" >
                         {darkThemeImage && theme == "light-theme" ?
                             <img
                                 src={darkThemeImage}

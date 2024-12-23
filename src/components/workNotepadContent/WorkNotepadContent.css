@@ -4,7 +4,7 @@
 }
 
 .left-column {
-    text-align: center;
+    text-align: var(--position-image-company);
     margin-right: 2%;
     align-items: left;
 }
@@ -20,8 +20,8 @@
 
 
 .image-company {
-    width: var(--width-image-company);
-    max-width: 120px;
+    /* width: var(--width-image-company); */
+    max-width: var(--width-image-company);
     box-shadow: 2px 2px 2px var(--box-border-color);
     padding: 2%;
     border-radius: 10px;
