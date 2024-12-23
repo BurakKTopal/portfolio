@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0aa8a84d.css",
-    "main.js": "/static/js/main.ca599750.js",
+    "main.css": "/static/css/main.0254fc9a.css",
+    "main.js": "/static/js/main.cbc03cf8.js",
     "static/js/453.f48946e4.chunk.js": "/static/js/453.f48946e4.chunk.js",
     "static/media/BB_Random_Particle_Sim.gif": "/static/media/BB_Random_Particle_Sim.143938db96838ce38ace.gif",
     "static/media/WB_Random_Particle_Sim.gif": "/static/media/WB_Random_Particle_Sim.3cd479bd9c306b125986.gif",
@@ -13,32 +13,32 @@
     "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
     "static/media/contactFormSuccess.png": "/static/media/contactFormSuccess.3afebeee97d890f4e541.png",
     "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
-    "static/media/MySherpa-logo.png": "/static/media/MySherpa-logo.240473577d21c302b70d.png",
+    "static/media/ASMLLogo.png": "/static/media/ASMLLogo.2ab6a4048bab648ed10d.png",
     "static/media/chessGameExample.png": "/static/media/chessGameExample.7b7239ad37f1184c6e59.png",
-    "static/media/MobileVikings-logo.png": "/static/media/MobileVikings-logo.e8d9ff81bec7f4632ba9.png",
+    "static/media/MobileVikings-logo.png": "/static/media/MobileVikings-logo.4691d0c4918f59124d7e.png",
     "static/media/LetsLink-logo-dark.png": "/static/media/LetsLink-logo-dark.b74647cd99a81a102ee1.png",
     "static/media/LetsLink-logo-light.png": "/static/media/LetsLink-logo-light.039597f3ed73445a6423.png",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
-    "static/media/AlbertHeijn-logo.png": "/static/media/AlbertHeijn-logo.3e801615fb766661eafb.png",
-    "static/media/BijlesHuisLogoLight.png": "/static/media/BijlesHuisLogoLight.d3905668b61a5666e0cc.png",
-    "static/media/ASMLLogo.png": "/static/media/ASMLLogo.c4262cecabda1baa5c5e.png",
+    "static/media/BijlesHuisLogoLight.png": "/static/media/BijlesHuisLogoLight.2b8de649805b09fde471.png",
     "static/media/terminalInfoChess.png": "/static/media/terminalInfoChess.18094a33b702c5c4640d.png",
     "static/media/synchronizationProtocol.png": "/static/media/synchronizationProtocol.480e6c5da075242ef813.png",
     "static/media/contactFormFailed.png": "/static/media/contactFormFailed.f11182ed9e3a8b37f269.png",
     "static/media/avgByteTransfer.png": "/static/media/avgByteTransfer.9c7c60db758be0b81db2.png",
     "static/media/BankingAppActions.png": "/static/media/BankingAppActions.4fe819dff872bdc7f216.png",
     "static/media/BankingAppActionBetweenUsers.png": "/static/media/BankingAppActionBetweenUsers.af3643ab9b0cb91c642e.png",
+    "static/media/MySherpa-logo.png": "/static/media/MySherpa-logo.aedf7ef5b4b1db158720.png",
     "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
-    "static/media/iinno-benelux-logo.png": "/static/media/iinno-benelux-logo.4c3820fb9cad3df1c857.png",
+    "static/media/AlbertHeijn-logo.png": "/static/media/AlbertHeijn-logo.93a6a094d95c0cdb26ee.png",
+    "static/media/iinno-benelux-logo.png": "/static/media/iinno-benelux-logo.ebeed2f643ad69729be6.png",
     "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/index.html",
-    "main.0aa8a84d.css.map": "/static/css/main.0aa8a84d.css.map",
-    "main.ca599750.js.map": "/static/js/main.ca599750.js.map",
+    "main.0254fc9a.css.map": "/static/css/main.0254fc9a.css.map",
+    "main.cbc03cf8.js.map": "/static/js/main.cbc03cf8.js.map",
     "453.f48946e4.chunk.js.map": "/static/js/453.f48946e4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0aa8a84d.css",
-    "static/js/main.ca599750.js"
+    "static/css/main.0254fc9a.css",
+    "static/js/main.cbc03cf8.js"
   ]
 }
