@@ -631,7 +631,7 @@ const bankingAppContent = <>
     <figcaption>Example of a client transferring money to another client (BT being my own currency).
     </figcaption>
 </>
-const notepadBankingApp = <ProjectNotepadContent skillSet="C++/Qt networking + Threading, SQLite, UI design" contentAboutProject={bankingAppContent}
+const notepadBankingApp = <ProjectNotepadContent skillSet="C++/Qt Networking & Threading, SQLite, UI design" contentAboutProject={bankingAppContent}
     githubLink="https://github.com/BurakKTopal/QtBankingApp"
 />
 notepadsProgramming.addTail({
@@ -684,7 +684,7 @@ const sgpdescription = <>
     <img src={avgByteTransfer} className="invert-for-white" />
     <figcaption>Statistics on the average byte transfer of two clients during a 40-second game</figcaption>
 </>
-const notepadSgp = <ProjectNotepadContent skillSet="Byte manipulation, optimization, Python networking, documentation" contentAboutProject={sgpdescription}
+const notepadSgp = <ProjectNotepadContent skillSet="Protocol optimization, Python networking & multihreading, Documentation" contentAboutProject={sgpdescription}
     githubLink="https://github.com/BurakKTopal/Synchronized-Gaming-Protocol"
 />
 

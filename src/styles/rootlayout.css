@@ -94,7 +94,7 @@
     --notepad-width: 60%;
     --width-notepad-math-physics: 92%;
     --Heading-max-width: 55%;
-    --right-column-worknotepad-font-size: 1.1em;
+    --right-column-worknotepad-font-size: 1.15em;
     --particle-simulation-font-size: 1.6em;
     --width-notepad-content-style: 90%;
     --width-plot-grades-container: 90%;
@@ -113,6 +113,7 @@
     --font-size-outside-notepad-box: 1.2em;
     --font-size-keywords: 1.1em;
     --position-image-company: center;
+    --work-notepad-content-width: 90%;
 
 }
 
@@ -125,7 +126,7 @@
     --width-notepad-math-physics: 90%;
     --notepad-width: 90%;
     --Heading-max-width: 80%;
-    --right-column-worknotepad-font-size: 0.9em;
+    --right-column-worknotepad-font-size: 0.95em;
     --width-notepad-content-style: 85%;
     --width-plot-grades-container: 90%;
     --Heading-margin-bottom: 5vh;
@@ -144,6 +145,7 @@
     --font-size-outside-notepad-box: 1em;
     --font-size-keywords: 0.9em;
     --position-image-company: left;
+    --work-notepad-content-width: 100%;
 }
 
 body {

@@ -5,7 +5,6 @@
 
 .left-column {
     text-align: var(--position-image-company);
-    margin-right: 5%;
     align-items: left;
 }
 
@@ -67,7 +66,7 @@
 .work-notepad-content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: var(--work-notepad-content-width);
     /* border-collapse: collapse; */
 }
 
