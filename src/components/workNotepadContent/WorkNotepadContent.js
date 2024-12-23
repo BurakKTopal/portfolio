@@ -8,8 +8,8 @@ export default function WorkNotepadContent({ title, activity, location, skillSet
 
     return (
         <>
-            <div className='workpad-container'>
-                <div className="work-notepad-content">
+            <div className='workpad-container' >
+                <div className="work-notepad-content" style={{ margin: "0px" }}>
 
 
                     <div className="left-column" >
