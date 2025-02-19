@@ -8,7 +8,7 @@ export const getAdditionalLayout = (theme) => {
         margin: {
             r: 10,
             b: 20,
-            l: 30,
+            l: 40
         },
         xaxis: {
             color: rootStyles.getPropertyValue('--text-color').trim(),
@@ -18,11 +18,12 @@ export const getAdditionalLayout = (theme) => {
             },
         },
         yaxis: {
-            // title: 'Grades',
+            tickformat: '0%', // Format the ticks as percentages
             font: {
                 family: rootStyles.getPropertyValue('--root-font-family').trim(),
                 size: 12
             },
+            // range: [0.7, 1.01],
             color: rootStyles.getPropertyValue('--text-color').trim(),
         },
         autosize: true,

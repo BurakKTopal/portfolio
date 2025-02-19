@@ -92,7 +92,7 @@ const textAboutMe =
         </p>
     </>
 const notepadsAboutMe = new DoubleLinkedList();
-notepadsAboutMe.addHead({ id: "aboutMe", title: "My story...", textContent: textAboutMe, button: false, datePeriod: '2004-...' });
+notepadsAboutMe.addHead({ id: "aboutMe", title: "My story", textContent: textAboutMe, button: false, datePeriod: '2004-...' });
 
 // Initialize double linked lists for each category
 
@@ -213,7 +213,7 @@ const mathYearThreeContent = <>
         <li>Modeling Week</li>
     </ul>
 </>
-notepadsMath.addTail({ id: "mathematics3", title: "My Third year", otherContent: <PlotGrades gradesData={mathYearThree} />, textContent: mathYearThreeContent, button: true, datePeriod: '2023-2024' });
+notepadsMath.addTail({ id: "mathematics3", title: "My third year", otherContent: <PlotGrades gradesData={mathYearThree} />, textContent: mathYearThreeContent, button: true, datePeriod: '2023-2024' });
 
 // Physics
 const notepadsPhysics = new DoubleLinkedList();

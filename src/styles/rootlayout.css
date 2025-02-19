@@ -114,7 +114,6 @@
     --font-size-keywords: 1.1em;
     --position-image-company: center;
     --work-notepad-content-width: 90%;
-
 }
 
 
@@ -141,8 +140,8 @@
     --translate-button-left: -70%;
     --translate-button-right: 70%;
     --width-image-company: 22%;
-    --main-text-font-size: 1em;
-    --font-size-outside-notepad-box: 1em;
+    --main-text-font-size: 0.85m;
+    --font-size-outside-notepad-box: 1.18em;
     --font-size-keywords: 0.9em;
     --position-image-company: left;
     --work-notepad-content-width: 100%;

@@ -31,7 +31,7 @@
     line-height: var(--line-height);
     font-size: var(--font-size-outside-notepad-box);
     font-family: var(--root-font-family);
-    line-height: 1.6;
+    /* line-height: 1.6; */
     color: var(--text-color);
 }
 

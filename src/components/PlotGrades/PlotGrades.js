@@ -26,10 +26,10 @@ function PlotGrades({ gradesData }) {
             // If current semester number is null, then we show whole year
 
             setCourses(gradesWholeYear.map(element => element.subject));
-            setGrades(gradesWholeYear.map(element => element.grade))
+            setGrades(gradesWholeYear.map(element => element.grade / 20))
         } else {
             setCourses(gradesData[currentSemesterNumber].map(element => element.subject));
-            setGrades(gradesData[currentSemesterNumber].map(element => element.grade));
+            setGrades(gradesData[currentSemesterNumber].map(element => element.grade / 20));
         }
 
     }, [currentSemesterNumber, gradesData]);
@@ -61,11 +61,12 @@ function PlotGrades({ gradesData }) {
 
     const layout = {
         title: {
-            text: `Grades During ${currentSemesterNumber != null ? `Semester ${currentSemesterNumber + 1}` : "the Year"}`,
+            text: `Grades during ${currentSemesterNumber != null ? `semester ${currentSemesterNumber + 1}` : "the year"}`,
             font: {
                 size: 18 // Adjust the font size as needed
             },
         },
+
         ...getAdditionalLayout(theme)
     };
 

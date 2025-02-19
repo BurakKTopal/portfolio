@@ -79,7 +79,7 @@
   line-height: 1.6;
   color: var(--text-color);
   /* Lighter text color */
-  text-align: justify;
+  text-align: left;
   /* Justify text */
   width: var(--width-notepad-content-style);
   /* Equal width to the container */
