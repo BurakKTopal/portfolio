@@ -462,8 +462,8 @@ notepadsProfessionalLife.addHead({
 
 const contentAboutASML = <>
     <p>
-        ASML was on my mind the day I realized I wanted to go into the practical side of Mathematics. By the good word of my supervisor of my Bachelor Thesis and my several job experiences, I was a good candidate to get into the Machine Control group.
-        My task was to use Coco to verify a new design.
+        ASML came to mind the day I realized I wanted to pursue the practical side of Mathematics. Thanks to the strong results of my Bachelor's thesis, my supervisor introduced me to the Machine Control Group at ASML.
+        My internship focuses on a feasibility study of anew designs, utilizing the Coco verification tool alongside C++ implementations.
     </p>
 </>
 
