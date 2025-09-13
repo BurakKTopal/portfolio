@@ -32,12 +32,12 @@ import RandomSimulationBlackBackground from '../assets/gifs/BB_Random_Particle_S
 
 
 function calculateAge(birthDateString) {
-    const birthDate = new Date(birthDateString); // Parse the input birthdate
-    const today = new Date(); // Get the current date
+    const [day, month, year] = birthDateString.split("-").map(Number);
+    const birthDate = new Date(year, month - 1, day); // month is 0-indexed
+    const today = new Date();
 
     let age = today.getFullYear() - birthDate.getFullYear();
     const monthDifference = today.getMonth() - birthDate.getMonth();
-    // Adjust age if the birthday hasn't occurred yet this year
     if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
         age--;
     }
@@ -636,7 +636,7 @@ const contentAboutProtossPAKEBench = <>
         and performance profiling of cryptographic protocols.
     </p>
     <ul>
-        <li>Benchmarks Protoss implementations against state-of-the-art protocols like CPace</li>
+        <li>Benchmarks Protoss implementations against the state-of-the-art protocol CPace</li>
         <li>Includes multiple language backends (C++, Rust, Python) for cross-comparison</li>
         <li>Focus on both performance (latency, throughput) and strong security guarantees</li>
     </ul>
@@ -661,8 +661,7 @@ const contentAboutProtossPAKEBench = <>
             <h4 style={{ marginBottom: '0.5rem' }}>Performance Comparison</h4>
             <img
                 src={ComparisonDifferentProtossImplementations}
-                className="invert-for-gray"
-                style={{ width: '80%', height: 'auto' }}
+                style={{ height: 'auto', filter: 'invert(4%)' }}
             />
             <p style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>
                 Benchmarking different Protoss implementations (C++, Rust, Python). Rust yielded the fastest results while also benefiting from memory safety guarantees.
@@ -673,8 +672,7 @@ const contentAboutProtossPAKEBench = <>
             <h4 style={{ marginBottom: '0.5rem' }}>CPace vs. Protoss Comparison</h4>
             <img
                 src={CpaceVsProtoss}
-                className="invert-for-gray"
-                style={{ width: '80%', height: 'auto' }}
+                style={{ height: 'auto', filter: 'invert(4%)' }}
             />
             <p style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>
                 Time comparison per step of Protoss versus CPace. Protoss consistently outperforms CPace,
@@ -693,7 +691,7 @@ const notepadProtossPAKEBench = <ProjectNotepadContent
 
 notepadsProgramming.addTail({
     id: "protossPAKEBench",
-    title: "ProtossPAKEBench: Benchmarking PAKE Protocols",
+    title: "PAKE Cryptographic Protocol Benchmarking",
     otherContent: notepadProtossPAKEBench,
     button: true,
     datePeriod: "May 2025 - June 2025"

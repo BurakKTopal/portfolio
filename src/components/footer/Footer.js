@@ -1,12 +1,14 @@
 import React from "react";
-import "./Footer.css"; // Import your CSS file for styling
-import { FaLinkedin, FaGithub } from "react-icons/fa"; // Import Font Awesome icons
+import "./Footer.css";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
+    const currentYear = new Date().getFullYear(); // Get current year
+
     return (
         <footer className="footer-style">
             <div className="footer-content">
-                <p>© 2024-2025 Burak Kucuktopal. All rights reserved.</p>
+                <p>© 2024-{currentYear} Burak Kucuktopal. All rights reserved.</p>
                 <div className="social-icons">
                     <a
                         href="https://www.linkedin.com/in/burak-kucuktopal/"
