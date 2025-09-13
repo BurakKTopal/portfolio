@@ -20,6 +20,10 @@ import LetsLinkLogoLight from '../assets/images/LetsLink-logo-light.png';
 import LetsLinkLogoDark from '../assets/images/LetsLink-logo-dark.png';
 import BijlesHuisLogoLight from '../assets/images/BijlesHuisLogoLight.png';
 import ASMLLogo from '../assets/images/ASMLLogo.png';
+import DillenTechnologiesLogo from '../assets/images/DillenTechnologies.png';
+import NXPSemiconductorsLogo from '../assets/images/NXPSemiconductorsLogo.png';
+import ComparisonDifferentProtossImplementations from '../assets/images/ComparisonDifferentProtossImplementations.png';
+import CpaceVsProtoss from '../assets/images/CpaceVsProtoss.png';
 
 import DLASimulationWhiteBackground from '../assets/gifs/WB_DLA_Particle_Sim.gif';
 import DLASimulationBlackBackground from '../assets/gifs/BB_DLA_Particle_Sim.gif';
@@ -48,7 +52,7 @@ const textAboutMe =
         <div id="aboutMe-intro">
             Hello there &#x1F604;
             <p>
-                I'm Burak Kucuktopal, and I'm {(!isNaN(age) && age) ? age : "20"} years old. Since I was young, I have always wanted to reveal my thoughts to the broader public,
+                I'm Burak Kucuktopal, and I'm {(!isNaN(age) && age) ? age : "21"} years old. Since I was young, I have always wanted to reveal my thoughts to the broader public,
                 and have a website to gather all my experiences, projects, and also important dates. Something that resembles a biography. Due to the lack
                 of knowledge and limited programming skills, it took quite some time to realize this. But here it is!
             </p>
@@ -474,7 +478,56 @@ notepadsProfessionalLife.addHead({
     title: "ASML",
     otherContent: workpadASML,
     button: true,
-    datePeriod: 'Nov 2024-...'
+    datePeriod: 'Nov 2024-Apr 2025'
+});
+
+const contentAboutDillenTechnologies = <>
+    <p>
+        Worked on an Azure-based .NET Aspire application, contributing to the development and improvement of the Lowi platform, an AI-driven tool for workflow automation. Implemented Gmail integrations using Google Cloud solutions, developed and maintained integration tests, and added key application features to enhance reliability and functionality.
+    </p>
+    <p>
+        Focused on writing clean, organized, and maintainable code, following best practices in the Domain-Driven Design paradigm. Gained hands-on experience with cloud services (Azure & Google Cloud), integration testing, and AI-supported workflow automation in a production environment.
+    </p>
+</>
+
+const workpadDillenTechnologies = <WorkNotepadContent
+    title={"Dillen Technologies"}
+    // activity={"Part-time · .NET Developer"}
+    location={"Hasselt, Flemish Region, Belgium · On-Site"}
+    skillSet={"C#, .NET Framework, Microsoft Azure, Google Cloud Platform"}
+    image={DillenTechnologiesLogo}
+    contentAboutExperience={contentAboutDillenTechnologies}
+/>
+
+notepadsProfessionalLife.addHead({
+    id: "dillen",
+    title: ".NET Developer",
+    otherContent: workpadDillenTechnologies,
+    button: true,
+    datePeriod: 'May 2025 - Aug 2025'
+});
+
+const contentAboutNXPSemiconductors = <>
+    <p>
+        Study on privacy-preserving Machine Learning technologies for embedded devices.
+    </p>
+</>
+
+const workpadNXPSemiconductors = <WorkNotepadContent
+    title={"AI/ML Intern"}
+    activity={"Graduation Internship"}
+    location={"Leuven, Flemish Region, Belgium"}
+    skillSet={"AI/ML, Privacy-Preserving Machine Learning, Embedded Systems"}
+    image={NXPSemiconductorsLogo}
+    contentAboutExperience={contentAboutNXPSemiconductors}
+/>
+
+notepadsProfessionalLife.addHead({
+    id: "nxp",
+    title: "NXP Semiconductors",
+    otherContent: workpadNXPSemiconductors,
+    button: true,
+    datePeriod: 'Sep 2025 - Present'
 });
 
 notepadsProfessionalLife.addHead({
@@ -545,6 +598,7 @@ const descriptionProgramming = <>
         <li><span style={{ fontStyle: 'italic' }}> November 2023</span>: Developed an efficient synchronized gaming protocol on TCP, complete with RFC-like documentation.</li>
         <li><span style={{ fontStyle: 'italic' }}> March 2024</span>: Shifted focus to C++ and Qt, designing a banking app with a localhost implementation and transaction capabilities.</li>
         <li><span style={{ fontStyle: 'italic' }}> November 2024</span>: Created a particle diffusion simulation in C++, using OpenGL to visualize the particles.</li>
+        <li><span style={{ fontStyle: 'italic' }}> June 2025</span>: Implemented Password-Authenticated Key Exchange cryptorgraphic protocol in C++, Rust and Python, beating state-of-the-art.</li>
     </ul>
     <span style={{ fontStyle: 'italic' }}>
         The pads provide more insights into these projects, along with the GitHub repositories. Feel free to visit them!
@@ -559,6 +613,91 @@ notepadsProgramming.addHead({
 });
 
 
+const contentAboutProtossPAKEBench = <>
+    <p>
+        This project was carried out as part of the 2IMS00 course at Eindhoven University of Technology,
+        focusing on <strong>Password-Authenticated Key Exchange (PAKE)</strong> protocols.
+        A PAKE enables two or more parties to establish a shared cryptographic key over an insecure network
+        using only a low-entropy password. Its key property is that the password never traverses the network,
+        while still ensuring mutual authentication and resistance to offline brute-force attacks.
+    </p>
+    <p>
+        Our work centered around <strong>Protoss</strong> (Protocol for Tight Optimal Symmetric Security),
+        a modern symmetric PAKE designed to overcome the performance and security limitations of
+        earlier schemes such as CPace and SPAKE. Protoss offers optimal communication efficiency,
+        supports efficient composition with symmetric primitives, and, importantly, features a
+        <em>tight security proof</em>, aligning theoretical and practical security guarantees.
+    </p>
+    <p>
+        As part of my contribution, I implemented multiple Protoss variants in C++, Rust, and Python,
+        and developed this benchmarking suite to systematically evaluate their performance.
+        The project was highly relevant to my studies in cryptography and secure systems,
+        giving me hands-on experience with elliptic curves, hash-to-group constructions,
+        and performance profiling of cryptographic protocols.
+    </p>
+    <ul>
+        <li>Benchmarks Protoss implementations against state-of-the-art protocols like CPace</li>
+        <li>Includes multiple language backends (C++, Rust, Python) for cross-comparison</li>
+        <li>Focus on both performance (latency, throughput) and strong security guarantees</li>
+    </ul>
+
+    <div style={{ marginTop: '2rem' }}>
+        <h3 style={{ fontStyle: 'italic', marginBottom: '1%' }}>Protoss Protocol Overview</h3>
+        <p>
+            The Protoss protocol is built around three simple steps:
+        </p>
+        <ol>
+            <li><strong>Init</strong> – both parties start from the shared password and generate an initial message to kick off the exchange.</li>
+            <li><strong>RspDer</strong> – the other party responds with their own contribution, and both sides start building the shared secret.</li>
+            <li><strong>Der</strong> – using the previous messages and the password, both parties derive the same secure session key.</li>
+        </ol>
+        <p>
+            This design ensures that the password never travels over the network, while guaranteeing mutual authentication and forward secrecy.
+        </p>
+
+        <h3 style={{ fontStyle: 'italic', marginTop: '2rem', marginBottom: '1%' }}>Benchmark Results</h3>
+
+        <div style={{ marginBottom: '2rem' }}>
+            <h4 style={{ marginBottom: '0.5rem' }}>Performance Comparison</h4>
+            <img
+                src={ComparisonDifferentProtossImplementations}
+                className="invert-for-gray"
+                style={{ width: '80%', height: 'auto' }}
+            />
+            <p style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>
+                Benchmarking different Protoss implementations (C++, Rust, Python). Rust yielded the fastest results while also benefiting from memory safety guarantees.
+            </p>
+        </div>
+
+        <div>
+            <h4 style={{ marginBottom: '0.5rem' }}>CPace vs. Protoss Comparison</h4>
+            <img
+                src={CpaceVsProtoss}
+                className="invert-for-gray"
+                style={{ width: '80%', height: 'auto' }}
+            />
+            <p style={{ fontSize: '0.9rem', fontStyle: 'italic' }}>
+                Time comparison per step of Protoss versus CPace. Protoss consistently outperforms CPace,
+                achieving about 10% speedup in C++ and 20% in Rust, while also offering a tight security proof.
+            </p>
+        </div>
+    </div>
+</>
+
+
+const notepadProtossPAKEBench = <ProjectNotepadContent
+    skillSet="C++, Rust, Python, Cryptography, Benchmarking, Symmetric Protocols"
+    contentAboutProject={contentAboutProtossPAKEBench}
+    githubLink="https://github.com/BurakKTopal/ProtossPAKEBench"
+/>
+
+notepadsProgramming.addTail({
+    id: "protossPAKEBench",
+    title: "ProtossPAKEBench: Benchmarking PAKE Protocols",
+    otherContent: notepadProtossPAKEBench,
+    button: true,
+    datePeriod: "May 2025 - June 2025"
+});
 
 
 const particleSimulation = <>
