@@ -605,8 +605,8 @@ const descriptionProgramming = <>
     </span>
 </>
 notepadsProgramming.addHead({
-    id: "programming",
-    title: "Programming",
+    id: "projects",
+    title: "Projects",
     textContent: descriptionProgramming,
     button: true,
     datePeriod: "2019 -..."

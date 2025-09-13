@@ -66,7 +66,7 @@ function Home() {
     [currentNotepadPhysics.getPrevNode() ? [currentNotepadPhysics.getValue()] : ''],
     currentNotepadProfessionalLife.getPrevNode() ? { title: "Work Experience", id: "" } : { title: "Work Experience", id: "professionallife" },
     currentNotepadProfessionalLife.getPrevNode() ? [currentNotepadProfessionalLife.getValue()] : '',
-    currentNotepadProgramming.getPrevNode() ? { title: "Programming", id: "" } : { title: "Programming", id: "programming" },
+    currentNotepadProgramming.getPrevNode() ? { title: "Projects", id: "" } : { title: "Projects", id: "projects" },
     currentNotepadProgramming.getPrevNode() ? [currentNotepadProgramming.getValue()] : '',
     // currentNotepadExtraCurricular.getValue(),
     { title: 'Want to get in touch?', id: "contactMe" }
@@ -78,7 +78,7 @@ function Home() {
     currentNotepadAboutMe.getValue(),
     notepadMathAndPhysics.getValue(),
     currentNotepadProfessionalLife.getPrevNode() ? { title: "Work Experience", id: currentNotepadProfessionalLife.getValue().id } : { title: "Work Experience", id: "professionallife" },
-    currentNotepadProgramming.getPrevNode() ? { title: "Programming", id: currentNotepadProgramming.getValue().id } : { title: "Programming", id: "programming" },
+    currentNotepadProgramming.getPrevNode() ? { title: "Projects", id: currentNotepadProgramming.getValue().id } : { title: "Projects", id: "projects" },
     // currentNotepadExtraCurricular.getValue(),
     { title: 'Want to get in touch?', id: "contactMe" }
   ]
