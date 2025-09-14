@@ -471,7 +471,7 @@ const contentAboutASML = <>
     </p>
 </>
 
-const workpadASML = <WorkNotepadContent title={"Design Engineer"} activity={"Internship"} location={"Veldhoven, Netherlands · On-Site"} skillSet={"Formal Verification Techniques, Coco, C++"} image={ASMLLogo} contentAboutExperience={contentAboutASML}
+const workpadASML = <WorkNotepadContent title={"Formal Verification Engineering Intern"} activity={"Internship"} location={"Veldhoven, Netherlands · On-Site"} skillSet={"Formal Verification Techniques, Coco, C++"} image={ASMLLogo} contentAboutExperience={contentAboutASML}
 />
 notepadsProfessionalLife.addHead({
     id: "asml",
@@ -491,7 +491,7 @@ const contentAboutDillenTechnologies = <>
 </>
 
 const workpadDillenTechnologies = <WorkNotepadContent
-    title={"Dillen Technologies"}
+    title={".NET DeveloperE"}
     // activity={"Part-time · .NET Developer"}
     location={"Hasselt, Flemish Region, Belgium · On-Site"}
     skillSet={"C#, .NET Framework, Microsoft Azure, Google Cloud Platform"}
@@ -501,7 +501,7 @@ const workpadDillenTechnologies = <WorkNotepadContent
 
 notepadsProfessionalLife.addHead({
     id: "dillen",
-    title: ".NET Developer",
+    title: "Dillen technologies",
     otherContent: workpadDillenTechnologies,
     button: true,
     datePeriod: 'May 2025 - Aug 2025'
